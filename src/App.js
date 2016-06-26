@@ -3,7 +3,7 @@ var jquery = require('jquery');
 
 var Router = require('./AppRouter');
 
-var data = require('../data/movies');
+var data = require('../data');
 
 Backbone.$ = jquery;
 
