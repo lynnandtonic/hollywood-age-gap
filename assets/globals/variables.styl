@@ -1,0 +1,67 @@
+// Variables
+
+// Font Families
+$font-proxima-condensed = 'proxima-nova-alt-ext-cond', Helvetica, sans-serif
+$font-proxima = 'proxima-nova-alt', Helvetica, sans-serif
+$font-georgia = Georgia, serif
+$font-helvetica = Helvetica, Arial, sans-serif
+
+// Font Weights
+$font-weight-normal = 400
+$font-weight-medium = 600
+$font-weight-bold = 700
+
+// Colors
+
+$brand-teal = #39857D
+$brand-blue = #296F92
+$brand-yellow = #DEE67E
+$marker-pink = #A44D60
+$marker-blue = #2E7799
+$card-yellow = #E7E8B0
+$brand-purple-light = #7C598C
+$brand-purple-drk = #532F67
+
+$grey-drk = #212221
+
+white(alpha)
+  rgba(255,255,255,alpha)
+
+black(alpha)
+  rgba(0,0,0,alpha)
+
+// old
+$blue = #40bae2
+
+// Transforms & transitions
+
+centerContent =
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+centerHoriz =
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+
+centerVert =
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+// Animations
+
+fadeIn =
+  -webkit-animation: fadein .2s
+  -moz-animation: fadein .2s
+  -o-animation: fadein .2s
+  animation: fadein .2s
+
+fadeInKeyframes =
+  @keyframes fadein
+    from
+      opacity: 0
+    to
+      opacity: 1

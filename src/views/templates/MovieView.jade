@@ -1,0 +1,18 @@
+- var difference = Math.abs(age1 - age2)
+
+h2= name
+.year= year
+.difference
+  span #{ difference }
+  span years
+.graph
+  //- Inject age1 and age2 where 53 and 25 are
+  .marker(class='man', style='left:#{ age1 }%')
+  .marker(class='woman', style='left:#{ age2 }%')
+.actor.actor1(class=gender1)
+  .age= age1
+  .name= actor1
+.actor.actor2(class=gender2)
+  .age= age2
+  .name= actor2
+.social-container

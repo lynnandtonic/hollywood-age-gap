@@ -1,0 +1,72 @@
+// Base styling
+
+*, *:after, *:before
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+html
+  font-size: 100%
+  -webkit-text-size-adjust: none
+
+body
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  font-family: $font-proxima
+  line-height: 1
+  background: $grey-drk
+  color: $grey-drk
+
+::-moz-selection
+  background-color: $brand-blue
+  color: white
+
+::selection
+  background-color: $brand-blue
+  color: white
+
+p, .content ul
+  margin-bottom: 20px
+  font-size: 18px
+  line-height: 1.4
+
+.content ul li
+  margin: 0 0 10px 30px
+  list-style: disc
+
+a
+  color: $brand-blue
+  text-decoration: none
+
+a, a img
+  transition: opacity .2s ease-in
+
+em
+  font-style: italic
+
+// for FOUT styling
+.wf-inactive
+  h1, h2, h3, p, a, .card div
+    opacity: 1
+
+.wf-loading
+  h1, h2, h3, p, a, .card div
+    opacity: 0
+
+.wf-active
+  h1, h2, h3, p, a, .card div
+    opacity: 1
+    transition: opacity .2s ease-in
+
+// Fade-in animation
+{fadeInKeyframes}
+
+// Clearfix
+.cf
+  &:before,
+  &:after
+    content: " "
+    display: table
+
+  &:after
+    clear: both

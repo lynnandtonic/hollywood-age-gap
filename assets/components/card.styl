@@ -1,0 +1,168 @@
+//- Card styling
+
+.movie-list
+  display: flex
+  flex-wrap: wrap
+  align-items: stretch
+
+.card
+  width: 25%
+  padding: 30px 20px
+  flex: none
+  position: relative
+  background: $card-yellow
+  border-right: 2px solid $grey-drk
+  border-bottom: 12px solid $grey-drk
+
+  &.hidden
+    display: none
+
+  &:nth-child(4n)
+    border-right: none
+
+  h2
+    margin-bottom: 5px
+    padding-bottom: 5px
+    border-bottom: 7px solid $grey-drk
+    font-size: 22px
+
+  .year
+    margin-bottom: 30px
+    font-size: 12px
+    text-align: right
+
+  .difference
+
+    span:first-child
+      font-size: 70px
+      font-weight: $font-weight-bold
+      font-family: $font-helvetica
+
+    span:nth-child(2)
+      margin-bottom: 40px
+      display: inline-block
+      position: relative
+      top: -3px
+      left: 6px
+      font-size: 18px
+      font-weight: $font-weight-normal
+      font-family: $font-proxima
+
+  .graph
+    height: 14px
+    margin-bottom: 40px
+    position: relative
+    background: url('/images/age-graph.svg') no-repeat center center
+    background-size: 100% 14px
+
+    .marker
+      width: 20px
+      height: 20px
+      margin-left: -10px
+      position: absolute
+      top: -4px
+      border: 3px solid white
+      border-radius: 50%
+      box-shadow: 3px 3px 0 black(.2)
+
+      &.woman
+        background: $marker-pink
+      &.man
+        background: $marker-blue
+
+  .actor
+    margin-bottom: 10px
+    padding: 8px 0
+    padding-left: 40px
+    position: relative
+
+    .age
+      width: 30px
+      height: 30px
+      padding-top: 5px
+      position: absolute
+      left: 0
+      top: 0
+      background: white
+      border: 3px solid
+      border-radius: 50%
+      text-align: center
+      font-size: 15px
+      font-weight: $font-weight-medium
+
+    &.woman .age
+      color: $marker-pink
+      border-color: $marker-pink
+    &.man .age
+      color: $marker-blue
+      border-color: $marker-blue
+
+    &.actor2
+      margin-bottom: 20px
+
+  .social-container
+    position: absolute
+    right: 10px
+    bottom: 10px
+
+  .social
+    margin-left: 5px
+    display: inline-block
+
+    a
+      width: 21px
+      height: 15px
+      display: block
+      background: no-repeat center center
+      background-size: auto @height
+      text-indent: -9999em
+      opacity: .5
+
+      &.twitter
+        background-image: url('/images/logo-twitter.svg')
+      &.facebook
+        background-image: url('/images/logo-facebook.svg')
+
+      &:hover
+        opacity: 1
+
+.card-contribute
+  padding: 0
+
+  a
+    height: 100%
+    padding: 50px 20px
+    position: relative
+    display: flex
+    align-items: center
+    background-color: transparent
+    color: $grey-drk
+    transition: background-color .3s ease-in
+
+    &:hover
+      background-color: darken($card-yellow,10%)
+
+    & > span
+      text-align: center
+
+    .cta
+      margin-top: 10px
+      padding-bottom: 60px
+      display: inline-block
+      position: relative
+      font-size: 30px
+
+      &:after
+        width: 40px
+        height: 40px
+        margin-left: -20px
+        padding-top: 4px
+        position: absolute
+        bottom: 0
+        left: 50%
+        border: 2px solid $grey-drk
+        border-radius: 50%
+        content: '+'
+        font-size: 30px
+        font-weight: $font-weight-bold
+        text-align: center

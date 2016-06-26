@@ -1,0 +1,7 @@
+.DS_Store
+.git
+
+node_modules
+build
+tmp
+data/index.js

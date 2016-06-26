@@ -1,0 +1,109 @@
+// Header and Search
+
+header
+  position: relative
+  z-index: 1
+
+.hero
+  min-height: 370px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: linear-gradient(30deg, $brand-teal, $brand-blue)
+  font-family: $font-proxima-condensed
+  text-transform: uppercase
+  color: $brand-yellow
+
+  nav
+    padding: 10px
+    position: absolute
+    top: 0
+    right: 15px
+    background: black(.4)
+    text-align: right
+
+    a
+      padding: 5px 10px
+      display: inline-block
+      color: white
+      font-size: 18px
+      font-weight: $font-weight-medium
+
+      &:hover
+        opacity: .7
+
+  .hero-text
+    margin-top: 30px
+    position: relative
+    text-align: center
+
+  .hero-headline
+    width: 772px
+    height: 163px
+    margin-bottom: 30px
+    background: url('/images/hero-headline.svg') no-repeat center center
+    background-size: contain
+    text-indent: -9999em
+
+  h2
+    display: inline-block
+    text-align: center
+    font-weight: $font-weight-normal
+    font-size: 22px
+
+    span
+      font-weight: $font-weight-medium
+      font-size: 30px
+
+  .hero-intro
+    position: absolute
+    left: -30px
+    top: -30px
+
+    span
+      margin-bottom: 5px
+
+  .hero-detail
+    span
+      margin: 0 3px 2px
+      position: relative
+      top: 2px
+      display: inline-block
+
+.search
+  padding: 6px 20px 4px
+  position: relative
+  background: $grey-drk
+
+  input
+    width: 100%
+    padding: 10px
+    padding-left: 35px
+    background: transparent url('/images/icon-search.svg') no-repeat 0 center
+    border: none
+    outline: none
+    font-size: 18px
+    color: white
+
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder
+      color: white
+      opacity: .6
+
+  .clear
+    width: 13px
+    height: @width
+    {centerVert}
+    right: 22px
+    background: url(images/icon-close-grey-red.svg) no-repeat 0 0
+    background-size: 13px 26px
+    border: none
+    cursor: pointer
+
+    &:hover
+      background-position: 0 -13px
+
+    &:focus
+      outline: none

@@ -1,0 +1,54 @@
+// Overlay
+
+body.detail-open
+  overflow: hidden
+
+  header,
+  .movie-list
+    opacity: 0
+
+header,
+.movie-list
+  position: relative
+  z-index: 1
+  transition: opacity .2s ease-in
+
+.overlay
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 10
+  {fadeIn}
+  transition: opacity .2s ease-in
+
+  &.hidden
+    z-index: 0
+    opacity: 0
+
+  .back
+    width: 20px
+    height: @width
+    position: absolute
+    top: 15px
+    right: 15px
+    z-index: 30
+    background: url('/images/icon-close-white.svg') no-repeat center center
+    text-indent: -9999em
+    font-weight: $font-weight-bold
+
+    &:hover
+      opacity: .5
+
+  .container
+    width: 100%
+    height: 100%
+    padding: 60px 20px 40px
+    position: relative
+    z-index: 2
+    overflow-y: auto
+
+  .content
+    max-width: 500px
+    margin: 0 auto
