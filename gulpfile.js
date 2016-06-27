@@ -9,18 +9,20 @@ var webserver = require('gulp-webserver');
 var jade = require('gulp-jade');
 var data = require('gulp-data');
 var concatJson = require('gulp-concat-json');
+var mergeJson = require('gulp-merge-json');
 var stylus = require('gulp-stylus');
 var autoprefixer = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
 var deploy = require('gulp-gh-pages');
 var uglify = require('gulp-uglify');
-
-var bundler = watchify(browserify('./src/App.js', watchify.args));
+var assignToPug = require('gulp-assign-to-pug');
+var clean = require('gulp-clean');
 
 gulp.task('build-js', ['build-json'], bundle); // so you can run `gulp js` to build the file
-bundler.on('update', bundle); // on any dep update, runs the bundler
 
 function bundle() {
+  var bundler = watchify(browserify('./src/App.js', watchify.args));
+  bundler.on('update', bundle); // on any dep update, runs the bundler
   return bundler.bundle()
     // log errors if they happen
     .on('error', gutil.log.bind(gutil, 'Browserify Error'))
@@ -33,6 +35,7 @@ function bundle() {
 }
 
 function bundleProd() {
+  var bundler = browserify('./src/App.js');
   return bundler.bundle()
   // log errors if they happen
     .on('error', gutil.log.bind(gutil, 'Browserify Error'))
@@ -42,14 +45,39 @@ function bundleProd() {
     .pipe(gulp.dest('./build'));
 }
 
-function buildJson() {
-  return gulp.src('./data/**/*.json')
-    .pipe(concatJson('index.js'))
-    .pipe(data(function(file){
-      file.contents = new Buffer("module.exports={movies:"+String(file.contents)+"};");
-      return file;
+function cleanJson() {
+  return gulp.src('build/data/index.json', {read: false})
+    .pipe(clean());
+}
+
+function buildMoviesJson() {
+  return gulp.src('./data/movies/**/*.json')
+    .pipe(concatJson('index.json'))
+    .pipe(gulp.dest('./build/data/movies'));
+}
+
+function buildActorsJson() {
+  return gulp.src('./data/actors/**/*.json')
+    .pipe(mergeJson('index.json', function (parsedJson, file) {
+      var output = {};
+      output[parsedJson.name] = parsedJson;
+      return output;
     }))
-    .pipe(gulp.dest('./data'));
+    .pipe(gulp.dest('./build/data/actors'));
+}
+
+function buildJson() {
+  return gulp.src('./build/data/**/*.json')
+    .pipe(mergeJson('index.json', function (parsedJson, file) {
+      var output = {};
+      if (parsedJson.push) {
+        output.movies = parsedJson;
+      } else {
+        output.actors = parsedJson;
+      }
+      return output;
+    }))
+    .pipe(gulp.dest('./build/data'));
 }
 
 function buildStatic() {
@@ -69,17 +97,19 @@ function buildStylus() {
 }
 
 function buildJade() {
-  return gulp.src('./templates/**/*.jade')
-    .pipe(jade())
-    .pipe(gulp.dest('build'));
+  return gulp.src('./build/data/index.json')
+    .pipe(assignToPug('./src/views/templates/index.jade', {
+      varName: 'actorsAndMovies'
+    }))
+    .pipe(gulp.dest('./build'));
 }
 
 gulp.task('webserver', function() {
 
   var stylWatcher = gulp.watch('assets/**/*.styl', ['build-stylus']);
   var imageWatcher = gulp.watch('assets/**/*', ['build-static']);
-  var jadeWatcher = gulp.watch('templates/**/*.jade', ['build-templates']);
-  var jsonWatcher = gulp.watch('data/**/*.json', ['build-json']);
+  var jadeWatcher = gulp.watch('src/views/templates/**/*.jade', ['build-templates']);
+  var jsonWatcher = gulp.watch('data/**/*.json', ['build-templates']);
 
   gulp.src('build')
     .pipe(webserver({
@@ -91,7 +121,19 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('build-json', function() {
+gulp.task('clean:json', function() {
+  return cleanJson();
+});
+
+gulp.task('build-actors-json', function() {
+  return buildActorsJson();
+});
+
+gulp.task('build-movies-json', function() {
+  return buildMoviesJson();
+});
+
+gulp.task('build-json', ['build-movies-json', 'build-actors-json', 'clean:json'], function() {
   return buildJson();
 });
 
@@ -99,7 +141,7 @@ gulp.task('build-static', function() {
   return buildStatic();
 });
 
-gulp.task('build-templates', function() {
+gulp.task('build-templates', ['build-json'], function() {
   return buildJade();
 });
 
@@ -107,13 +149,13 @@ gulp.task('build-stylus', function () {
   return buildStylus();
 });
 
-gulp.task('default', ['build-templates', 'build-stylus', 'build-static', 'build-js', 'webserver']);
+gulp.task('default', ['build-stylus', 'build-static', 'build-js', 'build-templates', 'webserver']);
 
-gulp.task('build-dev', ['build-templates', 'build-stylus', 'build-static'], function() {
+gulp.task('build-dev', ['build-stylus', 'build-static', 'build-templates'], function() {
   bundle();
 });
 
-gulp.task('build', ['build-templates', 'build-stylus', 'build-static'], function() {
+gulp.task('build', ['build-stylus', 'build-static', 'build-json', 'build-templates'], function() {
   bundleProd();
 });
 
