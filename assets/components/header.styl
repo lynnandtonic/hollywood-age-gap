@@ -59,7 +59,7 @@ header
       top: 2px
       display: inline-block
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: $bp-small)
 
   .hero
     min-height: 210px
@@ -79,7 +79,7 @@ header
       span
         font-size: 22px
 
-@media screen and (min-width: 601px)
+@media screen and (min-width: $bp-small + 1)
 
   .hero
 
@@ -96,7 +96,7 @@ header
       span
         margin-bottom: 5px
 
-@media screen and (min-width: 601px) and (max-width: 960px)
+@media screen and (min-width: $bp-small + 1) and (max-width: $bp-default)
 
   .hero
     min-height: 300px
@@ -106,7 +106,7 @@ header
       height: 130px
       margin-bottom: 10px
 
-@media screen and (min-width: 961px)
+@media screen and (min-width: $bp-default + 1)
 
   .hero
     min-height: 370px

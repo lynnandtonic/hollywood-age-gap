@@ -4,8 +4,14 @@ h2= movie.name
   span #{ movie.difference }
   span years
 .graph
+  span
+  span
+  span
+  span
+  span
+  span
   each actor in movie.relationship
-    .marker(class=actor.gender, style='left: ' + actor.age + '%')
+    .marker(class=actor.gender, style='left: ' + Math.round((actor.age - 18) * 1.923) + '%')
 each actor in movie.relationship
   .actor(class=actor.gender)
     .age= actor.age

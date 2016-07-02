@@ -39,19 +39,60 @@
       font-family: $font-proxima
 
   .graph
-    height: 14px
+    height: 2px
     margin-bottom: 40px
     position: relative
-    background: url('/images/age-graph.svg') no-repeat center center
-    background-size: 100% 14px
+    background: #c9ca9d
+
+    span
+      width: 2px
+      height: 16px
+      display: block
+      position: absolute
+      top: -(@height/2)
+      background: #c9ca9d
+      border-radius: 2px
+
+      &:before
+        position: absolute
+        bottom: -18px
+        left: -6px
+        font-size: 12px
+        color: black(.3)
+
+      &:first-of-type
+        left: 0
+        &:before
+          content: '18'
+          left: -4px
+      &:nth-of-type(2)
+        left: 22.85%
+        &:before
+          content: '30'
+      &:nth-of-type(3)
+        left: 42.08%
+        &:before
+          content:'40'
+      &:nth-of-type(4)
+        left: 61.31%
+        &:before
+          content:'50'
+      &:nth-of-type(5)
+        left: 80.54%
+        &:before
+          content:'60'
+      &:last-of-type
+        left: 100%
+        &:before
+          content: '70'
 
     .marker
       width: 20px
       height: 20px
-      margin-left: -10px
       position: absolute
-      top: -4px
+      top: -10px
       border: 3px solid white
+      margin-left: -10px
       border-radius: 50%
       box-shadow: 3px 3px 0 black(.2)
 
@@ -153,8 +194,7 @@
         font-weight: $font-weight-bold
         text-align: center
 
-
-@media screen and (max-width: 450px)
+@media screen and (max-width: $bp-small)
 
   .card-contribute
 
@@ -162,7 +202,7 @@
       width: 100%
       display: block
 
-@media screen and (min-width: 451px)
+@media screen and (min-width: $bp-small + 1)
 
   .movie-list
     display: flex
@@ -178,7 +218,7 @@
       display: flex
       align-items: center
 
-@media screen and (min-width: 451px) and (max-width: 900px)
+@media screen and (min-width: $bp-small + 1) and (max-width: $bp-med)
 
   .card
     width: 50%
@@ -186,7 +226,7 @@
     &:nth-child(even)
       border-right: none
 
-@media screen and (min-width: 901px) and (max-width: 1200px)
+@media screen and (min-width: $bp-med + 1) and (max-width: $bp-large)
 
   .card
     width: 33.333%
@@ -194,7 +234,7 @@
     &:nth-child(3n)
       border-right: none
 
-@media screen and (min-width: 1201px) and (max-width: 1600px)
+@media screen and (min-width: $bp-large + 1) and (max-width: $bp-xlarge)
 
   .card
     width: 25%
@@ -202,7 +242,7 @@
     &:nth-child(4n)
       border-right: none
 
-@media screen and (min-width: 1601px)
+@media screen and (min-width: $bp-xlarge + 1)
 
   .card
     width: 20%
