@@ -1,7 +1,12 @@
 .DS_Store
 .git
+.idea
+*.iml
+npm-debug.log
 
 node_modules
 build
 tmp
 data/index.js
+data/actors/index.js
+data/movies/index.js
