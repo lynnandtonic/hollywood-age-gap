@@ -1,0 +1,9 @@
+{
+    "name": "Something's Gotta Give",
+    "year": 2003,
+    "relationships": [
+        ["Jack Nicholson", "Amanda Peet"],
+        ["Jack Nicholson", "Diane Keaton"],
+        ["Keanu Reeves", "Diane Keaton"]
+    ]
+}
