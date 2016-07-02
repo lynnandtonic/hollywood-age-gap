@@ -17,6 +17,7 @@ var deploy = require('gulp-gh-pages');
 var uglify = require('gulp-uglify');
 var assignToPug = require('gulp-assign-to-pug');
 var clean = require('gulp-clean');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('build-js', ['build-json'], bundle); // so you can run `gulp js` to build the file
 
@@ -82,6 +83,7 @@ function buildJson() {
 
 function buildStatic() {
   return gulp.src('./assets/**/*')
+    .pipe(imagemin())
     .pipe(gulp.dest('build'));
 }
 
