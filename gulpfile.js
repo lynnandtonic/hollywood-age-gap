@@ -21,7 +21,7 @@ var clean = require('gulp-clean');
 gulp.task('build-js', ['build-json'], bundle); // so you can run `gulp js` to build the file
 
 function bundle() {
-  var bundler = watchify(browserify('./src/App.js', watchify.args));
+  var bundler = watchify(browserify('./src/index.js', watchify.args));
   bundler.on('update', bundle); // on any dep update, runs the bundler
   return bundler.bundle()
     // log errors if they happen
@@ -35,7 +35,7 @@ function bundle() {
 }
 
 function bundleProd() {
-  var bundler = browserify('./src/App.js');
+  var bundler = browserify('./src/index.js');
   return bundler.bundle()
   // log errors if they happen
     .on('error', gutil.log.bind(gutil, 'Browserify Error'))

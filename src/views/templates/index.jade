@@ -48,7 +48,6 @@ html
         meta(name='viewport', content='width=device-width, initial-scale=1')
         title Hollywood Age Gap
         meta(name='description', content='The age difference in years between movie love interests.')
-        //script(src='app.js')
         link(rel='stylesheet', href='/app.css')
         script.
             (function(d) {
@@ -67,3 +66,6 @@ html
                     include ../../src/views/templates/MovieView.jade
             li.card.card-contribute
                 include ../../src/views/templates/ContributeItemView.jade
+        .contribute.overlay.hidden
+            include ../../src/views/templates/ContributeView.jade
+        script(src='app.js', async)
