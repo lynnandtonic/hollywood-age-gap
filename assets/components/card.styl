@@ -1,14 +1,7 @@
 //- Card styling
 
-.movie-list
-  display: flex
-  flex-wrap: wrap
-  align-items: stretch
-
 .card
-  width: 25%
   padding: 30px 20px
-  flex: none
   position: relative
   background: $card-yellow
   border-right: 2px solid $grey-drk
@@ -16,9 +9,6 @@
 
   &.hidden
     display: none
-
-  &:nth-child(4n)
-    border-right: none
 
   h2
     margin-bottom: 5px
@@ -130,19 +120,18 @@
     height: 100%
     padding: 50px 20px
     position: relative
-    display: flex
-    align-items: center
     background-color: transparent
     color: $grey-drk
-    transition: background-color .3s ease-in
+    transition: background-color .2s ease-in
 
     &:hover
-      background-color: darken($card-yellow,10%)
+      background-color: darken($card-yellow,15%)
 
     & > span
       text-align: center
 
     .cta
+      width: 100%
       margin-top: 10px
       padding-bottom: 60px
       display: inline-block
@@ -163,3 +152,60 @@
         font-size: 30px
         font-weight: $font-weight-bold
         text-align: center
+
+
+@media screen and (max-width: 450px)
+
+  .card-contribute
+
+    a, a span
+      width: 100%
+      display: block
+
+@media screen and (min-width: 451px)
+
+  .movie-list
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+
+  .card
+    flex: none
+
+  .card-contribute
+
+    a
+      display: flex
+      align-items: center
+
+@media screen and (min-width: 451px) and (max-width: 900px)
+
+  .card
+    width: 50%
+
+    &:nth-child(even)
+      border-right: none
+
+@media screen and (min-width: 901px) and (max-width: 1200px)
+
+  .card
+    width: 33.333%
+
+    &:nth-child(3n)
+      border-right: none
+
+@media screen and (min-width: 1201px) and (max-width: 1600px)
+
+  .card
+    width: 25%
+
+    &:nth-child(4n)
+      border-right: none
+
+@media screen and (min-width: 1601px)
+
+  .card
+    width: 20%
+
+    &:nth-child(5n)
+      border-right: none

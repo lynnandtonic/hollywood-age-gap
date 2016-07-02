@@ -1,0 +1,37 @@
+.search
+  padding: 6px 20px 4px
+  position: relative
+  background: $grey-drk
+
+  input
+    width: 100%
+    padding: 10px
+    padding-left: 35px
+    background: transparent url('/images/icon-search.svg') no-repeat 0 center
+    border: none
+    outline: none
+    font-size: 18px
+    color: white
+
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder
+      color: white
+      opacity: .6
+
+  .clear
+    width: 13px
+    height: @width
+    {centerVert}
+    right: 22px
+    background: url(images/icon-close-grey-red.svg) no-repeat 0 0
+    background-size: 13px 26px
+    border: none
+    cursor: pointer
+
+    &:hover
+      background-position: 0 -13px
+
+    &:focus
+      outline: none
