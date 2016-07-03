@@ -1,6 +1,6 @@
 .search
   width: 100%
-  padding: 6px 20px 4px 0
+  padding: 6px 20px 6px
   position: fixed
   top: 0
   left: 0
@@ -10,12 +10,13 @@
 
   h1
     width: 170px
-    position: absolute
+    margin: 0
+    {centerVert}
     left: 20px
-    top: 18px
     font-family: $font-proxima-condensed
     font-size: 18px
     font-weight: $font-weight-bold
+    line-height: 1
     text-transform: uppercase
     color: $brand-yellow
 
@@ -23,16 +24,17 @@
     padding-right: 20px
     padding-left: 35px
     position: relative
-    background: url('/images/icon-search.svg') no-repeat 15px center
+    background: white(.15) url('/images/icon-search.svg') no-repeat 15px center
     background-size: auto 16px
+    border-radius: 4px
 
   input
     width: 100%
-    padding: 10px
+    padding: 8px 10px
     background: transparent
     border: none
     outline: none
-    font-size: 18px
+    font-size: 16px
     color: white
 
     &::-webkit-input-placeholder,
@@ -46,7 +48,7 @@
     width: 13px
     height: @width
     {centerVert}
-    right: 0
+    right: 10px
     background: url(images/icon-close-grey-red.svg) no-repeat 0 0
     background-size: 13px 26px
     border: none
@@ -61,6 +63,7 @@
 @media screen and (max-width: $bp-small)
 
   .search
+    padding: 6px
 
     h1
       display: none
