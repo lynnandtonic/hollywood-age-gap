@@ -1,0 +1,9 @@
+{
+    "name": "Wedding Crashers",
+    "year": 2005,
+    "relationships": [
+        ["Owen Wilson", "Rachel McAdams"],
+        ["Vince Vaughn", "Isla Fisher"],
+        ["Bradley Cooper", "Rachel McAdams"]
+    ]
+}

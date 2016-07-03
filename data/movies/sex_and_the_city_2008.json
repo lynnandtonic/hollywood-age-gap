@@ -1,0 +1,10 @@
+{
+    "name": "Sex and the City",
+    "year": 2008,
+    "relationships": [
+        ["Chris Noth", "Sarah Jessica Parker"],
+        ["Jason Lewis", "Kim Cattrall"],
+        ["Evan Handler", "Kristin Davis"],
+        ["David Eigenberg", "Cynthia Nixon"]
+    ]
+}

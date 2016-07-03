@@ -1,0 +1,9 @@
+{
+    "name": "Eternal Sunshine of the Spotless Mind",
+    "year": 2004,
+    "relationships": [
+        ["Jim Carrey", "Kate Winslet"],
+        ["Mark Ruffalo", "Kirsten Dunst"],
+        ["Tom Wilkinson", "Kirsten Dunst"]
+    ]
+}
