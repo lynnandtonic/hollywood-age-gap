@@ -4,7 +4,7 @@
   padding: 30px 20px
   position: relative
   background: $card-yellow
-  border-right: 2px solid $grey-drk
+  border: 1px solid $grey-drk
   border-bottom: 12px solid $grey-drk
 
   &.hidden
@@ -235,29 +235,17 @@
   .card
     width: 50%
 
-    &:nth-child(even)
-      border-right: none
-
 @media screen and (min-width: $bp-med + 1) and (max-width: $bp-large)
 
   .card
     width: 33.333%
-
-    &:nth-child(3n)
-      border-right: none
 
 @media screen and (min-width: $bp-large + 1) and (max-width: $bp-xlarge)
 
   .card
     width: 25%
 
-    &:nth-child(4n)
-      border-right: none
-
 @media screen and (min-width: $bp-xlarge + 1)
 
   .card
     width: 20%
-
-    &:nth-child(5n)
-      border-right: none
