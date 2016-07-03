@@ -1,0 +1,9 @@
+{
+    "name": "Grown Ups",
+    "year": 2010,
+    "relationships": [
+        ["Adam Sandler", "Salma Hayek"],
+        ["Kevin James", "Maria Bello"],
+        ["Chris Rock", "Maya Rudolph"]
+    ]
+}

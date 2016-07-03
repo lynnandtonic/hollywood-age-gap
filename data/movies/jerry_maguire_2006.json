@@ -1,0 +1,7 @@
+{
+    "name": "Jerry Maguire",
+    "year": 2006,
+    "relationships": [
+        ["Tom Cruise", "Renee Zellweger"]
+    ]
+}
