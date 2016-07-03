@@ -169,24 +169,26 @@
 .card-contribute
   min-height: 320px
   padding: 0
+  background: $gradient-purple
 
   a
     height: 100%
     padding: 50px 20px
     position: relative
-    background-color: transparent
-    color: $grey-drk
+    background-color: black(.4)
+    color: white
     transition: background-color .2s ease-in
 
     &:hover
-      background-color: darken($card-yellow,15%)
+      background-color: black(.1)
 
     & > span
       text-align: center
+      font-size: 18px
 
     .cta
       width: 100%
-      margin-top: 10px
+      margin-top: 15px
       padding-bottom: 60px
       display: inline-block
       position: relative
@@ -200,7 +202,7 @@
         position: absolute
         bottom: 0
         left: 50%
-        border: 2px solid $grey-drk
+        border: 2px solid white(.5)
         border-radius: 50%
         content: '+'
         font-size: 30px
@@ -222,14 +224,13 @@
     flex-wrap: wrap
     align-items: stretch
 
-  .card
-    flex: none
-
   .card-contribute
+    flex: auto
 
     a
       display: flex
       align-items: center
+      justify-content: center
 
 @media screen and (min-width: $bp-small + 1) and (max-width: $bp-med)
 

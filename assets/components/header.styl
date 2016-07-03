@@ -1,23 +1,20 @@
 // Header and Search
 
-header
-  position: relative
-  z-index: 1
-
 .hero
   display: flex
   align-items: center
   justify-content: center
-  background: linear-gradient(30deg, $brand-teal, $brand-blue)
+  background: $gradient-teal
+  border-bottom: 12px solid $grey-drk
   font-family: $font-proxima-condensed
   text-transform: uppercase
   color: $brand-yellow
 
   nav
     position: absolute
-    top: 0
+    top: 50px
     right: 15px
-    background: black(.4)
+    background: black(.3)
     text-align: right
 
     a
@@ -54,6 +51,9 @@ header
     a
       color: inherit
 
+      &:hover
+        opacity: .7
+
   .hero-detail
     span
       margin: 0 3px 2px
@@ -64,7 +64,10 @@ header
 @media screen and (max-width: $bp-small)
 
   .hero
-    min-height: 210px
+    min-height: 220px
+
+    nav
+      display: none
 
     .hero-headline
       width: 300px
@@ -72,7 +75,7 @@ header
       margin: 0 auto
 
     .hero-intro
-      left: 0
+      left: 10px
       top: -30px
 
     h2
