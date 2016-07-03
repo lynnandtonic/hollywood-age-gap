@@ -17,11 +17,12 @@ var deploy = require('gulp-gh-pages');
 var uglify = require('gulp-uglify');
 var assignToPug = require('gulp-assign-to-pug');
 var clean = require('gulp-clean');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('build-js', ['build-json'], bundle); // so you can run `gulp js` to build the file
 
 function bundle() {
-  var bundler = watchify(browserify('./src/App.js', watchify.args));
+  var bundler = watchify(browserify('./src/index.js', watchify.args));
   bundler.on('update', bundle); // on any dep update, runs the bundler
   return bundler.bundle()
     // log errors if they happen
@@ -35,7 +36,7 @@ function bundle() {
 }
 
 function bundleProd() {
-  var bundler = browserify('./src/App.js');
+  var bundler = browserify('./src/index.js');
   return bundler.bundle()
   // log errors if they happen
     .on('error', gutil.log.bind(gutil, 'Browserify Error'))
@@ -82,6 +83,7 @@ function buildJson() {
 
 function buildStatic() {
   return gulp.src('./assets/**/*')
+    .pipe(imagemin())
     .pipe(gulp.dest('build'));
 }
 
