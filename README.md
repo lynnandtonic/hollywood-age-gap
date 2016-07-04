@@ -21,6 +21,8 @@ If you don't want to deal with the codebase, you can tweet suggestions to [@lynn
 
 Actor and movie data are stored in JSON files.
 
+#### Add actors
+
 First check to see if the actors you are referencing are in `data/actors`.
 
 If you need to add an actor, create a `.json` file with the actor's first and last name, gender (man/woman), and birthday (YYYY-MM-DD):
@@ -35,7 +37,9 @@ If you need to add an actor, create a `.json` file with the actor's first and la
 
 Name the file with the actor's name, using underscores between words or in place of hyphens (all lowercase): `jane_doe.json` and save it to `data/actors`.
 
-Then create the movie `.json` file in `data/movies` with the movie title, year released, and actor names:
+## Add movie
+
+Create the movie `.json` file in `data/movies` with the movie title, year released, and actor names:
 
 ```
 {
@@ -52,12 +56,10 @@ Name the file with the movie title and year, using underscores between words or 
 If a movie has more than one couple, you can add those in the same movie file.
 
 ```
-{
     "relationships": [
         ["John Smith", "Jane Doe"],
         ["George Glass", "Sarah Connor"]
     ]
-}
 ```
 
 If the relationship is a man/woman couple, please put the man's name first. If it's a same-gender couple, any order is fine.
@@ -97,3 +99,4 @@ Please use the following loose declaration order:
 * Box Shadows
 * Fonts and Colors
 * Other
+
