@@ -1,0 +1,9 @@
+{
+    "name": "American Beauty",
+    "year": 1999,
+    "relationships": [
+        ["Kevin Spacey", "Mena Suvari"],
+        ["Wes Bentley", "Thora Birch"],
+        ["Peter Gallagher", "Annette Bening"]
+    ]
+}
