@@ -1,8 +1,9 @@
+- var years = movie.difference === 1 ? 'year' : 'years';
 h2= movie.name
 .year= movie.year
 .difference
-  span #{ movie.difference }
-  span years
+  span= movie.difference
+  span= years
 .graph
   span
   span
@@ -15,8 +16,11 @@ each actor in movie.relationship
     .age= actor.age
     .name= actor.name
 .social-container
-  a(href=url, class='twitter') Share on Twitter
-
-  //- TODO: hook up tweets to tweet out the content of each card
-  //- Clicking would launch new browser popup window that would prefill tweet with:
-  //- In “Shopgirl” the age difference between Steve Martin and Claire Danes is 34 years. http://hollywoodagegap.com
+  -
+    var text = 'In "' + movie.name + '" the age difference between ' + movie.relationship[0].name + ' and ' + movie.relationship[1].name + ' is ' + movie.difference + ' ' + years + '.';
+    var url = 'http://hollywoodagegap.com';
+    if ((text + ' ' + url).length > 140) {
+      text = text.replace('between', 'b/w');
+    }
+    var tweetUrl = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + text;
+  a.twitter(href=tweetUrl) Share on Twitter
