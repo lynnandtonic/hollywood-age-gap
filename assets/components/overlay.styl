@@ -1,18 +1,5 @@
 // Overlay
 
-body.detail-open
-  overflow: hidden
-
-  header,
-  .movie-list
-    opacity: 0
-
-header,
-.movie-list
-  position: relative
-  z-index: 1
-  transition: opacity .2s ease-in
-
 .overlay
   width: 100vw
   height: 100vh
@@ -21,7 +8,6 @@ header,
   left: 0
   z-index: 10
   {fadeIn}
-  transition: opacity .2s ease-in
 
   &.hidden
     z-index: 0
@@ -49,7 +35,3 @@ header,
     position: relative
     z-index: 2
     overflow-y: auto
-
-  .content
-    max-width: 500px
-    margin: 0 auto
