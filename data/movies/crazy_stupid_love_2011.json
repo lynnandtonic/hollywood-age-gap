@@ -4,7 +4,6 @@
     "relationships": [
         ["Steve Carell", "Julianne Moore"],
         ["Kevin Bacon", "Julianne Moore"],
-        ["Steve Carell", "Marisa Tomei"],
         ["Ryan Gosling", "Emma Stone"]
     ]
 }
