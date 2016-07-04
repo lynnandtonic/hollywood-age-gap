@@ -37,7 +37,7 @@ If you need to add an actor, create a `.json` file with the actor's first and la
 
 Name the file with the actor's name, using underscores between words or in place of hyphens (all lowercase): `jane_doe.json` and save it to `data/actors`.
 
-## Add movie
+#### Add movies
 
 Create the movie `.json` file in `data/movies` with the movie title, year released, and actor names:
 
