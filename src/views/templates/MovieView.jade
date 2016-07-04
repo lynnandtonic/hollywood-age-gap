@@ -17,7 +17,7 @@ each actor in movie.relationship
     .name= actor.name
 .social-container
   -
-    var text = 'In "' + movie.name + '" the age difference between ' + movie.relationship[0].name + ' and ' + movie.relationship[1].name + ' is ' + movie.difference + ' ' + years + '.';
+    var text = 'In "' + movie.name + '" the age gap b/w ' + movie.relationship[0].name + ' and ' + movie.relationship[1].name + ' is ' + movie.difference + ' ' + years + '.';
     var url = 'http://hollywoodagegap.com';
     if ((text + ' ' + url).length > 140) {
       text = text.replace('between', 'b/w');
