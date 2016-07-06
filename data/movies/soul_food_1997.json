@@ -1,0 +1,10 @@
+{
+    "name": "Soul Food",
+    "year": 1997,
+    "relationships": [
+        ["Michael Beach", "Vanessa Williams"],
+        ["Michael Beach", "Gina Ravera"],
+        ["Mekhi Phifer", "Nia Long"],
+        ["Jeffrey D. Sams", "Vivica A. Fox"]
+    ]
+}

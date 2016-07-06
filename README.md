@@ -12,6 +12,7 @@ Any movie can be added if it follows these rules:
 
 - The two (or more) actors play actual love interests (not just friends, coworkers, or some other non-romantic type of relationship)
 - The youngest of the two actors is at least 17 years old
+- Not animated characters
 
 ### Tweet
 
