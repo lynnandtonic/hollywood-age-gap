@@ -1,0 +1,11 @@
+{
+    "name": "Mona Lisa Smile",
+    "year": 2003,
+    "relationships": [
+        ["John Slattery", "Julia Roberts"],
+        ["Dominic West", "Julia Roberts"],
+        ["Ebon Moss-Bachrach", "Ginnifer Goodwin"],
+        ["Jordan Bridges", "Kirsten Dunst"],
+        ["Topher Grace", "Julia Stiles"]
+    ]
+}

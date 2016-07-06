@@ -1,0 +1,8 @@
+{
+    "name": "Fight Club",
+    "year": 1999,
+    "relationships": [
+        ["Brad Pitt", "Helena Bonham Carter"],
+        ["Edward Norton", "Helena Bonham Carter"]
+    ]
+}

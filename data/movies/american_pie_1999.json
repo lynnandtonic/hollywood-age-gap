@@ -1,0 +1,10 @@
+{
+    "name": "American Pie",
+    "year": 1999,
+    "relationships": [
+        ["Jason Biggs", "Shannon Elizabeth"],
+        ["Chris Klein", "Mena Suvari"],
+        ["Thomas Ian Nicholas", "Tara Reid"],
+        ["Eddie Kay Thomas", "Jennifer Coolidge"]
+    ]
+}
