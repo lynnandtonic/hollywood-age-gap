@@ -17,6 +17,12 @@ Any movie can be added if it follows these rules:
 
 If you don't want to deal with the codebase, you can tweet suggestions to [@lynnandtonic](https://twitter.com/lynnantonic).
 
+### Submit an issue
+
+[Submit a GitHub issue](https://github.com/lynnandtonic/hollywood-age-gap/issues) with the movie and actors you'd like to add.
+
+Please include the release year for the movie and each actor's birthdate.
+
 ### Contribute to the codebase
 
 Actor and movie data are stored in JSON files.
