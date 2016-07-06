@@ -3,14 +3,13 @@
 .hero
   display: flex
   align-items: center
-  justify-content: center
   background: $gradient-teal
   border-bottom: 12px solid $grey-drk
-  font-family: $font-proxima-condensed
   text-transform: uppercase
   color: $brand-yellow
 
   nav
+    width: 120px
     position: absolute
     top: 45px
     right: 20px
@@ -18,19 +17,24 @@
     text-align: right
 
     a
+      width: 100%
       padding: 15px 20px
       display: inline-block
-      color: white
       font-size: 18px
       font-weight: $font-weight-medium
+      font-family: $font-proxima-condensed
+      text-align: center
+      color: white
+
 
       &:hover
         opacity: .7
 
   .hero-text
-    margin-top: 30px
+    margin: 30px auto 0
     position: relative
     text-align: center
+    font-family: $font-proxima-condensed
 
   .hero-headline
     background: url('/images/hero-headline.svg') no-repeat center center
@@ -40,12 +44,14 @@
   h2
     display: inline-block
     text-align: center
+    font-family: $font-proxima-condensed
     font-weight: $font-weight-normal
 
     span
       font-weight: $font-weight-medium
 
   .hero-intro
+    width: 150px
     position: absolute
 
     a
@@ -55,6 +61,7 @@
         opacity: .7
 
   .hero-detail
+    width: 100%
     span
       margin: 0 3px 2px
       position: relative
@@ -67,10 +74,11 @@
     min-height: 220px
 
     nav
+      width: 110px
       right: 6px
 
       a
-        padding: 8px 15px
+        padding: 12px 15px 8px
 
     .hero-headline
       width: 300px

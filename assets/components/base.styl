@@ -13,7 +13,7 @@ body
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
   padding-top: 45px
-  font-family: $font-proxima
+  font-family: $font-verdana
   line-height: 1
   background: $gradient-teal
   color: $grey-drk
@@ -28,7 +28,7 @@ body
 
 p, .content ul
   margin-bottom: 20px
-  font-size: 18px
+  font-size: 16px
   line-height: 1.4
 
 .content ul li
@@ -47,15 +47,17 @@ em
 
 // for FOUT styling
 .wf-inactive
-  h1, h2, h3, p, a, .card div
+  .search h1, .hero nav a, .hero h2
     opacity: 1
 
 .wf-loading
-  h1, h2, h3, p, a, .card div
+  .search h1, .hero nav a, .hero h2
     opacity: 0
+  .search h1, .hero h2
+    font-size: 5px
 
 .wf-active
-  h1, h2, h3, p, a, .card div
+  .search h1, .hero nav a, .hero h2
     opacity: 1
     transition: opacity .1s ease-in
 

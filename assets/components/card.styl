@@ -14,7 +14,8 @@
     margin-bottom: 5px
     padding-bottom: 5px
     border-bottom: 7px solid $grey-drk
-    font-size: 22px
+    font-size: 20px
+    line-height: 1.2
 
   .year
     margin-bottom: 20px
@@ -24,7 +25,7 @@
   .difference
 
     span:first-child
-      font-size: 56px
+      font-size: 54px
       font-weight: $font-weight-bold
       font-family: $font-helvetica
 
@@ -34,9 +35,8 @@
       position: relative
       top: -3px
       left: 6px
-      font-size: 18px
+      font-size: 16px
       font-weight: $font-weight-normal
-      font-family: $font-proxima
 
   $graph-pos-18 = 0
   $graph-pos-30 = calc(19.3548% - 1px)
@@ -65,14 +65,13 @@
         position: absolute
         bottom: -18px
         left: -6px
-        font-size: 12px
+        font-size: 11px
         color: black(.3)
 
       &:first-of-type
         left: $graph-pos-18
         &:before
           content: '18'
-          left: -4px
       &:nth-of-type(2)
         left: $graph-pos-30
         &:before
@@ -106,19 +105,20 @@
     padding: 8px 0
     padding-left: 40px
     position: relative
+    font-size: 14px
 
     .age
       width: 30px
       height: 30px
-      padding-top: 5px
+      padding-top: 7px
       position: absolute
-      left: 0
+      left: -3px
       top: 0
       background: white
       border: 3px solid
       border-radius: 50%
       text-align: center
-      font-size: 15px
+      font-size: 12px
       font-weight: $font-weight-medium
 
     &.woman .age
@@ -153,6 +153,7 @@
   min-height: 200px
   padding: 0
   background: $gradient-purple
+  line-height: 1.4
 
   a
     height: 100%
@@ -167,7 +168,7 @@
 
     & > span
       text-align: center
-      font-size: 18px
+      font-size: 16px
 
     .cta
       width: 100%
@@ -175,7 +176,7 @@
       padding-bottom: 60px
       display: inline-block
       position: relative
-      font-size: 30px
+      font-size: 26px
 
       &:after
         width: 40px
@@ -188,7 +189,7 @@
         border: 2px solid white(.5)
         border-radius: 50%
         content: '+'
-        font-size: 30px
+        font-size: 24px
         font-weight: $font-weight-bold
         text-align: center
 
