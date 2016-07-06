@@ -1,0 +1,10 @@
+{
+    "name": "Closer",
+    "year": 2004,
+    "relationships": [
+        ["Jude Law", "Natalie Portman"],
+        ["Jude Law", "Julia Roberts"],
+        ["Clive Owen", "Natalie Portman"],
+        ["Clive Owen", "Julia Roberts"]
+    ]
+}
