@@ -1,0 +1,12 @@
+{
+    "name": "The Family Stone",
+    "year": 2007,
+    "relationships": [
+        ["Luke Wilson", "Sarah Jessica Parker"],
+        ["Dermot Mulroney", "Sarah Jessica Parker"],
+        ["Dermot Mulroney", "Claire Danes"],
+        ["Craig T. Nelson", "Diane Keaton"],
+        ["Tyrone Giordano", "Brian J. White"],
+        ["Jamie Kaler", "Elizabeth Reaser"]
+    ]
+}

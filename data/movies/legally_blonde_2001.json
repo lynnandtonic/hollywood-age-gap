@@ -2,6 +2,8 @@
     "name": "Legally Blonde",
     "year": 2001,
     "relationships": [
-        ["Luke Wilson", "Reese Witherspoon"]
+        ["Luke Wilson", "Reese Witherspoon"],
+        ["Matthew Davis", "Reese Witherspoon"],
+        ["Matthew Davis", "Selma Blair"]
     ]
 }

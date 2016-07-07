@@ -1,0 +1,7 @@
+{
+    "name": "Casino",
+    "year": 1995,
+    "relationships": [
+        ["Robert De Niro", "Sharon Stone"]
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "The Prestige",
+    "year": 2006,
+    "relationships": [
+        ["Christian Bale", "Rebecca Hall"],
+        ["Christian Bale", "Scarlett Johansson"],
+        ["Hugh Jackman", "Scarlett Johansson"]
+    ]
+}
