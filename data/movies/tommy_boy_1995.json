@@ -1,0 +1,9 @@
+{
+    "name": "Tommy Boy",
+    "year": 1995,
+    "relationships": [
+        ["Chris Farley", "Julie Warner"],
+        ["Rob Lowe", "Bo Derek"],
+        ["Brian Dennehy", "Bo Derek"]
+    ]
+}
