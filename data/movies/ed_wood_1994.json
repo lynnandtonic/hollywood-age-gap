@@ -1,0 +1,8 @@
+{
+    "name": "Ed Wood",
+    "year": 1994,
+    "relationships": [
+        ["Johnny Depp", "Sarah Jessica Parker"],
+        ["Johnny Depp", "Patricia Arquette"]
+    ]
+}

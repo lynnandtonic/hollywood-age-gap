@@ -1,0 +1,9 @@
+{
+    "name": "The Duchess",
+    "year": 2008,
+    "relationships": [
+        ["Ralph Fiennes", "Keira Knightley"],
+        ["Ralph Fiennes", "Hayley Atwell"],
+        ["Dominic Cooper", "Keira Knightley"]
+    ]
+}

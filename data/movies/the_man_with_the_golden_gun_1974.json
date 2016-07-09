@@ -1,0 +1,9 @@
+{
+    "name": "The Man with the Golden Gun",
+    "year": 1974,
+    "relationships": [
+        ["Roger Moore", "Maud Adams"],
+        ["Roger Moore", "Britt Ekland"],
+        ["Christopher Lee", "Maud Adams"]
+    ]
+}

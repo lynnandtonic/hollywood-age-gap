@@ -1,0 +1,9 @@
+{
+    "name": "Thunderball",
+    "year": 1965,
+    "relationships": [
+        ["Sean Connery", "Claudine Auger"],
+        ["Sean Connery", "Luciana Paluzzi"],
+        ["Adolfo Celi", "Claudine Auger"]
+    ]
+}

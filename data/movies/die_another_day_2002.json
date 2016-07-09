@@ -1,0 +1,8 @@
+{
+    "name": "Die Another Day",
+    "year": 2002,
+    "relationships": [
+        ["Pierce Brosnan", "Halle Berry"],
+        ["Pierce Brosnan", "Rosamund Pike"]
+    ]
+}

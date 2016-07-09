@@ -1,0 +1,11 @@
+{
+    "name": "A View to a Kill",
+    "year": 1985,
+    "relationships": [
+        ["Roger Moore", "Mary Stavin"],
+        ["Roger Moore", "Tanya Roberts"],
+        ["Roger Moore", "Fiona Fullerton"],
+        ["Roger Moore", "Grace Jones"],
+        ["Christopher Walken", "Grace Jones"]
+    ]
+}
