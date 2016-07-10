@@ -82,9 +82,9 @@ function buildJson() {
 }
 
 function buildStatic() {
-  return gulp.src('./assets/**/*')
+  return gulp.src('./assets/images/**/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build/images'));
 }
 
 function buildStylus() {
@@ -162,7 +162,7 @@ gulp.task('build', ['build-stylus', 'build-static', 'build-json', 'build-templat
 });
 
 gulp.task('deploy', ['build'], function () {
-  return gulp.src("./build/**/*")
+  return gulp.src(["./build/**/*", "!./build/data/**/*"])
     .pipe(deploy({
       cacheDir: './tmp'
     }));

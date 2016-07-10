@@ -8,7 +8,6 @@
     "prebuild": "npm run clean",
     "build": "gulp build",
     "clean": "rimraf ./build",
-    "predeploy": "build",
     "deploy": "gulp deploy",
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
