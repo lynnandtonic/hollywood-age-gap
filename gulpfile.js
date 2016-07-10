@@ -18,6 +18,7 @@ var uglify = require('gulp-uglify');
 var assignToPug = require('gulp-assign-to-pug');
 var clean = require('gulp-clean');
 var imagemin = require('gulp-imagemin');
+var inline = require('gulp-inline-source');
 
 gulp.task('build-js', ['build-json'], bundle); // so you can run `gulp js` to build the file
 
@@ -82,14 +83,20 @@ function buildJson() {
 }
 
 function buildStatic() {
-  return gulp.src('./assets/images/**/*')
+  return gulp.src([
+      './assets/images/**/*',
+      './assets/favicon.ico',
+      './assets/CNAME'
+    ])
     .pipe(imagemin())
-    .pipe(gulp.dest('build/images'));
+    .pipe(gulp.dest('build/'));
 }
 
 function buildStylus() {
   return gulp.src('./assets/app.styl')
-    .pipe(stylus())
+    .pipe(stylus({
+      url: { name: 'url', limit: false }
+    }))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
@@ -103,6 +110,12 @@ function buildJade() {
     .pipe(assignToPug('./src/views/templates/index.jade', {
       varName: 'actorsAndMovies'
     }))
+    .pipe(gulp.dest('./build'));
+}
+
+function inlineSource() {
+  return gulp.src('./build/*.html')
+    .pipe(inline())
     .pipe(gulp.dest('./build'));
 }
 
@@ -147,22 +160,32 @@ gulp.task('build-templates', ['build-json'], function() {
   return buildJade();
 });
 
-gulp.task('build-stylus', function () {
+gulp.task('build-stylus', ['build-static'], function() {
   return buildStylus();
 });
 
-gulp.task('default', ['build-stylus', 'build-static', 'build-js', 'build-templates', 'webserver']);
+gulp.task('default', ['build-stylus', 'build-js', 'build-templates', 'webserver']);
 
-gulp.task('build-dev', ['build-stylus', 'build-static', 'build-templates'], function() {
+gulp.task('build-dev', ['build-stylus', 'build-templates'], function() {
   bundle();
 });
 
-gulp.task('build', ['build-stylus', 'build-static', 'build-json', 'build-templates'], function() {
-  bundleProd();
+gulp.task('build', ['do-build'], function() {
+  inlineSource();
 });
 
-gulp.task('deploy', ['build'], function () {
-  return gulp.src(["./build/**/*", "!./build/data/**/*"])
+gulp.task('do-build', ['build-stylus', 'build-static', 'build-json', 'build-templates'], function() {
+  return bundleProd();
+});
+
+gulp.task('deploy', function () {
+  return gulp.src([
+      "./build/**/*",
+      "!./build/app.js",
+      "!./build/app.css",
+      "!./build/data/**/*",
+      "!./build/*.svg"
+    ])
     .pipe(deploy({
       cacheDir: './tmp'
     }));
