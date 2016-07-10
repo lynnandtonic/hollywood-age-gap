@@ -2,6 +2,7 @@
     "name": "Funny People",
     "year": 2009,
     "relationships": [
-        ["Eric Bana", "Leslie Mann"]
+        ["Eric Bana", "Leslie Mann"],
+        ["Adam Sandler", "Leslie Mann"]
     ]
 }

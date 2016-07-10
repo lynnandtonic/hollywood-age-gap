@@ -1,0 +1,10 @@
+{
+    "name": "Pushing Tin",
+    "year": 1999,
+    "relationships": [
+        ["John Cusack", "Angelina Jolie"],
+        ["John Cusack", "Cate Blanchett"],
+        ["Billy Bob Thornton", "Angelina Jolie"],
+        ["Billy Bob Thornton", "Cate Blanchett"]
+    ]
+}
