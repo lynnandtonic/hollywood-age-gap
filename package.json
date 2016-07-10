@@ -8,6 +8,7 @@
     "prebuild": "npm run clean",
     "build": "gulp build",
     "clean": "rimraf ./build",
+    "predeploy": "npm run build",
     "deploy": "gulp deploy",
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -32,6 +33,7 @@
     "gulp-data": "^1.2.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^3.0.1",
+    "gulp-inline-source": "^2.1.0",
     "gulp-jade": "^1.1.0",
     "gulp-merge-json": "^0.6.0",
     "gulp-minify-css": "^1.2.4",
