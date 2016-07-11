@@ -1,0 +1,8 @@
+{
+    "name": "Stone",
+    "year": 2010,
+    "relationships": [
+        ["Robert De Niro", "Milla Jovovich"],
+        ["Edward Norton", "Milla Jovovich"]
+    ]
+}
