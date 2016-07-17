@@ -19,6 +19,10 @@ var assignToPug = require('gulp-assign-to-pug');
 var clean = require('gulp-clean');
 var imagemin = require('gulp-imagemin');
 var inline = require('gulp-inline-source');
+var tap = require('gulp-tap');
+var rename = require('gulp-rename');
+
+var utils = require('./data/utils.js');
 
 gulp.task('build-js', ['build-json'], bundle); // so you can run `gulp js` to build the file
 
@@ -39,7 +43,7 @@ function bundle() {
 function bundleProd() {
   var bundler = browserify('./src/index.js');
   return bundler.bundle()
-  // log errors if they happen
+    // log errors if they happen
     .on('error', gutil.log.bind(gutil, 'Browserify Error'))
     .pipe(source('app.js'))
     .pipe(buffer())
@@ -107,8 +111,25 @@ function buildStylus() {
 
 function buildJade() {
   return gulp.src('./build/data/index.json')
+    .pipe(data(function() {
+      return {utils: utils};
+    }))
     .pipe(assignToPug('./src/views/templates/index.jade', {
       varName: 'actorsAndMovies'
+    }))
+    .pipe(gulp.dest('./build'));
+}
+
+function buildCsv() {
+  return gulp.src('./build/data/index.json')
+    .pipe(tap(function(file) {
+      var movieList = JSON.parse(file.contents.toString());
+      movieList = utils.toSortedMovieList(movieList);
+      file.contents = new Buffer(utils.movieListToCsv(movieList), 'utf8');
+    }))
+    .pipe(rename({
+      basename: 'movies',
+      extname: '.csv'
     }))
     .pipe(gulp.dest('./build'));
 }
@@ -124,7 +145,7 @@ gulp.task('webserver', function() {
   var stylWatcher = gulp.watch('assets/**/*.styl', ['build-stylus']);
   var imageWatcher = gulp.watch('assets/**/*', ['build-static']);
   var jadeWatcher = gulp.watch('src/views/templates/**/*.jade', ['build-templates']);
-  var jsonWatcher = gulp.watch('data/**/*.json', ['build-templates']);
+  var jsonWatcher = gulp.watch('data/**/*.json', ['build-templates', 'build-csv']);
 
   gulp.src('build')
     .pipe(webserver({
@@ -164,7 +185,11 @@ gulp.task('build-stylus', ['build-static'], function() {
   return buildStylus();
 });
 
-gulp.task('default', ['build-stylus', 'build-js', 'build-templates', 'webserver']);
+gulp.task('build-csv', ['build-json'], function() {
+  return buildCsv();
+});
+
+gulp.task('default', ['build-stylus', 'build-js', 'build-templates', 'build-csv', 'webserver']);
 
 gulp.task('build-dev', ['build-stylus', 'build-templates'], function() {
   bundle();
@@ -174,7 +199,7 @@ gulp.task('build', ['do-build'], function() {
   inlineSource();
 });
 
-gulp.task('do-build', ['build-stylus', 'build-static', 'build-json', 'build-templates'], function() {
+gulp.task('do-build', ['build-stylus', 'build-static', 'build-json', 'build-templates', 'build-csv'], function() {
   return bundleProd();
 });
 
