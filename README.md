@@ -2,6 +2,10 @@
 
 An informational site showing the age gap between movie love interests.
 
+## Data
+
+You can download a CSV of the site's data here: [hollywoodagegap.com/movies.csv](http://hollywoodagegap.com/movies.csv)
+
 ## Contribute
 
 There's a lot of movies in the world, so the one you're looking for might be missing. If you'd like to see a movie added to the site, please contribute.
