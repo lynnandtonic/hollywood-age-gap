@@ -1,0 +1,8 @@
+{
+    "name": "Magic Mike",
+    "year": 2012,
+    "relationships": [
+        ["Channing Tatum", "Olivia Munn"],
+        ["Channing Tatum", "Cody Horn"]
+    ]
+}
