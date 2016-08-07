@@ -36,6 +36,14 @@ html
 
     body#top
         include ../../src/views/templates/SearchView.jade
+        .sorting
+            label Sort by:
+            .select-container
+                select(name='movie-sorting')
+                    option(value='Age gap') Age gap
+                    option(value='Older man') Older man
+                    option(value='Older woman') Older woman
+
         ul.movie-list
             each movie in movies
                 li.card

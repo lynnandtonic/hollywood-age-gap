@@ -1,0 +1,62 @@
+// Sorting
+
+.sorting
+  padding: 6px 20px
+  background: $grey-drk
+  color: white
+
+  label
+    min-width: 55px
+    display: inline-block
+    vertical-align: middle
+    font-size: 16px
+    font-family: $font-proxima-condensed
+    font-weight: $font-weight-bold
+    line-height: 1
+    text-transform: uppercase
+
+.select-container
+  width: 140px
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  overflow: hidden
+  background: white(.15)
+  border-radius: 3px
+
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    top: 10px
+    right: 10px
+    border-top: 5px solid white(.6)
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent
+    z-index: 2
+
+  select
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    width: 140px
+    height: 25px
+    padding-left: 5px
+    position: relative
+    background: transparent
+    border: none
+    font-size: 13px
+    line-height: 1.2
+    color: white
+    z-index: 1
+
+    option
+      padding: 2px
+      background: white
+      outline: none
+      color: $grey-drk
+
+@media screen and (max-width: $bp-small)
+
+  .sorting
+    padding: 6px
