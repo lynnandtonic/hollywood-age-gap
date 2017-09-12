@@ -1,0 +1,8 @@
+{
+    "name": "High Society",
+    "year": 1956,
+    "relationships": [
+        ["Frank Sinatra", "Grace Kelly"],
+        ["Bing Crosby", "Grace Kelly"]
+    ]
+}
