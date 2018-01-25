@@ -1,6 +1,7 @@
 {
     "name": "Harold and Maude",
     "year": 1971,
+    "director": "Hal Ashby",
     "relationships": [
         ["Bud Cort", "Ruth Gordon"]
     ]

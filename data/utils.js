@@ -26,7 +26,8 @@ function toSortedMovieList (json) {
             name: actor2.name
           }
         ],
-        year: movie.year
+        year: movie.year,
+        director: movie.director
       };
       movies.push(newMovie);
     }
@@ -59,12 +60,13 @@ function csv(line) {
 
 function movieListToCsv(movieList) {
   var output = [];
-  output.push(csv(['Movie Name', 'Release Year', 'Age Difference', 'Actor 1 Name', 'Actor 1 Gender', 'Actor 1 Birthdate', 'Actor 1 Age', 'Actor 2 Name', 'Actor 2 Gender', 'Actor 2 Birthdate', 'Actor 2 Age']));
+  output.push(csv(['Movie Name', 'Release Year', 'Director', 'Age Difference', 'Actor 1 Name', 'Actor 1 Gender', 'Actor 1 Birthdate', 'Actor 1 Age', 'Actor 2 Name', 'Actor 2 Gender', 'Actor 2 Birthdate', 'Actor 2 Age']));
   for (var i = 0; i < movieList.length; i++) {
     var movie = movieList[i];
     var entry = [];
     entry.push(movie.name);
     entry.push(movie.year);
+    entry.push(movie.director);
     entry.push(movie.difference);
     for (var j = 0; j < movie.relationship.length; j++) {
       var person = movie.relationship[j];
