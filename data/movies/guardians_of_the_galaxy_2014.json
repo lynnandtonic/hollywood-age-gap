@@ -1,6 +1,7 @@
 {
     "name": "Guardians of the Galaxy",
     "year": 2014,
+    "director": "James Gunn",
     "relationships": [
         ["Chris Pratt", "Zoe Saldana"]
     ]

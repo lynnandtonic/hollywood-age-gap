@@ -1,6 +1,7 @@
 {
     "name": "Layer Cake",
     "year": 2004,
+    "director": "Matthew Vaughn",
     "relationships": [
         ["Daniel Craig", "Sienna Miller"],
         ["Ben Whishaw", "Sienna Miller"]

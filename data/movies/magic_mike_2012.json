@@ -1,6 +1,7 @@
 {
     "name": "Magic Mike",
     "year": 2012,
+    "director": "Steven Soderbergh",
     "relationships": [
         ["Channing Tatum", "Olivia Munn"],
         ["Channing Tatum", "Cody Horn"]

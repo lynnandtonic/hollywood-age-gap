@@ -1,6 +1,7 @@
 {
     "name": "Jurassic World",
     "year": 2015,
+    "director": "Colin Trevorrow",
     "relationships": [
         ["Chris Pratt", "Bryce Dallas Howard"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "High School High",
     "year": 1996,
+    "director": "Hart Bochner",
     "relationships": [
         ["Jon Lovitz", "Tia Carrere"]
     ]

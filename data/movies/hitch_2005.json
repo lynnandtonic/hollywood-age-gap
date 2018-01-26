@@ -1,6 +1,7 @@
 {
     "name": "Hitch",
     "year": 2005,
+    "director": "Andy Tennant",
     "relationships": [
         ["Will Smith", "Eva Mendes"]
     ]

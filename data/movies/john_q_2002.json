@@ -1,6 +1,7 @@
 {
     "name": "John Q.",
     "year": 2002,
+    "director": "Nick Cassavetes",
     "relationships": [
         ["Denzel Washington", "Kimberly Elise"]
     ]

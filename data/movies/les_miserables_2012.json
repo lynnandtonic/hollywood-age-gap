@@ -1,6 +1,7 @@
 {
     "name": "Les Miserables",
     "year": 2012,
+    "director": "Tom Hooper",
     "relationships": [
         ["Eddie Redmayne", "Amanda Seyfried"],
         ["Sacha Baron Cohen", "Helena Bonham Carter"]

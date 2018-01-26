@@ -1,6 +1,7 @@
 {
     "name": "Larry Crowne",
     "year": 2011,
+    "director": "Tom Hanks",
     "relationships": [
         ["Tom Hanks", "Julia Roberts"]
     ]

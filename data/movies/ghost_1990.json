@@ -1,6 +1,7 @@
 {
     "name": "Ghost",
     "year": 1990,
+    "director": "Jerry Zucker",
     "relationships": [
         ["Patrick Swayze", "Demi Moore"]
     ]

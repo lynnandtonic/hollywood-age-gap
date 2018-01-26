@@ -1,6 +1,7 @@
 {
     "name": "Inception",
     "year": 2010,
+    "director": "Christopher Nolan",
     "relationships": [
         ["Leonardo DiCaprio", "Marion Cotillard"]
     ]

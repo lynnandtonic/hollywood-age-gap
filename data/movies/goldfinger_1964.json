@@ -1,6 +1,7 @@
 {
     "name": "Goldfinger",
     "year": 1964,
+    "director": "Guy Hamilton",
     "relationships": [
         ["Sean Connery", "Shirley Eaton"],
         ["Sean Connery", "Honor Blackman"]

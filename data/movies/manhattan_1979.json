@@ -1,6 +1,7 @@
 {
     "name": "Manhattan",
     "year": 1979,
+    "director": "Woody Allen",
     "relationships": [
         ["Woody Allen", "Mariel Hemingway"],
         ["Michael Murphy", "Diane Keaton"]

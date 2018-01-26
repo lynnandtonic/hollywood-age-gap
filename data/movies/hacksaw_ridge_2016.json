@@ -1,6 +1,7 @@
 {
     "name": "Hacksaw Ridge",
     "year": 2016,
+    "director": "Mel Gibson",
     "relationships": [
         ["Andrew Garfield", "Teresa Palmer"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Juno",
     "year": 2007,
+    "director": "Jason Reitman",
     "relationships": [
         ["Michael Cera", "Ellen Page"],
         ["Jason Bateman", "Jennifer Garner"],

@@ -1,6 +1,7 @@
 {
     "name": "Gigli",
     "year": 2003,
+    "director": "Martin Brest",
     "relationships": [
         ["Ben Affleck", "Jennifer Lopez"]
     ]

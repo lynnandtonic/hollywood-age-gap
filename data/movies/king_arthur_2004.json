@@ -1,6 +1,7 @@
 {
     "name": "King Arthur",
     "year": 2004,
+    "director": "Antoine Fuqua",
     "relationships": [
         ["Clive Owen", "Keira Knightley"]
     ]

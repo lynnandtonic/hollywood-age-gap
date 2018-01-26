@@ -1,6 +1,7 @@
 {
     "name": "Head over Heels",
     "year": 2001,
+    "director": "Mark Waters",
     "relationships": [
         ["Freddie Prinze Jr.", "Monica Potter"]
     ]

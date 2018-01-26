@@ -1,6 +1,7 @@
 {
     "name": "Meet Bill",
     "year": 2007,
+    "director": "Bernie Goldmann, Melisa Wallack",
     "relationships": [
         ["Aaron Eckhart", "Elizabeth Banks"],
         ["Timothy Olyphant", "Elizabeth Banks"]

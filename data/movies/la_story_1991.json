@@ -1,6 +1,7 @@
 {
     "name": "L.A. Story",
     "year": 1991,
+    "director": "Mick Jackson",
     "relationships": [
         ["Steve Martin", "Victoria Tennant"],
         ["Steve Martin", "Sarah Jessica Parker"]

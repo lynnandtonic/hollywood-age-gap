@@ -1,6 +1,7 @@
 {
     "name": "Jane Eyre",
     "year": 2011,
+    "director": "Cary Fukunaga",
     "relationships": [
         ["Michael Fassbender", "Mia Wasikowska"]
     ]

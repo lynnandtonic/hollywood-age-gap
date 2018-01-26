@@ -1,6 +1,7 @@
 {
     "name": "It's Complicated",
     "year": 2009,
+    "director": "Nancy Meyers",
     "relationships": [
         ["Alec Baldwin", "Meryl Streep"],
         ["Alec Baldwin", "Lake Bell"],

@@ -1,6 +1,7 @@
 {
     "name": "Music and Lyrics",
     "year": 2007,
+    "director": "Marc Lawrence",
     "relationships": [
         ["Hugh Grant", "Drew Barrymore"]
     ]

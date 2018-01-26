@@ -1,6 +1,7 @@
 {
     "name": "Mrs. Doubtfire",
     "year": 1993,
+    "director": "Chris Columbus",
     "relationships": [
         ["Pierce Brosnan", "Sally Field"],
         ["Robin Williams", "Sally Field"]

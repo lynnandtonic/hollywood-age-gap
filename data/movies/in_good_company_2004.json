@@ -1,6 +1,7 @@
 {
     "name": "In Good Company",
     "year": 2004,
+    "director": "Paul Weitz",
     "relationships": [
         ["Topher Grace", "Scarlett Johansson"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Miss Congeniality",
     "year": 2000,
+    "director": "Donald Petrie",
     "relationships": [
         ["Benjamin Bratt", "Sandra Bullock"]
     ]
