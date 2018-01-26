@@ -17,13 +17,25 @@
     font-size: 20px
     line-height: 1.2
 
-  .year
+  .meta
+    display: flex
+    justify-content: space-between
     margin-bottom: 20px
     font-size: 12px
-    text-align: right
 
   .director
-    display: none
+    opacity: .6
+
+    &:before
+      content: 'Directed by '
+
+  .year
+    text-align: right
+
+  
+
+  // .director
+  //   display: none
 
   .difference
 
