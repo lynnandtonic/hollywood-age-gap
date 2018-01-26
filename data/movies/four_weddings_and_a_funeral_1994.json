@@ -1,6 +1,7 @@
 {
     "name": "Four Weddings and a Funeral",
     "year": 1994,
+    "director": "Mike Newell",
     "relationships": [
         ["Hugh Grant", "Andie MacDowell"]
     ]

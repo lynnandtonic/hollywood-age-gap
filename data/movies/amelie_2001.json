@@ -1,6 +1,7 @@
 {
     "name": "Amelie",
     "year": 2001,
+    "director": "Jean-Pierre Jeunet",
     "relationships": [
         ["Mathieu Kassovitz", "Audrey Tautou"]
     ]

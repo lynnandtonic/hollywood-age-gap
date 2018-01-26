@@ -1,6 +1,7 @@
 {
     "name": "Allied",
     "year": 2016,
+    "director": "Robert Zemeckis",
     "relationships": [
         ["Brad Pitt", "Marion Cotillard"]
     ]

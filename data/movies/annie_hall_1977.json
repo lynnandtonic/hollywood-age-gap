@@ -1,6 +1,7 @@
 {
     "name": "Annie Hall",
     "year": 1977,
+    "director": "Woody Allen",
     "relationships": [
         ["Woody Allen", "Diane Keaton"]
     ]

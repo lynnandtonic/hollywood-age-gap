@@ -1,6 +1,7 @@
 {
     "name": "Cold Mountain",
     "year": 2003,
+    "director": "Anthony Minghella",
     "relationships": [
         ["Jude Law", "Nicole Kidman"]
     ]

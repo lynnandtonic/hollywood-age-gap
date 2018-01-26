@@ -1,6 +1,7 @@
 {
     "name": "Chef",
     "year": 2014,
+    "director": "Jon Favreau",
     "relationships": [
         ["Jon Favreau", "Sofia Vergara"]
     ]

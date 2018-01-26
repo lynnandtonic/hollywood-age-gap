@@ -1,6 +1,7 @@
 {
     "name": "Café Society",
     "year": 2016,
+    "director": "Woody Allen",
     "relationships": [
         ["Jesse Eisenberg", "Kristen Stewart"],
         ["Jesse Eisenberg", "Blake Lively"],

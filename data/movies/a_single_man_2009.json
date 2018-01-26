@@ -1,6 +1,7 @@
 {
     "name": "A Single Man",
     "year": 2009,
+    "director": "Tom Ford",
     "relationships": [
         ["Colin Firth", "Nicholas Hoult"],
         ["Colin Firth", "Matthew Goode"]

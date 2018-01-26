@@ -1,6 +1,7 @@
 {
     "name": "Friday",
     "year": 1995,
+    "director": "F. Gary Gray",
     "relationships": [
         ["Ice Cube", "Nia Long"]
     ]

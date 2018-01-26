@@ -1,6 +1,7 @@
 {
     "name": "Blow",
     "year": 2001,
+    "director": "Ted Demme",
     "relationships": [
         ["Johnny Depp", "Penelope Cruz"]
     ]

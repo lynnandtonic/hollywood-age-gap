@@ -1,6 +1,7 @@
 {
     "name": "Bridget Jones's Diary",
     "year": 2001,
+    "director": "Sharon Maguire",
     "relationships": [
         ["Colin Firth", "Renee Zellweger"],
         ["Hugh Grant", "Renee Zellweger"]

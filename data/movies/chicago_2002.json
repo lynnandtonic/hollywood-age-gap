@@ -1,6 +1,7 @@
 {
     "name": "Chicago",
     "year": 2002,
+    "director": "Rob Marshall",
     "relationships": [
         ["John C. Reilly", "Renee Zellweger"],
         ["Dominic West", "Renee Zellweger"]

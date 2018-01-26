@@ -1,6 +1,7 @@
 {
     "name": "Carol",
     "year": 2015,
+    "director": "Todd Haynes",
     "relationships": [
         ["Cate Blanchett", "Rooney Mara"]
     ]

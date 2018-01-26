@@ -1,6 +1,7 @@
 {
     "name": "Buffalo '66",
     "year": 1998,
+    "director": "Vincent Gallo",
     "relationships": [
         ["Vincent Gallo", "Christina Ricci"]
     ]

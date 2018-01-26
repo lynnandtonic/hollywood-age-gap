@@ -1,6 +1,7 @@
 {
     "name": "Big Daddy",
     "year": 1999,
+    "director": "Dennis Dugan",
     "relationships": [
         ["Adam Sandler", "Joey Lauren Adams"],
         ["Jon Stewart", "Leslie Mann"]

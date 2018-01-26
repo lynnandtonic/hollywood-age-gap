@@ -1,6 +1,7 @@
 {
     "name": "Ed Wood",
     "year": 1994,
+    "director": "Tim Burton",
     "relationships": [
         ["Johnny Depp", "Sarah Jessica Parker"],
         ["Johnny Depp", "Patricia Arquette"]

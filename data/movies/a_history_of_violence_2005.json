@@ -1,6 +1,7 @@
 {
     "name": "A History of Violence",
     "year": 2005,
+    "director": "David Cronenberg",
     "relationships": [
         ["Viggo Mortensen", "Maria Bello"]
     ]

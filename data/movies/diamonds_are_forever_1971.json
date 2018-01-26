@@ -1,6 +1,7 @@
 {
     "name": "Diamonds Are Forever",
     "year": 1971,
+    "director": "Guy Hamilton",
     "relationships": [
         ["Sean Connery", "Jill St. John"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Funny People",
     "year": 2009,
+    "director": "Judd Apatow",
     "relationships": [
         ["Eric Bana", "Leslie Mann"],
         ["Adam Sandler", "Leslie Mann"]

@@ -1,6 +1,7 @@
 {
     "name": "Barbershop",
     "year": 2002,
+    "director": "Tim Story",
     "relationships": [
         ["Ice Cube", "Jazsmin Lewis"]
     ]

@@ -1,7 +1,9 @@
 {
     "name": "Fifty Shades of Grey",
     "year": 2015,
+    "director": "Sam Taylor-Johnson",
     "relationships": [
-        ["Jamie Dornan", "Dakota Johnson"]
+        ["Jamie Dornan", "Dakota Johnson"],
+        ["Luke Grimes", "Eloise Mumford"]
     ]
 }

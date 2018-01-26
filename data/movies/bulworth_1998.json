@@ -1,6 +1,7 @@
 {
     "name": "Bulworth",
     "year": 1998,
+    "director": "Warren Beatty",
     "relationships": [
         ["Warren Beatty", "Halle Berry"]
     ]

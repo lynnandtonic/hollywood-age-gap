@@ -1,6 +1,7 @@
 {
     "name": "Funny Face",
     "year": 1957,
+    "director": "Stanley Donen",
     "relationships": [
         ["Fred Astaire", "Audrey Hepburn"]
     ]

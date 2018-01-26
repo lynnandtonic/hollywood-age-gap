@@ -1,6 +1,7 @@
 {
     "name": "American Sniper",
     "year": 2014,
+    "director": "Clint Eastwood",
     "relationships": [
         ["Bradley Cooper", "Sienna Miller"]
     ]

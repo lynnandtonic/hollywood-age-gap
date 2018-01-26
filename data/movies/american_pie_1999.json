@@ -1,6 +1,7 @@
 {
     "name": "American Pie",
     "year": 1999,
+    "director": "Paul Weitz, Chris Weitz",
     "relationships": [
         ["Jason Biggs", "Shannon Elizabeth"],
         ["Chris Klein", "Mena Suvari"],
