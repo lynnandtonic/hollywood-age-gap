@@ -1,6 +1,7 @@
 {
     "name": "Zoolander",
     "year": 2001,
+    "director": "Ben Stiller",
     "relationships": [
         ["Ben Stiller", "Christine Taylor"]
     ]

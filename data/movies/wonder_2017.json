@@ -1,6 +1,7 @@
 {
     "name": "Wonder",
     "year": 2017,
+    "director": "Stephen Chbosky",
     "relationships": [
         ["Owen Wilson", "Julia Roberts"]
     ]

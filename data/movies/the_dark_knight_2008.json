@@ -1,6 +1,7 @@
 {
     "name": "The Dark Knight",
     "year": 2008,
+    "director": "Christopher Nolan",
     "relationships": [
         ["Christian Bale", "Maggie Gyllenhaal"]
     ]

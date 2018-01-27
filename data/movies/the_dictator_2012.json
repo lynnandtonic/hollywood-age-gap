@@ -1,6 +1,7 @@
 {
     "name": "The Dictator",
     "year": 2012,
+    "director": "Larry Charles",
     "relationships": [
         ["Sacha Baron Cohen", "Anna Faris"]
     ]

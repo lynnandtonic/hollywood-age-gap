@@ -1,6 +1,7 @@
 {
     "name": "Transformers",
     "year": 2007,
+    "director": "Michael Bay",
     "relationships": [
         ["Shia LaBeouf", "Megan Fox"]
     ]

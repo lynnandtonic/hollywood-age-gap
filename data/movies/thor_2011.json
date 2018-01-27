@@ -1,6 +1,7 @@
 {
     "name": "Thor",
     "year": 2011,
+    "director": "Kenneth Branagh",
     "relationships": [
         ["Chris Hemsworth", "Natalie Portman"]
     ]

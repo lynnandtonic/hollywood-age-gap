@@ -1,6 +1,7 @@
 {
     "name": "The Wood",
     "year": 1999,
+    "director": "Rick Famuyiwa",
     "relationships": [
         ["Omar Epps", "Sanaa Lathan"],
         ["Taye Diggs", "LisaRaye McCoy"]

@@ -1,6 +1,7 @@
 {
     "name": "The Naked Gun",
     "year": 1988,
+    "director": "David Zucker",
     "relationships": [
         ["Leslie Nielsen", "Priscilla Presley"]
     ]

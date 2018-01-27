@@ -1,6 +1,7 @@
 {
     "name": "The Graduate",
     "year": 1967,
+    "director": "Mike Nichols",
     "relationships": [
         ["Dustin Hoffman", "Anne Bancroft"],
         ["Dustin Hoffman", "Katharine Ross"]

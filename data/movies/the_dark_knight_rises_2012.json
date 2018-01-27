@@ -1,6 +1,7 @@
 {
     "name": "The Dark Knight Rises",
     "year": 2012,
+    "director": "Christopher Nolan",
     "relationships": [
         ["Christian Bale", "Anne Hathaway"]
     ]

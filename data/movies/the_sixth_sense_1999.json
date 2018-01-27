@@ -1,6 +1,7 @@
 {
     "name": "The Sixth Sense",
     "year": 1999,
+    "director": "M. Night Shyamalan",
     "relationships": [
         ["Bruce Willis", "Olivia Williams"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "The Crush",
     "year": 1993,
+    "director": "Alan Shapiro",
     "relationships": [
         ["Cary Elwes", "Jennifer Rubin"],
         ["Cary Elwes", "Alicia Silverstone"]

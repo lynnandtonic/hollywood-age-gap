@@ -1,6 +1,7 @@
 {
     "name": "X-Men",
     "year": 2000,
+    "director": "Bryan Singer",
     "relationships": [
         ["Hugh Jackman", "Famke Janssen"],
         ["James Marsden", "Famke Janssen"]

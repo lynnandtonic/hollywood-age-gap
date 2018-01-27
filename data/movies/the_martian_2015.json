@@ -1,6 +1,7 @@
 {
     "name": "The Martian",
     "year": 2015,
+    "director": "Ridley Scott",
     "relationships": [
         ["Sebastian Stan", "Kate Mara"]
     ]

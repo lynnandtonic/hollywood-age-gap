@@ -1,6 +1,7 @@
 {
     "name": "The Notebook",
     "year": 2004,
+    "director": "Nick Cassavetes",
     "relationships": [
         ["Ryan Gosling", "Rachel McAdams"]
     ]

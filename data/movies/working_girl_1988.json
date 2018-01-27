@@ -1,6 +1,7 @@
 {
     "name": "Working Girl",
     "year": 1988,
+    "director": "Mike Nichols",
     "relationships": [
         ["Harrison Ford", "Melanie Griffith"]
     ]

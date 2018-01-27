@@ -1,6 +1,7 @@
 {
     "name": "Wayne's World",
     "year": 1993,
+    "director": "Penelope Spheeris",
     "relationships": [
         ["Mike Myers", "Tia Carrere"]
     ]

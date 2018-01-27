@@ -1,6 +1,7 @@
 {
     "name": "Unfaithful",
     "year": 2002,
+    "director": "Adrian Lyne",
     "relationships": [
         ["Richard Gere", "Diane Lane"],
         ["Olivier Martinez", "Diane Lane"]

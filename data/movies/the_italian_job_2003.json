@@ -1,6 +1,7 @@
 {
     "name": "The Italian Job",
     "year": 2003,
+    "director": "F. Gary Gray",
     "relationships": [
         ["Mark Wahlberg", "Charlize Theron"]
     ]
