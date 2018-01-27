@@ -1,6 +1,7 @@
 {
     "name": "Shopgirl",
     "year": 2005,
+    "director": "Anand Tucker",
     "relationships": [
         ["Steve Martin", "Claire Danes"],
         ["Jason Schwartzman", "Claire Danes"]

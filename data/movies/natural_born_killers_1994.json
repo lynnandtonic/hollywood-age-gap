@@ -1,6 +1,7 @@
 {
     "name": "Natural Born Killers",
     "year": 1994,
+    "director": "Oliver Stone",
     "relationships": [
         ["Woody Harrelson", "Juliette Lewis"]
     ]

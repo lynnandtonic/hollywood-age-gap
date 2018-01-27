@@ -1,6 +1,7 @@
 {
     "name": "The Happening",
     "year": 2008,
+    "director": "M. Night Shyamalan",
     "relationships": [
         ["Mark Wahlberg", "Zooey Deschanel"]
     ]

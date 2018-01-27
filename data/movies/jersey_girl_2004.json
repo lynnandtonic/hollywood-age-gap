@@ -1,6 +1,7 @@
 {
     "name": "Jersey Girl",
     "year": 2004,
+    "director": "Kevin Smith",
     "relationships": [
         ["Ben Affleck", "Liv Tyler"]
     ]

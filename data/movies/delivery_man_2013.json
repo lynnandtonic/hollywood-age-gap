@@ -1,6 +1,7 @@
 {
     "name": "Delivery Man",
     "year": 2013,
+    "director": "Ken Scott",
     "relationships": [
         ["Vince Vaughn", "Cobie Smulders"]
     ]

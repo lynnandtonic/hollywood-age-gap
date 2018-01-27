@@ -1,6 +1,7 @@
 {
     "name": "Groundhog Day",
     "year": 1993,
+    "director": "Harold Ramis",
     "relationships": [
         ["Bill Murray", "Andie MacDowell"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Chinatown",
     "year": 1974,
+    "director": "Roman Polanski",
     "relationships": [
         ["Jack Nicholson", "Faye Dunaway"]
     ]

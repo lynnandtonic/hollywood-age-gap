@@ -1,6 +1,7 @@
 {
     "name": "Australia",
     "year": 2008,
+    "director": "Baz Luhrmann",
     "relationships": [
         ["Hugh Jackman", "Nicole Kidman"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Tommy Boy",
     "year": 1995,
+    "director": "Peter Segal",
     "relationships": [
         ["Chris Farley", "Julie Warner"],
         ["Rob Lowe", "Bo Derek"],

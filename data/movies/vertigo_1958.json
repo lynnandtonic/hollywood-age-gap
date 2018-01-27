@@ -1,6 +1,7 @@
 {
     "name": "Vertigo",
     "year": 1958,
+    "director": "Alfred Hitchcock",
     "relationships": [
         ["James Stewart", "Kim Novak"]
     ]

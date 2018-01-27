@@ -1,6 +1,7 @@
 {
     "name": "Risky Business",
     "year": 1983,
+    "director": "Paul Brickman",
     "relationships": [
         ["Tom Cruise", "Rebecca De Mornay"]
     ]

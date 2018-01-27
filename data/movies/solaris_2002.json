@@ -1,6 +1,7 @@
 {
     "name": "Solaris",
     "year": 2002,
+    "director": "Steven Soderbergh",
     "relationships": [
         ["George Clooney", "Natascha McElhone"]
     ]

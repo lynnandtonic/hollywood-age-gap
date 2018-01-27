@@ -1,6 +1,7 @@
 {
     "name": "Casanova",
     "year": 2005,
+    "director": "Lasse Hallström",
     "relationships": [
         ["Heath Ledger", "Sienna Miller"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "First Knight",
     "year": 1995,
+    "director": "Jerry Zucker",
     "relationships": [
         ["Richard Gere", "Julia Ormond"],
         ["Sean Connery", "Julia Ormond"]

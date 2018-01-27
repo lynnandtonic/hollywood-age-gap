@@ -1,6 +1,7 @@
 {
     "name": "Skyfall",
     "year": 2012,
+    "director": "Sam Mendes",
     "relationships": [
         ["Daniel Craig", "Berenice Marlohe"],
         ["Daniel Craig", "Tonia Sotiropoulou"]

@@ -1,6 +1,7 @@
 {
     "name": "Captain America: The First Avenger",
     "year": 2011,
+    "director": "Joe Johnston",
     "relationships": [
         ["Chris Evans", "Hayley Atwell"]
     ]

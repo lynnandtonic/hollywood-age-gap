@@ -1,6 +1,7 @@
 {
     "name": "Anger Management",
     "year": 2003,
+    "director": "Peter Segal",
     "relationships": [
         ["Adam Sandler", "Marisa Tomei"]
     ]

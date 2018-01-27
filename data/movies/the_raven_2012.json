@@ -1,6 +1,7 @@
 {
     "name": "The Raven",
     "year": 2012,
+    "director": "James McTeigue",
     "relationships": [
         ["John Cusack", "Alice Eve"]
     ]

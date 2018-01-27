@@ -1,6 +1,7 @@
 {
     "name": "X-Men: First Class",
     "year": 2015,
+    "director": "Matthew Vaughn",
     "relationships": [
         ["Michael Fassbender", "Jennifer Lawrence"],
         ["Nicholas Hoult", "Jennifer Lawrence"],

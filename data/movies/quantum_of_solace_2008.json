@@ -1,6 +1,7 @@
 {
     "name": "Quantum of Solace",
     "year": 2008,
+    "director": "Marc Forster",
     "relationships": [
         ["Daniel Craig", "Gemma Arterton"]
     ]

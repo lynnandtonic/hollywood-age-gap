@@ -1,6 +1,7 @@
 {
     "name": "The Bourne Identity",
     "year": 2002,
+    "director": "Doug Liman",
     "relationships": [
         ["Matt Damon", "Franka Potente"]
     ]

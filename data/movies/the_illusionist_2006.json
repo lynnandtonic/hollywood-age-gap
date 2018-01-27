@@ -1,6 +1,7 @@
 {
     "name": "The Illusionist",
     "year": 2006,
+    "director": "Neil Burger",
     "relationships": [
         ["Edward Norton", "Jessica Biel"]
     ]

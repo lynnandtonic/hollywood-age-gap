@@ -1,6 +1,7 @@
 {
     "name": "Casino Royale",
     "year": 2006,
+    "director": "Martin Campbell",
     "relationships": [
         ["Daniel Craig", "Eva Green"]
     ]

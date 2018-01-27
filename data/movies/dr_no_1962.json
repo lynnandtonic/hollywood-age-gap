@@ -1,6 +1,7 @@
 {
     "name": "Dr. No",
     "year": 1962,
+    "director": "Terence Young",
     "relationships": [
         ["Sean Connery", "Eunice Gayson"],
         ["Sean Connery", "Zena Marshall"],

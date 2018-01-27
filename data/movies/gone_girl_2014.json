@@ -1,6 +1,7 @@
 {
     "name": "Gone Girl",
     "year": 2014,
+    "director": "David Fincher",
     "relationships": [
         ["Ben Affleck", "Rosamund Pike"],
         ["Ben Affleck", "Emily Ratajkowski"]

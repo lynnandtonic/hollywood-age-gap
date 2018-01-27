@@ -1,6 +1,7 @@
 {
     "name": "Up Close & Personal",
     "year": 1996,
+    "director": "Jon Avnet",
     "relationships": [
         ["Robert Redford", "Michelle Pfeiffer"]
     ]

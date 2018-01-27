@@ -1,6 +1,7 @@
 {
     "name": "Basic Instinct",
     "year": 1992,
+    "director": "Paul Verhoeven",
     "relationships": [
         ["Michael Douglas", "Sharon Stone"]
     ]

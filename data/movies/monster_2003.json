@@ -1,6 +1,7 @@
 {
     "name": "Monster",
     "year": 2003,
+    "director": "Patty Jenkins",
     "relationships": [
         ["Charlize Theron", "Christina Ricci"]
     ]

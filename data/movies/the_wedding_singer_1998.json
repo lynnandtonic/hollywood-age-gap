@@ -1,6 +1,7 @@
 {
     "name": "The Wedding Singer",
     "year": 1998,
+    "director": "Frank Coraci",
     "relationships": [
         ["Adam Sandler", "Drew Barrymore"]
     ]

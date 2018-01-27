@@ -1,6 +1,7 @@
 {
     "name": "The Great Gatsby",
     "year": 1974,
+    "director": "Jack Clayton",
     "relationships": [
         ["Robert Redford", "Mia Farrow"]
     ]

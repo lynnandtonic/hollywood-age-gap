@@ -1,6 +1,7 @@
 {
     "name": "Dave",
     "year": 1993,
+    "director": "Ivan Reitman",
     "relationships": [
         ["Kevin Kline", "Sigourney Weaver"]
     ]

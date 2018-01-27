@@ -1,6 +1,7 @@
 {
     "name": "National Treasure",
     "year": 2004,
+    "director": "Jon Turteltaub",
     "relationships": [
         ["Nicolas Cage", "Diane Kruger"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Sabrina",
     "year": 1954,
+    "director": "Billy Wilder",
     "relationships": [
         ["William Holden", "Audrey Hepburn"],
         ["Humphrey Bogart", "Audrey Hepburn"]

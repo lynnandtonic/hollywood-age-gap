@@ -1,6 +1,7 @@
 {
     "name": "Man of Steel",
     "year": 2013,
+    "director": "Zack Snyder",
     "relationships": [
         ["Henry Cavill", "Amy Adams"],
         ["Kevin Costner", "Diane Lane"]

@@ -1,6 +1,7 @@
 {
     "name": "300",
     "year": 2007,
+    "director": "Zack Snyder",
     "relationships": [
         ["Gerard Butler", "Lena Headey"]
     ]

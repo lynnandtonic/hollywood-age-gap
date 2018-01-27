@@ -1,6 +1,7 @@
 {
     "name": "Forgetting Sarah Marshall",
     "year": 2008,
+    "director": "Nicholas Stoller",
     "relationships": [
         ["Jason Segel", "Mila Kunis"],
         ["Russell Brand", "Kristen Bell"]

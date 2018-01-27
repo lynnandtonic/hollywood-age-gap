@@ -1,6 +1,7 @@
 {
     "name": "Thunderball",
     "year": 1965,
+    "director": "Terence Young",
     "relationships": [
         ["Sean Connery", "Claudine Auger"],
         ["Sean Connery", "Luciana Paluzzi"],

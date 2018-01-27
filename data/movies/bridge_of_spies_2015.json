@@ -1,6 +1,7 @@
 {
     "name": "Bridge of Spies",
     "year": 2015,
+    "director": "Steven Spielberg",
     "relationships": [
         ["Tom Hanks", "Amy Ryan"]
     ]

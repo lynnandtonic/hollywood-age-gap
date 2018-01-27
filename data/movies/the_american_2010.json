@@ -1,6 +1,7 @@
 {
     "name": "The American",
     "year": 2010,
+    "director": "Anton Corbijn",
     "relationships": [
         ["George Clooney", "Violante Placido"]
     ]

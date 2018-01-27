@@ -1,6 +1,7 @@
 {
     "name": "The Amazing Spider-Man",
     "year": 2012,
+    "director": "Marc Webb",
     "relationships": [
         ["Andrew Garfield", "Emma Stone"]
     ]

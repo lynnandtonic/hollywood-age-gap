@@ -1,6 +1,7 @@
 {
     "name": "Iron Man",
     "year": 2008,
+    "director": "Jon Favreau",
     "relationships": [
         ["Robert Downey Jr.", "Gwyneth Paltrow"]
     ]

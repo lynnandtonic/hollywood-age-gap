@@ -1,6 +1,7 @@
 {
     "name": "What Lies Beneath",
     "year": 2000,
+    "director": "Robert Zemeckis",
     "relationships": [
         ["Harrison Ford", "Michelle Pfeiffer"]
     ]

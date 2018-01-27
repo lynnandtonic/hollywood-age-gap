@@ -1,6 +1,7 @@
 {
     "name": "Django Unchained",
     "year": 2012,
+    "director": "Quentin Tarantino",
     "relationships": [
         ["Jamie Foxx", "Kerry Washington"]
     ]

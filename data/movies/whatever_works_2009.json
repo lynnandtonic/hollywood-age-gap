@@ -1,6 +1,7 @@
 {
     "name": "Whatever Works",
     "year": 2009,
+    "director": "Woody Allen",
     "relationships": [
         ["Larry David", "Evan Rachel Wood"],
         ["Henry Cavill", "Evan Rachel Wood"],

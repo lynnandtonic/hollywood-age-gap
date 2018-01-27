@@ -1,6 +1,7 @@
 {
     "name": "Meet Joe Black",
     "year": 1998,
+    "director": "Martin Brest",
     "relationships": [
         ["Brad Pitt", "Claire Forlani"]
     ]

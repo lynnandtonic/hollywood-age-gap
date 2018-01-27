@@ -1,6 +1,7 @@
 {
     "name": "Edward Scissorhands",
     "year": 1990,
+    "director": "Tim Burton",
     "relationships": [
         ["Johnny Depp", "Winona Ryder"]
     ]

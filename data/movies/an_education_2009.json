@@ -1,6 +1,7 @@
 {
     "name": "An Education",
     "year": 2009,
+    "director": "Lone Scherfig",
     "relationships": [
         ["Peter Sarsgaard", "Carey Mulligan"]
     ]

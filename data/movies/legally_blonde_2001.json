@@ -1,6 +1,7 @@
 {
     "name": "Legally Blonde",
     "year": 2001,
+    "director": "Robert Luketic",
     "relationships": [
         ["Luke Wilson", "Reese Witherspoon"],
         ["Matthew Davis", "Reese Witherspoon"],

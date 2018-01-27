@@ -1,6 +1,7 @@
 {
     "name": "Kindergarten Cop",
     "year": 1990,
+    "director": "Ivan Reitman",
     "relationships": [
         ["Arnold Schwarzenegger", "Penelope Ann Miller"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "The Whole Nine Yards",
     "year": 2000,
+    "director": "Jonathan Lynn",
     "relationships": [
         ["Bruce Willis", "Amanda Peet"],
         ["Matthew Perry", "Natasha Henstridge"]

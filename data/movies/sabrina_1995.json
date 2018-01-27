@@ -1,6 +1,7 @@
 {
     "name": "Sabrina",
     "year": 1995,
+    "director": "Sydney Pollack",
     "relationships": [
         ["Harrison Ford", "Julia Ormond"]
     ]

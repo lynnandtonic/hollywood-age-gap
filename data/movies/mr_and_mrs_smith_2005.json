@@ -1,6 +1,7 @@
 {
     "name": "Mr. & Mrs. Smith",
     "year": 2005,
+    "director": "Doug Liman",
     "relationships": [
         ["Brad Pitt", "Angelina Jolie"]
     ]

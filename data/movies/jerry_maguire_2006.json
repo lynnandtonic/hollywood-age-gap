@@ -1,6 +1,7 @@
 {
     "name": "Jerry Maguire",
     "year": 2006,
+    "director": "Cameron Crowe",
     "relationships": [
         ["Tom Cruise", "Renee Zellweger"]
     ]

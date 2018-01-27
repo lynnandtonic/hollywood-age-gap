@@ -1,6 +1,7 @@
 {
     "name": "Enchanted",
     "year": 2007,
+    "director": "Kevin Lima",
     "relationships": [
         ["Patrick Dempsey", "Amy Adams"],
         ["James Marsden", "Idina Menzel"]

@@ -1,6 +1,7 @@
 {
     "name": "Deja Vu",
     "year": 2006,
+    "director": "Tony Scott",
     "relationships": [
         ["Denzel Washington", "Paula Patton"]
     ]

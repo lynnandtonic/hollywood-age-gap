@@ -1,6 +1,7 @@
 {
     "name": "EDtv",
     "year": 1999,
+    "director": "Ron Howard",
     "relationships": [
         ["Matthew McConaughey", "Jenna Elfman"],
         ["Woody Harrelson", "Jenna Elfman"]

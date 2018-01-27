@@ -1,6 +1,7 @@
 {
     "name": "Made of Honor",
     "year": 2008,
+    "director": "Paul Weiland",
     "relationships": [
         ["Patrick Dempsey", "Michelle Monaghan"],
         ["Kevin McKidd", "Michelle Monaghan"]

@@ -1,6 +1,7 @@
 {
     "name": "Clueless",
     "year": 1995,
+    "director": "Amy Heckerling",
     "relationships": [
         ["Paul Rudd", "Alicia Silverstone"],
         ["Donald Faison", "Stacey Dash"]

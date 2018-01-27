@@ -1,6 +1,7 @@
 {
     "name": "The Details",
     "year": 2011,
+    "director": "Jacob Aaron Estes",
     "relationships": [
         ["Tobey Maguire", "Elizabeth Banks"],
         ["Ray Liotta", "Kerry Washington"]

@@ -1,6 +1,7 @@
 {
     "name": "Snowden",
     "year": 2016,
+    "director": "Oliver Stone",
     "relationships": [
         ["Joseph Gordon-Levitt", "Shailene Woodley"]
     ]

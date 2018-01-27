@@ -1,6 +1,7 @@
 {
     "name": "Enemy at the Gates",
     "year": 2001,
+    "director": "Jean-Jacques Annaud",
     "relationships": [
         ["Jude Law", "Rachel Weisz"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Good Will Hunting",
     "year": 1997,
+    "director": "Gus Van Sant",
     "relationships": [
         ["Matt Damon", "Minnie Driver"]
     ]

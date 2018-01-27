@@ -1,6 +1,7 @@
 {
     "name": "Scarface",
     "year": 1983,
+    "director": "Brian De Palma",
     "relationships": [
         ["Al Pacino", "Michelle Pfeiffer"]
     ]

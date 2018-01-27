@@ -1,6 +1,7 @@
 {
     "name": "The Squid and the Whale",
     "year": 2005,
+    "director": "Noah Baumbach",
     "relationships": [
         ["Jeff Daniels", "Anna Paquin"]
     ]

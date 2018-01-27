@@ -1,6 +1,7 @@
 {
     "name": "Milk",
     "year": 2008,
+    "director": "Gus Van Sant",
     "relationships": [
         ["Sean Penn", "James Franco"]
     ]

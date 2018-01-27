@@ -1,6 +1,7 @@
 {
     "name": "Brooklyn",
     "year": 2015,
+    "director": "John Crowley",
     "relationships": [
         ["Emory Cohen", "Saoirse Ronan"]
     ]

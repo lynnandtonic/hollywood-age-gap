@@ -1,6 +1,7 @@
 {
     "name": "Baby Driver",
     "year": 2017,
+    "director": "Edgar Wright",
     "relationships": [
         ["Ansel Elgort", "Lily James"],
         ["Jon Hamm", "Eiza Gonzalez"]

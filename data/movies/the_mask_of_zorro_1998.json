@@ -1,6 +1,7 @@
 {
     "name": "The Mask of Zorro",
     "year": 1998,
+    "director": "Martin Campbell",
     "relationships": [
         ["Antonio Banderas", "Catherine Zeta-Jones"]
     ]

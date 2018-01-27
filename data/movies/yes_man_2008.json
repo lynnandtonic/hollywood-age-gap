@@ -1,6 +1,7 @@
 {
     "name": "Yes Man",
     "year": 2008,
+    "director": "Peyton Reed",
     "relationships": [
         ["Jim Carrey", "Zooey Deschanel"]
     ]

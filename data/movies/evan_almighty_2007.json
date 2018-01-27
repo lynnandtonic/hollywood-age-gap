@@ -1,6 +1,7 @@
 {
     "name": "Evan Almighty",
     "year": 2007,
+    "director": "Tom Shadyac",
     "relationships": [
         ["Steve Carell", "Lauren Graham"]
     ]

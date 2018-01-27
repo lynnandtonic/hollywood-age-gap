@@ -1,6 +1,7 @@
 {
     "name": "American Beauty",
     "year": 1999,
+    "director": "Sam Mendes",
     "relationships": [
         ["Kevin Spacey", "Mena Suvari"],
         ["Wes Bentley", "Thora Birch"],

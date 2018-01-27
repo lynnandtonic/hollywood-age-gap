@@ -1,6 +1,7 @@
 {
     "name": "Troy",
     "year": 2004,
+    "director": "Wolfgang Petersen",
     "relationships": [
         ["Orlando Bloom", "Diane Kruger"],
         ["Brad Pitt", "Rose Byrne"]

@@ -1,6 +1,7 @@
 {
     "name": "Batman Begins",
     "year": 2005,
+    "director": "Christopher Nolan",
     "relationships": [
         ["Christian Bale", "Katie Holmes"]
     ]

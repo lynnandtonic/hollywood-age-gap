@@ -1,6 +1,7 @@
 {
     "name": "The Wolverine",
     "year": 2013,
+    "director": "James Mangold",
     "relationships": [
         ["Hugh Jackman", "Tao Okamoto"]
     ]

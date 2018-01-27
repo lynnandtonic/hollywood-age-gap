@@ -1,6 +1,7 @@
 {
     "name": "Year One",
     "year": 2009,
+    "director": "Harold Ramis",
     "relationships": [
         ["Jack Black", "June Diane Raphael"],
         ["Michael Cera", "Juno Temple"]
