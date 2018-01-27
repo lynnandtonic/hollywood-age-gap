@@ -1,6 +1,7 @@
 {
     "name": "Sister Act",
     "year": 1992,
+    "director": "Emile Ardolino",
     "relationships": [
         ["Harvey Keitel", "Whoopi Goldberg"],
         ["Bill Nunn", "Whoopi Goldberg"]

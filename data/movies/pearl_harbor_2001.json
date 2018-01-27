@@ -1,6 +1,7 @@
 {
     "name": "Pearl Harbor",
     "year": 2001,
+    "director": "Michael Bay",
     "relationships": [
         ["Ben Affleck", "Kate Beckinsale"],
         ["Josh Hartnett", "Kate Beckinsale"]

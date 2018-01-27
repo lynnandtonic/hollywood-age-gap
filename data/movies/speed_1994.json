@@ -1,6 +1,7 @@
 {
     "name": "Speed",
     "year": 1994,
+    "director": "Jan de Bont",
     "relationships": [
         ["Keanu Reeves", "Sandra Bullock"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Sweet Home Alabama",
     "year": 2002,
+    "director": "Andy Tennant",
     "relationships": [
         ["Patrick Dempsey", "Reese Witherspoon"],
         ["Josh Lucas", "Reese Witherspoon"]

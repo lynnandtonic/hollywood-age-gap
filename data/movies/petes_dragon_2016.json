@@ -1,6 +1,7 @@
 {
     "name": "Pete's Dragon",
     "year": 2016,
+    "director": "David Lowery",
     "relationships": [
         ["Wes Bentley", "Bryce Dallas Howard"]
     ]

@@ -1,6 +1,7 @@
 {
-    "name": "Red",
+    "name": "RED",
     "year": 2010,
+    "director": "Robert Schwentke",
     "relationships": [
         ["Bruce Willis", "Mary-Louise Parker"]
     ]

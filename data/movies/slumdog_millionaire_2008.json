@@ -1,6 +1,7 @@
 {
     "name": "Slumdog Millionaire",
     "year": 2008,
+    "director": "Danny Boyle",
     "relationships": [
         ["Dev Patel", "Freida Pinto"]
     ]

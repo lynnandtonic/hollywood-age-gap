@@ -1,6 +1,7 @@
 {
     "name": "St. Vincent",
     "year": 2014,
+    "director": "Theodore Melfi",
     "relationships": [
         ["Bill Murray", "Naomi Watts"]
     ]

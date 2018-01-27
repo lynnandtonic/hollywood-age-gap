@@ -1,6 +1,7 @@
 {
     "name": "Sex and the City",
     "year": 2008,
+    "director": "Michael Patrick King",
     "relationships": [
         ["Chris Noth", "Sarah Jessica Parker"],
         ["Jason Lewis", "Kim Cattrall"],

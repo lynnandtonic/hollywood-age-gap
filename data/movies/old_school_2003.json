@@ -1,6 +1,7 @@
 {
     "name": "Old School",
     "year": 2003,
+    "director": "Todd Phillips",
     "relationships": [
         ["Luke Wilson", "Ellen Pompeo"],
         ["Luke Wilson", "Elisha Cuthbert"],

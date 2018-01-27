@@ -1,6 +1,7 @@
 {
     "name": "Rushmore",
     "year": 1998,
+    "director": "Wes Anderson",
     "relationships": [
         ["Bill Murray", "Olivia Williams"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Spanglish",
     "year": 2004,
+    "director": "James L. Brooks",
     "relationships": [
         ["Adam Sandler", "Tea Leoni"],
         ["Adam Sandler", "Paz Vega"]

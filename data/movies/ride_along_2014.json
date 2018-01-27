@@ -1,6 +1,7 @@
 {
     "name": "Ride Along",
     "year": 2014,
+    "director": "Tim Story",
     "relationships": [
         ["Kevin Hart", "Tika Sumpter"]
     ]

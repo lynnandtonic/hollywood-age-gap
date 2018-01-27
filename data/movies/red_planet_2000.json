@@ -1,6 +1,7 @@
 {
     "name": "Red Planet",
     "year": 2000,
+    "director": "Antony Hoffman",
     "relationships": [
         ["Val Kilmer", "Carrie-Anne Moss"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Punch-Drunk Love",
     "year": 2002,
+    "director": "Paul Thomas Anderson",
     "relationships": [
         ["Adam Sandler", "Emily Watson"]
     ]

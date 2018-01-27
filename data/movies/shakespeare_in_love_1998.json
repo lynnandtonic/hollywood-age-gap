@@ -1,6 +1,7 @@
 {
     "name": "Shakespeare in Love",
     "year": 1998,
+    "director": "John Madden",
     "relationships": [
         ["Joseph Fiennes", "Gwyneth Paltrow"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Suicide Squad",
     "year": 2016,
+    "director": "David Ayer",
     "relationships": [
         ["Jared Leto", "Margot Robbie"],
         ["Joel Kinnaman", "Cara Delevingne"]

@@ -1,6 +1,7 @@
 {
     "name": "Passengers",
     "year": 2016,
+    "director": "Morten Tyldum",
     "relationships": [
         ["Chris Pratt", "Jennifer Lawrence"]
     ]

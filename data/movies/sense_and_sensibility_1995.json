@@ -1,6 +1,7 @@
 {
     "name": "Sense and Sensibility",
     "year": 1995,
+    "director": "Ang Lee",
     "relationships": [
         ["Alan Rickman", "Kate Winslet"],
         ["Hugh Grant", "Emma Thompson"]
