@@ -2,6 +2,7 @@
     "name": "Dr. No",
     "year": 1962,
     "director": "Terence Young",
+    "franchise": "James Bond",
     "relationships": [
         ["Sean Connery", "Eunice Gayson"],
         ["Sean Connery", "Zena Marshall"],

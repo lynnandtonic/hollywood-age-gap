@@ -2,6 +2,7 @@
     "name": "Thor",
     "year": 2011,
     "director": "Kenneth Branagh",
+    "franchise": "Marvel",
     "relationships": [
         ["Chris Hemsworth", "Natalie Portman"]
     ]

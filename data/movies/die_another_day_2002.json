@@ -2,6 +2,7 @@
     "name": "Die Another Day",
     "year": 2002,
     "director": "Lee Tamahori",
+    "franchise": "James Bond",
     "relationships": [
         ["Pierce Brosnan", "Halle Berry"],
         ["Pierce Brosnan", "Rosamund Pike"]

@@ -2,6 +2,7 @@
     "name": "Quantum of Solace",
     "year": 2008,
     "director": "Marc Forster",
+    "franchise": "James Bond",
     "relationships": [
         ["Daniel Craig", "Gemma Arterton"]
     ]

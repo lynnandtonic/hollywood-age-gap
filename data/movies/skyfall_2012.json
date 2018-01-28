@@ -2,6 +2,7 @@
     "name": "Skyfall",
     "year": 2012,
     "director": "Sam Mendes",
+    "franchise": "James Bond",
     "relationships": [
         ["Daniel Craig", "Berenice Marlohe"],
         ["Daniel Craig", "Tonia Sotiropoulou"]

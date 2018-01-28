@@ -2,6 +2,7 @@
     "name": "Diamonds Are Forever",
     "year": 1971,
     "director": "Guy Hamilton",
+    "franchise": "James Bond",
     "relationships": [
         ["Sean Connery", "Jill St. John"]
     ]

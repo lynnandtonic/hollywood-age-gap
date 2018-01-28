@@ -2,6 +2,7 @@
     "name": "Guardians of the Galaxy",
     "year": 2014,
     "director": "James Gunn",
+    "franchise": "Marvel",
     "relationships": [
         ["Chris Pratt", "Zoe Saldana"]
     ]

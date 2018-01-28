@@ -2,6 +2,7 @@
     "name": "For Your Eyes Only",
     "year": 1981,
     "director": "John Glen",
+    "franchise": "James Bond",
     "relationships": [
         ["Roger Moore", "Carole Bouquet"],
         ["Roger Moore", "Cassandra Harris"],

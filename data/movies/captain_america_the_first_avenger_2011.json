@@ -2,6 +2,7 @@
     "name": "Captain America: The First Avenger",
     "year": 2011,
     "director": "Joe Johnston",
+    "franchise": "Marvel",
     "relationships": [
         ["Chris Evans", "Hayley Atwell"]
     ]

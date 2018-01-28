@@ -2,6 +2,7 @@
     "name": "Goldfinger",
     "year": 1964,
     "director": "Guy Hamilton",
+    "franchise": "James Bond",
     "relationships": [
         ["Sean Connery", "Shirley Eaton"],
         ["Sean Connery", "Honor Blackman"]
