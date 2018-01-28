@@ -13,7 +13,8 @@ for (var i = 0; i < cards.length; i++) {
     card: card,
     title: titleEl.innerHTML,
     year: card.querySelector('.year').innerHTML,
-    director: card.querySelector('.director').innerHTML
+    director: card.querySelector('.director').innerHTML,
+    franchise: card.querySelector('.franchise').innerHTML
   };
   var actors = card.querySelectorAll('.actor .name');
   for (var j = 0; j < actors.length; j++) {
@@ -36,6 +37,8 @@ function doSearch (el) {
     } else if (searchTerm.test(data.year)) {
       hasMatch = true;
     } else if (searchTerm.test(data.director)) {
+      hasMatch = true;
+    } else if (searchTerm.test(data.franchise)) {
       hasMatch = true;
     } else {
       for (var j = 0; j < data.actorNames.length; j++) {

@@ -27,7 +27,8 @@ function toSortedMovieList (json) {
           }
         ],
         year: movie.year,
-        director: movie.director
+        director: movie.director,
+        franchise: movie.franchise
       };
       movies.push(newMovie);
     }
