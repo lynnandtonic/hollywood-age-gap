@@ -1,6 +1,7 @@
 {
     "name": "Sound of Music",
     "year": 1965,
+    "director": "Robert Wise",
     "relationships": [
         ["Christopher Plummer", "Julie Andrews"]
     ]

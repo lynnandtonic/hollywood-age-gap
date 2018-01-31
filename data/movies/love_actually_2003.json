@@ -1,6 +1,7 @@
 {
     "name": "Love Actually",
     "year": 2003,
+    "director": "Richard Curtis",
     "relationships": [
         ["Chiwetel Ejiofor", "Keira Knightley"],
         ["Colin Firth", "Lucia Moniz"],

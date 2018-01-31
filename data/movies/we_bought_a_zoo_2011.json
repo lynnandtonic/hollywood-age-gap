@@ -1,6 +1,7 @@
 {
     "name": "We Bought a Zoo",
     "year": 2011,
+    "director": "Cameron Crowe",
     "relationships": [
         ["Matt Damon", "Scarlett Johansson"]
     ]

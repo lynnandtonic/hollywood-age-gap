@@ -1,6 +1,7 @@
 {
     "name": "Stone",
     "year": 2010,
+    "director": "John Curran",
     "relationships": [
         ["Robert De Niro", "Milla Jovovich"],
         ["Edward Norton", "Milla Jovovich"]

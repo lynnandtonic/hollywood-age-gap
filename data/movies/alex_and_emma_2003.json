@@ -1,6 +1,7 @@
 {
     "name": "Alex & Emma",
     "year": 2003,
+    "director": "Rob Reiner",
     "relationships": [
         ["Luke Wilson", "Kate Hudson"]
     ]

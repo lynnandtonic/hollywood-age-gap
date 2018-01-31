@@ -1,6 +1,7 @@
 {
     "name": "Jack and Jill",
     "year": 2011,
+    "director": "Dennis Dugan",
     "relationships": [
         ["Adam Sandler", "Katie Holmes"]
     ]

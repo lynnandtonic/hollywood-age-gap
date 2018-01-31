@@ -1,0 +1,9 @@
+{
+    "name": "Singin' in the Rain",
+    "year": 1952,
+    "director": "Stanley Donen, Gene Kelly",
+    "relationships": [
+        ["Gene Kelly", "Debbie Reynolds"],
+        ["Gene Kelly", "Jean Hagen"]
+    ]
+}

@@ -1,6 +1,7 @@
 {
     "name": "Autumn in New York",
     "year": 2000,
+    "director": "Joan Chen",
     "relationships": [
         ["Richard Gere", "Winona Ryder"]
     ]

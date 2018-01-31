@@ -1,6 +1,7 @@
 {
     "name": "Con Air",
     "year": 1997,
+    "director": "Simon West",
     "relationships": [
         ["Nicolas Cage", "Monica Potter"]
     ]

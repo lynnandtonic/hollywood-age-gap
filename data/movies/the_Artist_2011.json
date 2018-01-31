@@ -1,6 +1,7 @@
 {
     "name": "The Artist",
     "year": 2011,
+    "director": "Michel Hazanavicius",
     "relationships": [
         ["Jean Dujardin", "Berenice Bejo"]
     ]

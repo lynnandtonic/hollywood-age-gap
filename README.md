@@ -52,12 +52,13 @@ Name the file with the actor's name, using underscores between words or in place
 
 #### Add movies
 
-Create the movie `.json` file in `data/movies` with the movie title, year released, and actor names:
+Create the movie `.json` file in `data/movies` with the movie title, year released, director, and actor names:
 
 ```
 {
     "name": "A Great Movie",
     "year": 2016,
+    "director": "Sally Jones",
     "relationships": [
         ["John Smith", "Jane Doe"]
     ]

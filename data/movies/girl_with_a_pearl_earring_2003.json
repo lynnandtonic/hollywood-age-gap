@@ -1,6 +1,7 @@
 {
     "name": "Girl with a Pearl Earring",
     "year": 2003,
+    "director": "Peter Webber",
     "relationships": [
         ["Colin Firth", "Essie Davis"],
         ["Cillian Murphy", "Scarlett Johansson"]

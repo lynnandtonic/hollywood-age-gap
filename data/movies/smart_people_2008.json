@@ -1,6 +1,7 @@
 {
     "name": "Smart People",
     "year": 2008,
+    "director": "Noam Murro",
     "relationships": [
         ["Dennis Quaid", "Sarah Jessica Parker"]
     ]

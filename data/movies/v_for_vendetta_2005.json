@@ -1,6 +1,7 @@
 {
     "name": "V for Vendetta",
     "year": 2005,
+    "director": "James McTeigue",
     "relationships": [
         ["Hugo Weaving", "Natalie Portman"]
     ]

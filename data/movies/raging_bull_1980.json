@@ -1,6 +1,7 @@
 {
     "name": "Raging Bull",
     "year": 1980,
+    "director": "Martin Scorsese",
     "relationships": [
         ["Robert De Niro", "Cathy Moriarty"]
     ]

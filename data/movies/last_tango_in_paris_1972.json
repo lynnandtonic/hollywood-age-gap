@@ -1,6 +1,7 @@
 {
     "name": "Last Tango in Paris",
     "year": 1972,
+    "director": "Bernardo Bertolucci",
     "relationships": [
         ["Marlon Brando", "Maria Schneider"]
     ]

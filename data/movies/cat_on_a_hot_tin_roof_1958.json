@@ -1,6 +1,7 @@
 {
     "name": "Cat on a Hot Tin Roof",
     "year": 1958,
+    "director": "Richard Brooks",
     "relationships": [
         ["Paul Newman", "Elizabeth Taylor"]
     ]

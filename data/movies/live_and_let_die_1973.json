@@ -1,6 +1,8 @@
 {
     "name": "Live and Let Die",
     "year": 1973,
+    "director": "Guy Hamilton",
+    "franchise": "James Bond",
     "relationships": [
         ["Roger Moore", "Madeline Smith"],
         ["Roger Moore", "Gloria Hendry"],

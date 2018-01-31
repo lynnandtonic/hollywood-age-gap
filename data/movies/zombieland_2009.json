@@ -1,6 +1,7 @@
 {
     "name": "Zombieland",
     "year": 2009,
+    "director": "Ruben Fleischer",
     "relationships": [
         ["Jesse Eisenberg", "Emma Stone"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "The Beach",
     "year": 2000,
+    "director": "Danny Boyle",
     "relationships": [
         ["Leonardo DiCaprio", "Virginie Ledoyen"],
         ["Guillaume Canet", "Virginie Ledoyen"]

@@ -1,6 +1,7 @@
 {
     "name": "A Good Year",
     "year": 2006,
+    "director": "Ridley Scott",
     "relationships": [
         ["Russell Crowe", "Marion Cotillard"]
     ]

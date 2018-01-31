@@ -1,6 +1,7 @@
 {
     "name": "Walk the Line",
     "year": 2005,
+    "director": "James Mangold",
     "relationships": [
         ["Joaquin Phoenix", "Reese Witherspoon"],
         ["Joaquin Phoenix", "Ginnifer Goodwin"]

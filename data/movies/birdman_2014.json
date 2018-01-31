@@ -1,6 +1,7 @@
 {
     "name": "Birdman",
     "year": 2014,
+    "director": "Alejandro González Iñárritu",
     "relationships": [
         ["Edward Norton", "Emma Stone"]
     ]

@@ -1,6 +1,8 @@
 {
     "name": "The Incredible Hulk",
     "year": 2008,
+    "director": "Louis Leterrier",
+    "franchise": "Marvel",
     "relationships": [
         ["Edward Norton", "Liv Tyler"]
     ]

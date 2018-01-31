@@ -1,6 +1,7 @@
 {
     "name": "The American President",
     "year": 1995,
+    "director": "Rob Reiner",
     "relationships": [
         ["Michael Douglas", "Annette Bening"]
     ]

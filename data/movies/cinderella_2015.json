@@ -1,6 +1,7 @@
 {
     "name": "Cinderella",
     "year": 2015,
+    "director": "Kenneth Branagh",
     "relationships": [
         ["Richard Madden", "Lily James"]
     ]

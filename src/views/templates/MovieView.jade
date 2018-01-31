@@ -1,6 +1,9 @@
 - var years = movie.difference === 1 ? 'year' : 'years';
 h2= movie.name
-.year= movie.year
+.meta
+  .franchise= movie.franchise
+  .director= movie.director
+  .year= movie.year
 .difference
   span= movie.difference
   span= years
@@ -18,7 +21,7 @@ each actor in movie.relationship
 .social-container
   -
     var text = 'In “' + movie.name + '” the age gap b/w ' + movie.relationship[0].name + ' and ' + movie.relationship[1].name + ' is ' + movie.difference + ' ' + years + '.';
-    var url = 'http://hollywoodagegap.com';
+    var url = 'https://hollywoodagegap.com';
     if ((text + ' ' + url).length > 140) {
       text = text.replace('between', 'b/w');
     }

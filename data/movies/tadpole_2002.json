@@ -1,6 +1,7 @@
 {
     "name": "Tadpole",
     "year": 2002,
+    "director": "Gary Winick",
     "relationships": [
         ["Aaron Stanford", "Sigourney Weaver"],
         ["Aaron Stanford", "Bebe Neuwirth"],

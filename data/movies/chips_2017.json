@@ -1,0 +1,8 @@
+{
+    "name": "Chips",
+    "year": 2017,
+    "director": "Dax Shepard",
+    "relationships": [
+        ["Dax Shepard", "Kristen Bell"]
+    ]
+}

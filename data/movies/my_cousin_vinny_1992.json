@@ -1,6 +1,7 @@
 {
     "name": "My Cousin Vinny",
     "year": 1992,
+    "director": "Jonathan Lynn",
     "relationships": [
         ["Joe Pesci", "Marisa Tomei"]
     ]

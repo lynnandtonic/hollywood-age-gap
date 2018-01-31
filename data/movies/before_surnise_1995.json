@@ -1,6 +1,7 @@
 {
     "name": "Before Sunrise",
     "year": 1995,
+    "director": "Richard Linklater",
     "relationships": [
         ["Ethan Hawke", "Julie Delpy"]
     ]

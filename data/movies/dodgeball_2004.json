@@ -1,6 +1,7 @@
 {
     "name": "Dodgeball",
     "year": 2004,
+    "director": "Rawson Marshall Thurber",
     "relationships": [
         ["Vince Vaughn", "Christine Taylor"]
     ]

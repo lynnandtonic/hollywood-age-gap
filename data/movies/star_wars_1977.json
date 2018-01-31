@@ -1,6 +1,7 @@
 {
     "name": "Star Wars",
     "year": 1977,
+    "director": "George Lucas",
     "relationships": [
         ["Harrison Ford", "Carrie Fisher"]
     ]

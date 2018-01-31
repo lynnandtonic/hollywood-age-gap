@@ -1,6 +1,7 @@
 {
     "name": "Reservation Road",
     "year": 2007,
+    "director": "Terry George",
     "relationships": [
         ["Joaquin Phoenix", "Jennifer Connelly"]
     ]

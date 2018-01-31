@@ -1,6 +1,7 @@
 {
     "name": "Bull Durham",
     "year": 1988,
+    "director": "Ron Shelton",
     "relationships": [
         ["Kevin Costner", "Susan Sarandon"]
     ]

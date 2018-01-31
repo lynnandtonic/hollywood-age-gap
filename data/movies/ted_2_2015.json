@@ -1,6 +1,7 @@
 {
     "name": "Ted 2",
     "year": 2015,
+    "director": "Seth MacFarlane",
     "relationships": [
         ["Mark Wahlberg", "Amanda Seyfried"]
     ]

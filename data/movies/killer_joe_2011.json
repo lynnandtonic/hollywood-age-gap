@@ -1,6 +1,7 @@
 {
     "name": "Killer Joe",
     "year": 2011,
+    "director": "William Friedkin",
     "relationships": [
         ["Matthew McConaughey", "Juno Temple"]
     ]

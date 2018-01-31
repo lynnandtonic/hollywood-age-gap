@@ -1,6 +1,8 @@
 {
     "name": "Tomorrow Never Dies",
     "year": 1997,
+    "director": "Roger Spottiswoode",
+    "franchise": "James Bond",
     "relationships": [
         ["Pierce Brosnan", "Teri Hatcher"],
         ["Pierce Brosnan", "Michelle Yeoh"],

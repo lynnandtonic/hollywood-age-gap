@@ -1,6 +1,7 @@
 {
     "name": "The Devil Wears Prada",
     "year": 2006,
+    "director": "David Frankel",
     "relationships": [
         ["Simon Baker", "Anne Hathaway"],
         ["Adrian Grenier", "Anne Hathaway"]

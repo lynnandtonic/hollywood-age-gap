@@ -1,6 +1,7 @@
 {
     "name": "Little Nicky",
     "year": 2000,
+    "director": "Steven Brill",
     "relationships": [
         ["Adam Sandler", "Patricia Arquette"]
     ]

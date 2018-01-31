@@ -1,6 +1,7 @@
 {
     "name": "Closer",
     "year": 2004,
+    "director": "Mike Nichols",
     "relationships": [
         ["Jude Law", "Natalie Portman"],
         ["Jude Law", "Julia Roberts"],

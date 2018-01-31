@@ -1,6 +1,7 @@
 {
     "name": "Mamma Mia!",
     "year": 2008,
+    "director": "Phyllida Lloyd",
     "relationships": [
         ["Dominic Cooper", "Amanda Seyfried"],
         ["Pierce Brosnan", "Meryl Streep"]

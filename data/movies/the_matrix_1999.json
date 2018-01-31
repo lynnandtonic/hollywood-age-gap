@@ -1,6 +1,7 @@
 {
     "name": "The Matrix",
     "year": 1999,
+    "director": "Lana Wachowski, Lilly Wachowski",
     "relationships": [
         ["Keanu Reeves", "Carrie-Anne Moss"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Tootsie",
     "year": 1982,
+    "director": "Sydney Pollack",
     "relationships": [
         ["Dustin Hoffman", "Jessica Lange"]
     ]

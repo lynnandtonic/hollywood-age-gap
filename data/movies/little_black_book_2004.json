@@ -1,6 +1,7 @@
 {
     "name": "Little Black Book",
     "year": 2004,
+    "director": "Nick Hurran",
     "relationships": [
         ["Ron Livingston", "Brittany Murphy"]
     ]

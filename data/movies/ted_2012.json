@@ -1,6 +1,7 @@
 {
     "name": "Ted",
     "year": 2012,
+    "director": "Seth MacFarlane",
     "relationships": [
         ["Mark Wahlberg", "Mila Kunis"]
     ]

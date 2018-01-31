@@ -1,6 +1,7 @@
 {
     "name": "Love Story",
     "year": 1970,
+    "director": "Arthur Hiller",
     "relationships": [
         ["Ryan O'Neal", "Ali MacGraw"]
     ]

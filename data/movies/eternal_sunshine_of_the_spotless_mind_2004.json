@@ -1,6 +1,7 @@
 {
     "name": "Eternal Sunshine of the Spotless Mind",
     "year": 2004,
+    "director": "Michel Gondry",
     "relationships": [
         ["Jim Carrey", "Kate Winslet"],
         ["Mark Ruffalo", "Kirsten Dunst"],

@@ -1,6 +1,7 @@
 {
     "name": "Beverly Hills Ninja",
     "year": 1997,
+    "director": "Dennis Dugan",
     "relationships": [
         ["Chris Farley", "Nicollette Sheridan"]
     ]

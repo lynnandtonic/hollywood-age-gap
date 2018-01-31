@@ -1,6 +1,7 @@
 {
     "name": "Sleepy Hollow",
     "year": 1999,
+    "director": "Tim Burton",
     "relationships": [
         ["Johnny Depp", "Christina Ricci"]
     ]

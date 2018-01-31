@@ -1,6 +1,7 @@
 {
     "name": "The Holiday",
     "year": 2006,
+    "director": "Nancy Meyers",
     "relationships": [
         ["Jude Law", "Cameron Diaz"],
         ["Jack Black", "Kate Winslet"]

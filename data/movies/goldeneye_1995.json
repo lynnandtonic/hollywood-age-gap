@@ -1,6 +1,8 @@
 {
     "name": "GoldenEye",
     "year": 1995,
+    "director": "Martin Campbell",
+    "franchise": "James Bond",
     "relationships": [
         ["Pierce Brosnan", "Izabella Scorupco"]
     ]

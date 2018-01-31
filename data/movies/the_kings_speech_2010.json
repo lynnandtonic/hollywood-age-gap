@@ -1,6 +1,7 @@
 {
     "name": "The King's Speech",
     "year": 2010,
+    "director": "Tom Hooper",
     "relationships": [
         ["Colin Firth", "Helena Bonham Carter"]
     ]

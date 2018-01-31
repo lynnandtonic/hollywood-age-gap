@@ -1,6 +1,7 @@
 {
     "name": "Palo Alto",
     "year": 2013,
+    "director": "Gia Coppola",
     "relationships": [
         ["Nat Wolff", "Emma Roberts"],
         ["James Franco", "Emma Roberts"]

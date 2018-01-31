@@ -1,6 +1,7 @@
 {
     "name": "Deadpool",
     "year": 2016,
+    "director": "Tim Miller",
     "relationships": [
         ["Ryan Reynolds", "Morena Baccarin"]
     ]

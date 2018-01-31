@@ -1,0 +1,9 @@
+{
+    "name": "Bridget Jones's Baby",
+    "year": 2016,
+    "director": "Sharon Maguire",
+    "relationships": [
+        ["Colin Firth", "Renee Zellweger"],
+        ["Patrick Dempsey", "Renee Zellweger"]
+    ]
+}

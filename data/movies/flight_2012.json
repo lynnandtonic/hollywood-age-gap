@@ -1,6 +1,7 @@
 {
     "name": "Flight",
     "year": 2012,
+    "director": "Robert Zemeckis",
     "relationships": [
         ["Denzel Washington", "Kelly Reilly"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "My Life",
     "year": 1993,
+    "director": "Bruce Joel Rubin",
     "relationships": [
         ["Michael Keaton", "Nicole Kidman"]
     ]

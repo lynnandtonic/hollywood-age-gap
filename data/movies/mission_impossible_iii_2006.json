@@ -1,6 +1,7 @@
 {
     "name": "Mission: Impossible III",
     "year": 2006,
+    "director": "J.J. Abrams",
     "relationships": [
         ["Tom Cruise", "Michelle Monaghan"]
     ]

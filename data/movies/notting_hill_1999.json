@@ -1,6 +1,7 @@
 {
     "name": "Notting Hill",
     "year": 1999,
+    "director": "Roger Michell",
     "relationships": [
         ["Hugh Grant", "Julia Roberts"]
     ]

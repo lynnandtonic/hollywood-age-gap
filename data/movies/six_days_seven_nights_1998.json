@@ -1,6 +1,7 @@
 {
     "name": "Six Days, Seven Nights",
     "year": 1998,
+    "director": "Ivan Reitman",
     "relationships": [
         ["Harrison Ford", "Anne Heche"],
         ["David Schwimmer", "Anne Heche"]

@@ -1,6 +1,7 @@
 {
     "name": "Braveheart",
     "year": 1995,
+    "director": "Mel Gibson",
     "relationships": [
         ["Mel Gibson", "Sophie Marceau"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Pushing Tin",
     "year": 1999,
+    "director": "Mike Newell",
     "relationships": [
         ["John Cusack", "Angelina Jolie"],
         ["John Cusack", "Cate Blanchett"],

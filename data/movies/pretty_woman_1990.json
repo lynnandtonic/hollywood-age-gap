@@ -1,6 +1,7 @@
 {
     "name": "Pretty Woman",
     "year": 1990,
+    "director": "Garry Marshall",
     "relationships": [
         ["Richard Gere", "Julia Roberts"]
     ]

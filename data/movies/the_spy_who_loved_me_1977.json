@@ -1,6 +1,8 @@
 {
     "name": "The Spy Who Loved Me",
     "year": 1977,
+    "director": "Lewis Gilbert",
+    "franchise": "James Bond",
     "relationships": [
         ["Roger Moore", "Barbara Bach"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "The Rum Diary",
     "year": 2011,
+    "director": "Bruce Robinson",
     "relationships": [
         ["Aaron Eckhart", "Amber Heard"],
         ["Johnny Depp", "Amber Heard"]

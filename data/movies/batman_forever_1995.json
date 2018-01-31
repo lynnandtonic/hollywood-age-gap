@@ -1,6 +1,7 @@
 {
     "name": "Batman Forever",
     "year": 1995,
+    "director": "Joel Schumacher",
     "relationships": [
         ["Val Kilmer", "Nicole Kidman"]
     ]

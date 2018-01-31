@@ -1,6 +1,7 @@
 {
     "name": "Elizabethtown",
     "year": 2005,
+    "director": "Cameron Crowe",
     "relationships": [
         ["Orlando Bloom", "Kirsten Dunst"]
     ]

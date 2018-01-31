@@ -1,6 +1,7 @@
 {
     "name": "Rock of Ages",
     "year": 2012,
+    "director": "Adam Shankman",
     "relationships": [
         ["Tom Cruise", "Malin Akerman"],
         ["Alec Baldwin", "Russell Brand"]

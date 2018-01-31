@@ -1,6 +1,7 @@
 {
     "name": "Star Trek",
     "year": 2009,
+    "director": "J.J. Abrams",
     "relationships": [
         ["Zachary Quinto", "Zoe Saldana"]
     ]

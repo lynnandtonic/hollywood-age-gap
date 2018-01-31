@@ -1,6 +1,7 @@
 {
     "name": "American Gangster",
     "year": 2007,
+    "director": "Ridley Scott",
     "relationships": [
         ["Denzel Washington", "Lymari Nadal"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Forrest Gump",
     "year": 1994,
+    "director": "Robert Zemeckis",
     "relationships": [
         ["Tom Hanks", "Robin Wright"]
     ]

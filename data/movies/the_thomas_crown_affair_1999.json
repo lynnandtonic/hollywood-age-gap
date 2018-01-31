@@ -1,6 +1,7 @@
 {
     "name": "The Thomas Crown Affair",
     "year": 1999,
+    "director": "John McTiernan",
     "relationships": [
         ["Pierce Brosnan", "Rene Russo"]
     ]

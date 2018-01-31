@@ -1,0 +1,8 @@
+{
+    "name": "The Mummy",
+    "year": 2017,
+    "director": "Alex Kurtzman",
+    "relationships": [
+        ["Tom Cruise", "Annabelle Wallis"]
+    ]
+}

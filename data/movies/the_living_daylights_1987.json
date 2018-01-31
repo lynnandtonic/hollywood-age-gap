@@ -1,6 +1,8 @@
 {
     "name": "The Living Daylights",
     "year": 1987,
+    "director": "John Glen",
+    "franchise": "James Bond",
     "relationships": [
         ["Timothy Dalton", "Maryam d'Abo"],
         ["Jeroen Krabbe", "Maryam d'Abo"]

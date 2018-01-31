@@ -1,6 +1,7 @@
 {
     "name": "My Big Fat Greek Wedding",
     "year": 2002,
+    "director": "Joel Zwick",
     "relationships": [
         ["John Corbett", "Nia Vardalos"]
     ]

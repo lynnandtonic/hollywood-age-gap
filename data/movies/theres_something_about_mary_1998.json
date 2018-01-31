@@ -1,6 +1,7 @@
 {
     "name": "There's Something About Mary",
     "year": 1998,
+    "director": "Bobby Farrelly, Peter Farrelly",
     "relationships": [
         ["Ben Stiller", "Cameron Diaz"]
     ]

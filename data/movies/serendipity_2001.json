@@ -1,6 +1,7 @@
 {
     "name": "Serendipity",
     "year": 2001,
+    "director": "Peter Chelsom",
     "relationships": [
         ["John Cusack", "Kate Beckinsale"]
     ]

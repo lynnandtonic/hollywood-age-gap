@@ -1,6 +1,7 @@
 {
     "name": "The Legend of Tarzan",
     "year": 2016,
+    "director": "David Yates",
     "relationships": [
         ["Alexander Skarsgard", "Margot Robbie"]
     ]

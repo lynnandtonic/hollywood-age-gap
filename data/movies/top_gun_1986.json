@@ -1,6 +1,7 @@
 {
     "name": "Top Gun",
     "year": 1986,
+    "director": "Tony Scott",
     "relationships": [
         ["Tom Cruise", "Kelly McGillis"]
     ]

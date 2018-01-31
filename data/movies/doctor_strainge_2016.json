@@ -1,0 +1,9 @@
+{
+    "name": "Doctor Strange",
+    "year": 2016,
+    "director": "Scott Derrickson",
+    "franchise": "Marvel",
+    "relationships": [
+        ["Benedict Cumberbatch", "Rachel McAdams"]
+    ]
+}

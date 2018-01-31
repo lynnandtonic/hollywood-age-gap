@@ -1,6 +1,7 @@
 {
     "name": "Yogi Bear",
     "year": 2010,
+    "director": "Eric Brevig",
     "relationships": [
         ["Tom Cavanagh", "Anna Faris"]
     ]

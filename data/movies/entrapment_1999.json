@@ -1,7 +1,8 @@
 {
     "name": "Entrapment",
     "year": 1999,
+    "director": "Jon Amiel",
     "relationships": [
-        ["Sean Connery", "Catherina Zeta-Jones"]
+        ["Sean Connery", "Catherine Zeta-Jones"]
     ]
 }

@@ -1,6 +1,7 @@
 {
     "name": "Hollywood Ending",
     "year": 2002,
+    "director": "Woody Allen",
     "relationships": [
         ["Woody Allen", "Debra Messing"],
         ["Treat Williams", "Tea Leoni"]

@@ -1,6 +1,7 @@
 {
     "name": "Jury Duty",
     "year": 1995,
+    "director": "John Fortenberry",
     "relationships": [
         ["Pauly Shore", "Tia Carrere"]
     ]

@@ -1,6 +1,8 @@
 {
     "name": "Moonraker",
     "year": 1979,
+    "director": "Lewis Gilbert",
+    "franchise": "James Bond",
     "relationships": [
         ["Roger Moore", "Corinne Clery"],
         ["Roger Moore", "Emily Bolton"],

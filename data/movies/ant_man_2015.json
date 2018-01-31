@@ -1,6 +1,8 @@
 {
     "name": "Ant-Man",
     "year": 2015,
+    "director": "Peyton Reed",
+    "franchise": "Marvel",
     "relationships": [
         ["Paul Rudd", "Evangeline Lilly"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Liberal Arts",
     "year": 2012,
+    "director": "Josh Radnor",
     "relationships": [
         ["Josh Radnor", "Elizabeth Olsen"]
     ]

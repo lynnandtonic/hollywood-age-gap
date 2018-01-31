@@ -1,6 +1,7 @@
 {
     "name": "Garden State",
     "year": 2004,
+    "director": "Zach Braff",
     "relationships": [
         ["Zach Braff", "Natalie Portman"]
     ]
