@@ -1,0 +1,8 @@
+{
+    "name": "Raising Arizona",
+    "year": 1987,
+    "director": "Joel Coen",
+    "relationships": [
+        ["Nicolas Cage", "Holly Hunter"]
+    ]
+}
