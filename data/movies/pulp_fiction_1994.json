@@ -1,0 +1,8 @@
+{
+    "name": "Pulp Fiction",
+    "year": 1994,
+    "director": "Quentin Tarantino",
+    "relationships": [
+        ["Bruce Willis", "Maria de Medeiros"]
+    ]
+}
