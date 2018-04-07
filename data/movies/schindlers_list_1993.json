@@ -1,0 +1,9 @@
+{
+  "name": "Schindler's List",
+  "year": 1993,
+  "director": "Steven Spielberg",
+  "relationships": [
+    ["Liam Neeson", "Beatrice Macola"],
+    ["Ralph Fiennes", "Magdalena Komornicka"]
+  ]
+}

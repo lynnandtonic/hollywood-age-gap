@@ -1,0 +1,9 @@
+{
+  "name": "Guess Who's Coming to Dinner",
+  "year": 1967,
+  "director": "John Huston",
+  "relationships": [
+    ["Spencer Tracy", "Katharine Hepburn"],
+    ["Sidney Poitier", "Katharine Houghton"]
+  ]
+}
