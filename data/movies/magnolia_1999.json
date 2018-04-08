@@ -1,0 +1,9 @@
+{
+  "name": "Magnolia",
+  "year": 1999,
+  "director": "Paul Thomas Anderson",
+  "relationships": [
+    ["Jason Robards", "Julianne Moore"],
+    ["John C. Reilly", "Melora Walters"]
+  ]
+}
