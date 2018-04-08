@@ -1,0 +1,9 @@
+{
+  "name": "The Big Lebowski",
+  "year": 1998,
+  "director": "Joel Coen",
+  "relationships": [
+    ["Jeff Bridges", "Julianne Moore"],
+    ["David Huddleston", "Tara Reid"]
+  ]
+}
