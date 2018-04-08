@@ -1,0 +1,9 @@
+{
+  "name": "State of the Union",
+  "year": 1948,
+  "director": "Frank Capra",
+  "relationships": [
+    ["Spencer Tracy", "Katharine Hepburn"],
+    ["Spencer Tracy", "Angela Lansbury"]
+  ]
+}
