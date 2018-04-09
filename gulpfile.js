@@ -114,7 +114,7 @@ function buildJade() {
     .pipe(data(function() {
       return {utils: utils};
     }))
-    .pipe(assignToPug('./src/views/templates/index.jade', {
+    .pipe(assignToPug('./src/views/templates/index.pug', {
       varName: 'actorsAndMovies'
     }))
     .pipe(gulp.dest('./build'));
