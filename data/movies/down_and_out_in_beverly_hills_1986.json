@@ -1,0 +1,9 @@
+{
+  "name": "Down and Out in Beverly Hills",
+  "year": 1986,
+  "director": "Paul Mazursky",
+  "relationships": [
+    ["Richard Dreyfuss", "Elizabeth Peña"],
+    ["Richard Dreyfuss", "Bette Midler"]
+  ]
+}
