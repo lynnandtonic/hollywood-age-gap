@@ -2,5 +2,8 @@
   "name": "The Quiet American",
   "year": 2002,
   "director": "Phillip Noyce",
-  "relationships": [["Michael Caine", "Do Thi Hai Yen"]]
+  "relationships": [
+    ["Michael Caine", "Do Thi Hai Yen"],
+    ["Brendan Fraser", "Do Thi Hai Yen"]
+  ]
 }
