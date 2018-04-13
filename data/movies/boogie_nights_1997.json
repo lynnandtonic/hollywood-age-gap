@@ -1,0 +1,11 @@
+{
+  "name": "Boogie Nights",
+  "year": 1997,
+  "director": "Paul Thomas Anderson",
+  "relationships": [
+    ["Mark Wahlberg", "Julianne Moore"],
+    ["Don Cheadle", "Melora Walters"],
+    ["Mark Wahlberg", "Philip Seymour Hoffman"],
+    ["William H. Macy", "Nina Hartley"]
+  ]
+}
