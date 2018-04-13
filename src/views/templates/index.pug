@@ -35,15 +35,15 @@ html
             })(document);
 
     body#top
-        include ../../src/views/templates/SearchView.jade
+        include ../../src/views/templates/SearchView.pug
         ul.movie-list
             each movie in movies
                 li.card
-                    include ../../src/views/templates/MovieView.jade
+                    include ../../src/views/templates/MovieView.pug
             li.card.card-contribute
-                include ../../src/views/templates/ContributeItemView.jade
+                include ../../src/views/templates/ContributeItemView.pug
         .contribute.overlay.hidden
-            include ../../src/views/templates/ContributeView.jade
+            include ../../src/views/templates/ContributeView.pug
 
         // inline build/app.js
         script(src='app.js', inline)
