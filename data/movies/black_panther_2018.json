@@ -2,6 +2,7 @@
     "name": "Black Panther",
     "year": 2018,
     "director": "Ryan Coogler",
+    "franchise": "Marvel",
     "relationships": [
         ["Chadwick Boseman", "Lupita Nyong'o"],
         ["Daniel Kaluuya", "Danai Gurira"]
