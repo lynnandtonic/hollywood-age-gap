@@ -18,6 +18,7 @@ each actor in movie.relationship
   .actor(class=actor.gender)
     .age= actor.age
     .name= actor.name
+      span(class='sr-only')=', '+ actor.gender
 .social-container
   -
     var text = 'In “' + movie.name + '” the age gap b/w ' + movie.relationship[0].name + ' and ' + movie.relationship[1].name + ' is ' + movie.difference + ' ' + years + '.';
