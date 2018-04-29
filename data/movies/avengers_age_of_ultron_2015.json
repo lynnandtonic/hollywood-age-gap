@@ -2,6 +2,7 @@
     "name": "Avengers: Age of Ultron",
     "year": 2015,
     "director": "Joss Whedon",
+    "franchise": "Marvel",
     "relationships": [
         ["Jeremy Renner", "Linda Cardellini"],
         ["Mark Ruffalo", "Scarlett Johansson"]
