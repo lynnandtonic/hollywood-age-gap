@@ -1,0 +1,8 @@
+{
+    "name": "Rebecca",
+    "year": 1940,
+    "director": "Alfred Hitchcock",
+    "relationships": [
+        ["Laurence Olivier", "Jane Fontaine"]
+    ]
+}
