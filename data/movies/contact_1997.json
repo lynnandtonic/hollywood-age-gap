@@ -1,0 +1,8 @@
+{
+    "name": "Contact",
+    "year": 1997,
+    "director": "Robert Zemeckis",
+    "relationships": [
+        ["Matthew McConaughey", "Jodie Foster"]
+    ]
+}
