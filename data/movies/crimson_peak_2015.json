@@ -1,0 +1,9 @@
+{
+    "name": "Crimson Peak",
+    "year": 2015,
+    "director": "Guillermo del Toro",
+    "relationships": [
+        ["Tom Hiddleston", "Mia Wasikowska"],
+        ["Tom Hiddleston", "Jessica Chastain"]
+    ]
+}
