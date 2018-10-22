@@ -1,0 +1,9 @@
+{
+    "name": "A Simple Favor",
+    "year": 2018,
+    "director": "Paul Feig",
+    "relationships": [
+        ["Henry Golding", "Blake Lively"],
+        ["Henry Golding", "Anna Kendrick"]
+    ]
+}
