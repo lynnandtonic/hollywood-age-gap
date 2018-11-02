@@ -1,0 +1,8 @@
+{
+    "name": "A Star Is Born",
+    "year": 1937,
+    "director": "William A. Wellman",
+    "relationships": [
+        ["Frederic March", "Janet Gaynor"]
+    ]
+}
