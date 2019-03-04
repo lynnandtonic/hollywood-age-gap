@@ -90,7 +90,8 @@ function buildStatic() {
   return gulp.src([
       './assets/images/**/*',
       './assets/favicon.ico',
-      './assets/CNAME'
+      './assets/CNAME',
+      '_redirects'
     ])
     .pipe(imagemin())
     .pipe(gulp.dest('build/'));
