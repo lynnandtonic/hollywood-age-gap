@@ -3,6 +3,7 @@
     "year": 2004,
     "director": "Nick Cassavetes",
     "relationships": [
-        ["Ryan Gosling", "Rachel McAdams"]
+        ["Ryan Gosling", "Rachel McAdams"],
+        ["James Marsden", "Rachel McAdams"]
     ]
 }
