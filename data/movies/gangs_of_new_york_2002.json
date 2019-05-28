@@ -1,0 +1,8 @@
+{
+    "name": "Gangs of New York",
+    "year": 2002,
+    "director": "Martin Scorsese",
+    "relationships": [
+        ["Leonardo DiCaprio", "Cameron Diaz"]
+    ]
+}

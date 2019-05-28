@@ -1,0 +1,10 @@
+{
+    "name": "The Aviator",
+    "year": 2004,
+    "director": "Martin Scorsese",
+    "relationships": [
+        ["Leonardo DiCaprio", "Cate Blanchett"],
+        ["Leonardo DiCaprio", "Kate Beckinsale"],
+        ["Leonardo DiCaprio", "Kelli Garner"]
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Shutter Island",
+    "year": 2010,
+    "director": "Martin Scorsese",
+    "relationships": [
+        ["Leonardo DiCaprio", "Michelle Williams"]
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Romeo + Juliet",
+    "year": 1996,
+    "director": "Baz Luhrmann",
+    "relationships": [
+        ["Leonardo DiCaprio", "Claire Danes"]
+    ]
+}
