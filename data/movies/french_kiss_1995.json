@@ -1,6 +1,7 @@
 {
     "name": "French Kiss",
     "year": 1995,
+    "director": "Lawrence Kasdan",
     "relationships": [
         ["Kevin Kline", "Meg Ryan"],
         ["Timothy Hutton", "Meg Ryan"]

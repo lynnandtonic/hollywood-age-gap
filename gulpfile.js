@@ -6,7 +6,7 @@ var buffer = require('vinyl-buffer');
 var watchify = require('watchify');
 var browserify = require('browserify');
 var webserver = require('gulp-webserver');
-var jade = require('gulp-jade');
+var pug = require('gulp-pug');
 var data = require('gulp-data');
 var concatJson = require('gulp-concat-json');
 var mergeJson = require('gulp-merge-json');
@@ -90,7 +90,8 @@ function buildStatic() {
   return gulp.src([
       './assets/images/**/*',
       './assets/favicon.ico',
-      './assets/CNAME'
+      './assets/CNAME',
+      '_redirects'
     ])
     .pipe(imagemin())
     .pipe(gulp.dest('build/'));
@@ -109,12 +110,12 @@ function buildStylus() {
     .pipe(gulp.dest('build'));
 }
 
-function buildJade() {
+function buildPug() {
   return gulp.src('./build/data/index.json')
     .pipe(data(function() {
       return {utils: utils};
     }))
-    .pipe(assignToPug('./src/views/templates/index.jade', {
+    .pipe(assignToPug('./src/views/templates/index.pug', {
       varName: 'actorsAndMovies'
     }))
     .pipe(gulp.dest('./build'));
@@ -144,7 +145,7 @@ gulp.task('webserver', function() {
 
   var stylWatcher = gulp.watch('assets/**/*.styl', ['build-stylus']);
   var imageWatcher = gulp.watch('assets/**/*', ['build-static']);
-  var jadeWatcher = gulp.watch('src/views/templates/**/*.jade', ['build-templates']);
+  var pugWatcher = gulp.watch('src/views/templates/**/*.pug', ['build-templates']);
   var jsonWatcher = gulp.watch('data/**/*.json', ['build-templates', 'build-csv']);
 
   gulp.src('build')
@@ -178,7 +179,7 @@ gulp.task('build-static', function() {
 });
 
 gulp.task('build-templates', ['build-json'], function() {
-  return buildJade();
+  return buildPug();
 });
 
 gulp.task('build-stylus', ['build-static'], function() {

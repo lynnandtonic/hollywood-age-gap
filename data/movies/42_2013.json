@@ -1,6 +1,7 @@
 {
     "name": "42",
     "year": 2013,
+    "director": "Brian Helgeland",
     "relationships": [
         ["Chadwick Boseman", "Nicole Beharie"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Mona Lisa Smile",
     "year": 2003,
+    "director": "Mike Newell",
     "relationships": [
         ["John Slattery", "Julia Roberts"],
         ["Dominic West", "Julia Roberts"],

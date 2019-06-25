@@ -1,0 +1,9 @@
+{
+    "name": "Stella Dallas",
+    "year": 1937,
+    "director": "King Vidor",
+    "relationships": [
+        ["John Boles", "Barbara Stanwyck"],
+        ["Tim Holt", "Anne Shirley"]
+    ]
+}

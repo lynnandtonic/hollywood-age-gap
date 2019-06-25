@@ -1,6 +1,7 @@
 {
     "name": "Desperado",
     "year": 1995,
+    "director": "Robert Rodriguez",
     "relationships": [
         ["Antonio Banderas", "Salma Hayek"]
     ]

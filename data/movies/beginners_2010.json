@@ -1,6 +1,7 @@
 {
     "name": "Beginners",
     "year": 2010,
+    "director": "Mike Mills",
     "relationships": [
         ["Ewan McGregor", "Melanie Laurent"],
         ["Christopher Plummer", "Goran Visnjic"]

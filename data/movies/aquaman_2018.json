@@ -1,0 +1,9 @@
+{
+    "name": "Aquaman",
+    "year": 2018,
+    "director": "James Wan",
+    "relationships": [
+        ["Jason Momoa", "Amber Heard"],
+        ["Temuera Morrison", "Nicole Kidman"]
+    ]
+}

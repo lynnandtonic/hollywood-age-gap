@@ -1,6 +1,7 @@
 {
     "name": "Aloha",
     "year": 2015,
+    "director": "Cameron Crowe",
     "relationships": [
         ["Bradley Cooper", "Emma Stone"]
     ]

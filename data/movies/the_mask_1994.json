@@ -1,6 +1,7 @@
 {
     "name": "The Mask",
     "year": 1994,
+    "director": "Chuck Russell",
     "relationships": [
         ["Jim Carrey", "Cameron Diaz"]
     ]

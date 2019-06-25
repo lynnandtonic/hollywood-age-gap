@@ -1,6 +1,7 @@
 {
     "name": "Pitch Perfect",
     "year": 2012,
+    "director": "Jason Moore",
     "relationships": [
         ["Skylar Astin", "Anna Kendrick"]
     ]

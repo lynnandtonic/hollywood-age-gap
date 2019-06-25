@@ -1,0 +1,8 @@
+{
+    "name": "Ben-Hur",
+    "year": 2016,
+    "director": "Timur Bekmambetov",
+    "relationships": [
+        ["Jack Huston", "Nazanin Boniadi"]
+    ]
+}

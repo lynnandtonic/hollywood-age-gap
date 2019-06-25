@@ -1,0 +1,8 @@
+{
+    "name": "A Star Is Born",
+    "year": 1975,
+    "director": "Frank Pierson",
+    "relationships": [
+        ["Kris Kristofferson", "Barbra Streisand"]
+    ]
+}

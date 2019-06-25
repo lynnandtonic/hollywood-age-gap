@@ -1,6 +1,7 @@
 {
     "name": "Bruce Almighty",
     "year": 2003,
+    "director": "Tom Shadyac",
     "relationships": [
         ["Jim Carrey", "Jennifer Aniston"]
     ]

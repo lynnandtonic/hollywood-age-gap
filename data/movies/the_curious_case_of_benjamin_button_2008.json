@@ -1,6 +1,7 @@
 {
     "name": "The Curious Case of Benjamin Button",
     "year": 2008,
+    "director": "David Fincher",
     "relationships": [
         ["Brad Pitt", "Cate Blanchett"]
     ]

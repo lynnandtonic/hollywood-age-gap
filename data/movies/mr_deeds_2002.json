@@ -1,6 +1,7 @@
 {
     "name": "Mr. Deeds",
     "year": 2002,
+    "director": "Steven Brill",
     "relationships": [
         ["Adam Sandler", "Winona Ryder"]
     ]

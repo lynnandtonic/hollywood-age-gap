@@ -1,0 +1,10 @@
+{
+    "name": "Widows",
+    "year": 2018,
+    "director": "Steve McQueen",
+    "relationships": [
+        ["Liam Neeson", "Viola Davis"],
+        ["Manuel Garcia-Rulfo", "Michelle Rodriguez"],
+        ["Jon Bernthal", "Elizabeth Debicki"]
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Rear Window",
+    "year": 1954,
+    "director": "Alfred Hitchcock",
+    "relationships": [
+        ["James Stewart", "Grace Kelly"]
+    ]
+}

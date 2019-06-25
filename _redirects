@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://gracious-heisenberg-34f7ce.netlify.com/* https://hollywoodagegap.com/:splat 301!

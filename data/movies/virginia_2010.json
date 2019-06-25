@@ -1,6 +1,7 @@
 {
     "name": "Virginia",
     "year": 2010,
+    "director": "Dustin Lance Black",
     "relationships": [
         ["Ed Harris", "Jennifer Connelly"],
         ["Harrison Gilbertson", "Emma Roberts"]

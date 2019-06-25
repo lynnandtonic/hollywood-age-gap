@@ -1,6 +1,8 @@
 {
     "name": "From Russia with Love",
     "year": 1963,
+    "director": "Terence Young",
+    "franchise": "James Bond",
     "relationships": [
         ["Sean Connery", "Daniela Bianchi"],
         ["Sean Connery", "Aliza Gur"],

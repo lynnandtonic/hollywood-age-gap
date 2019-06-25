@@ -1,0 +1,8 @@
+{
+    "name": "Mr. Right",
+    "year": 2015,
+    "director": "Paco Cabezas",
+    "relationships": [
+        ["Sam Rockwell", "Anna Kendrick"]
+    ]
+}

@@ -1,6 +1,7 @@
 {
     "name": "Billy Madison",
     "year": 1995,
+    "director": "Tamra Davis",
     "relationships": [
         ["Adam Sandler", "Bridgette Wilson"]
     ]

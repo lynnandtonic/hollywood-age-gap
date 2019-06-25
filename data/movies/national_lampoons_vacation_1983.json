@@ -1,6 +1,7 @@
 {
     "name": "National Lampoon's Vacation",
     "year": 1983,
+    "director": "Harold Ramis",
     "relationships": [
         ["Chevy Chase", "Beverly D'Angelo"]
     ]

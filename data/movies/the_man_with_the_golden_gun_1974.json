@@ -1,6 +1,8 @@
 {
     "name": "The Man with the Golden Gun",
     "year": 1974,
+    "director": "Guy Hamilton",
+    "franchise": "James Bond",
     "relationships": [
         ["Roger Moore", "Maud Adams"],
         ["Roger Moore", "Britt Ekland"],

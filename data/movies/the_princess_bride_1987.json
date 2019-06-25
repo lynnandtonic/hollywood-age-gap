@@ -1,6 +1,7 @@
 {
     "name": "The Princess Bride",
     "year": 1987,
+    "director": "Rob Reiner",
     "relationships": [
         ["Cary Elwes", "Robin Wright"]
     ]

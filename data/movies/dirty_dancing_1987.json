@@ -1,6 +1,7 @@
 {
     "name": "Dirty Dancing",
     "year": 1987,
+    "director": "Emile Ardolino",
     "relationships": [
         ["Patrick Swayze", "Jennifer Grey"]
     ]

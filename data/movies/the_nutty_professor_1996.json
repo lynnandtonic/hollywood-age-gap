@@ -1,6 +1,7 @@
 {
     "name": "The Nutty Professor",
     "year": 1996,
+    "director": "Tom Shadyac",
     "relationships": [
         ["Eddie Murphy", "Jada Pinkett"]
     ]

@@ -1,6 +1,7 @@
 {
     "name": "Wedding Crashers",
     "year": 2005,
+    "director": "David Dobkin",
     "relationships": [
         ["Owen Wilson", "Rachel McAdams"],
         ["Vince Vaughn", "Isla Fisher"],

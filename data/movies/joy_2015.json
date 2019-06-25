@@ -1,6 +1,7 @@
 {
     "name": "Joy",
     "year": 2015,
+    "director": "David O. Russell",
     "relationships": [
         ["Edgar Ramirez", "Jennifer Lawrence"]
     ]

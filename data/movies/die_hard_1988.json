@@ -1,6 +1,7 @@
 {
     "name": "Die Hard",
     "year": 1988,
+    "director": "John McTiernan",
     "relationships": [
         ["Bruce Willis", "Bonnie Bedelia"]
     ]

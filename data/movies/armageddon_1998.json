@@ -1,6 +1,7 @@
 {
     "name": "Armageddon",
     "year": 1998,
+    "director": "Michael Bay",
     "relationships": [
         ["Ben Affleck", "Liv Tyler"]
     ]

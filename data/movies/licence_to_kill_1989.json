@@ -1,6 +1,8 @@
 {
     "name": "Licence to Kill",
     "year": 1989,
+    "director": "John Glen",
+    "franchise": "James Bond",
     "relationships": [
         ["Timothy Dalton", "Talisa Soto"],
         ["Timothy Dalton", "Carey Lowell"],

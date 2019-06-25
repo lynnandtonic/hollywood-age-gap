@@ -1,6 +1,7 @@
 {
     "name": "A Beautiful Mind",
     "year": 2001,
+    "director": "Ron Howard",
     "relationships": [
         ["Russell Crowe", "Jennifer Connelly"]
     ]

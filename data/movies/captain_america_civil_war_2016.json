@@ -1,6 +1,8 @@
 {
     "name": "Captain America: Civil War",
     "year": 2016,
+    "director": "Joe & Anthony Russo",
+    "franchise": "Marvel",
     "relationships": [
         ["Chris Evans", "Emily VanCamp"]
     ]

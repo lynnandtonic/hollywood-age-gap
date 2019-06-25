@@ -1,6 +1,8 @@
 {
     "name": "Octopussy",
     "year": 1983,
+    "director": "John Glen",
+    "franchise": "James Bond",
     "relationships": [
         ["Roger Moore", "Maud Adams"],
         ["Roger Moore", "Kristina Wayborn"]

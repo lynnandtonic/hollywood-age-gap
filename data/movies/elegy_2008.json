@@ -1,6 +1,7 @@
 {
     "name": "Elegy",
     "year": 2008,
+    "director": "Isabel Coixet",
     "relationships": [
         ["Ben Kingsley", "Penelope Cruz"],
         ["Ben Kingsley", "Patricia Clarkson"]

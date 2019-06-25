@@ -1,6 +1,7 @@
 {
     "name": "Raiders of the Lost Ark",
     "year": 1981,
+    "director": "Steven Spielberg",
     "relationships": [
         ["Harrison Ford", "Karen Allen"]
     ]

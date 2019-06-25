@@ -1,6 +1,7 @@
 {
     "name": "Analyze This",
     "year": 1999,
+    "director": "Harold Ramis",
     "relationships": [
         ["Billy Crystal", "Lisa Kudrow"]
     ]

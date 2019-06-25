@@ -1,6 +1,7 @@
 {
     "name": "That Thing You Do!",
     "year": 1996,
+    "director": "Tom Hanks",
     "relationships": [
         ["Tom Everett Scott", "Liv Tyler"],
         ["Johnathon Schaech", "Liv Tyler"]

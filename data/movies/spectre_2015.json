@@ -1,8 +1,10 @@
 {
     "name": "Spectre",
     "year": 2015,
+    "director": "Sam Mendes",
+    "franchise": "James Bond",
     "relationships": [
-        ["Daniel Craig", "Lea Seydoux"],
+        ["Daniel Craig", "Léa Seydoux"],
         ["Daniel Craig", "Monica Bellucci"]
     ]
 }

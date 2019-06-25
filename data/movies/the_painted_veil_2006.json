@@ -1,7 +1,8 @@
 {
-	"name": "The Painted Veil",
-	"year": 2006,
-	"relationships": [
-		["Edward Norton", "Naomi Watts"]
-	]
+  "name": "The Painted Veil",
+  "year": 2006,
+    "director": "John Curran",
+  "relationships": [
+    ["Edward Norton", "Naomi Watts"]
+  ]
 }

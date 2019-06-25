@@ -1,6 +1,7 @@
 {
     "name": "Stranger Than Fiction",
     "year": 2006,
+    "director": "Marc Forster",
     "relationships": [
         ["Will Ferrell", "Maggie Gyllenhaal"]
     ]

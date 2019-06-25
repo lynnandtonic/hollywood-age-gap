@@ -1,6 +1,7 @@
 {
     "name": "Regarding Henry",
     "year": 1991,
+    "director": "Mike Nichols",
     "relationships": [
         ["Harrison Ford", "Annette Bening"],
         ["Harrison Ford", "Rebecca Miller"]

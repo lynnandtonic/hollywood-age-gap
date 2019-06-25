@@ -52,12 +52,13 @@ Name the file with the actor's name, using underscores between words or in place
 
 #### Add movies
 
-Create the movie `.json` file in `data/movies` with the movie title, year released, and actor names:
+Create the movie `.json` file in `data/movies` with the movie title, year released, director, and actor names:
 
 ```
 {
     "name": "A Great Movie",
     "year": 2016,
+    "director": "Sally Jones",
     "relationships": [
         ["John Smith", "Jane Doe"]
     ]
@@ -89,11 +90,11 @@ Navigate to `localhost:3456`
 
 ### Editing templates
 
-Template content is written in Jade templates which produce the site HTML.
+Template content is written in Pug templates which produce the site HTML.
 
-The Jade files are located in `/src/views/templates`.
+The Pug files are located in `/src/views/templates`.
 
-Note that these aren't markdown files and the syntax and whitespace you use does matter quite a bit. See the [Jade documentation](http://jade-lang.com) to see how to use Jade.
+Note that these aren't markdown files and the syntax and whitespace you use does matter quite a bit. See the [Pug documentation](https://pugjs.org/api/getting-started.html) to see how to use Pug.
 
 ### Editing CSS
 

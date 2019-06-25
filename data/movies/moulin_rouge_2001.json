@@ -1,6 +1,7 @@
 {
     "name": "Moulin Rouge!",
     "year": 2001,
+    "director": "Baz Luhrmann",
     "relationships": [
         ["Ewan McGregor", "Nicole Kidman"]
     ]

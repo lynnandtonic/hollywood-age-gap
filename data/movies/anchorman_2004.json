@@ -1,6 +1,7 @@
 {
     "name": "Anchorman: The Legend of Ron Burgundy",
     "year": 2004,
+    "director": "Adam McKay",
     "relationships": [
         ["Will Ferrell", "Christina Applegate"]
     ]

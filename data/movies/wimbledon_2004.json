@@ -1,6 +1,7 @@
 {
     "name": "Wimbledon",
     "year": 2004,
+    "director": "Richard Loncraine",
     "relationships": [
         ["Paul Bettany", "Kirsten Dunst"]
     ]

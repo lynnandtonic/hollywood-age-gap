@@ -1,6 +1,7 @@
 {
     "name": "Chocolat",
     "year": 2000,
+    "director": "Lasse Hallström",
     "relationships": [
         ["Johnny Depp", "Juliette Binoche"]
     ]

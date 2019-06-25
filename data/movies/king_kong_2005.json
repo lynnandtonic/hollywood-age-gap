@@ -1,6 +1,7 @@
 {
     "name": "King Kong",
     "year": 2005,
+    "director": "Peter Jackson",
     "relationships": [
         ["Adrien Brody", "Naomi Watts"]
     ]

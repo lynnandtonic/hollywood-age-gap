@@ -1,6 +1,7 @@
 {
     "name": "Ace Ventura: Pet Detective",
     "year": 1994,
+    "director": "Tom Shadyac",
     "relationships": [
         ["Jim Carrey", "Courteney Cox"]
     ]

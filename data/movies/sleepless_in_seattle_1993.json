@@ -1,6 +1,7 @@
 {
     "name": "Sleepless in Seattle",
     "year": 1993,
+    "director": "Nora Ephron",
     "relationships": [
         ["Tom Hanks", "Meg Ryan"]
     ]

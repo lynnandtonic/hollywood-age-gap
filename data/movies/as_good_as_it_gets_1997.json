@@ -1,6 +1,7 @@
 {
     "name": "As Good as It Gets",
     "year": 1997,
+    "director": "James L. Brooks",
     "relationships": [
         ["Jack Nicholson", "Helen Hunt"]
     ]

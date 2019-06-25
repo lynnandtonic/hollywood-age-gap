@@ -1,6 +1,7 @@
 {
     "name": "Chasing Amy",
     "year": 1997,
+    "director": "Kevin Smith",
     "relationships": [
         ["Ben Affleck", "Joey Lauren Adams"]
     ]

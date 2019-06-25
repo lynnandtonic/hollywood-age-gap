@@ -1,6 +1,7 @@
 {
     "name": "Something New",
     "year": 2006,
+    "director": "Sanaa Hamri",
     "relationships": [
         ["Simon Baker", "Sanaa Lathan"]
     ]

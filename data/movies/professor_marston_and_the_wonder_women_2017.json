@@ -1,0 +1,10 @@
+{
+    "name": "Professor Marston and the Wonder Women",
+    "year": 2017,
+    "director": "Angela Robinson",
+    "relationships": [
+        ["Luke Evans", "Rebecca Hall"],
+        ["Luke Evans", "Bella Heathcote"],
+        ["Rebecca Hall", "Bella Heathcote"]
+    ]
+}

@@ -1,6 +1,7 @@
 {
     "name": "Casino",
     "year": 1995,
+    "director": "Martin Scorsese",
     "relationships": [
         ["Robert De Niro", "Sharon Stone"]
     ]

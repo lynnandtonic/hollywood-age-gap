@@ -1,6 +1,7 @@
 {
     "name": "Monster's Ball",
     "year": 2001,
+    "director": "Marc Forster",
     "relationships": [
         ["Billy Bob Thornton", "Halle Berry"]
     ]

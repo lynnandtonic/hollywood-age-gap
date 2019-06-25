@@ -1,6 +1,7 @@
 {
     "name": "X2: X-Men United",
     "year": 2003,
+    "director": "Bryan Singer",
     "relationships": [
         ["Shawn Ashmore", "Anna Paquin"]
     ]

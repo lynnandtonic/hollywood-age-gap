@@ -1,6 +1,7 @@
 {
     "name": "Elf",
     "year": 2003,
+    "director": "Jon Favreau",
     "relationships": [
         ["Will Ferrell", "Zooey Deschanel"]
     ]

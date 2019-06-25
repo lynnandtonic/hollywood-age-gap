@@ -1,7 +1,9 @@
 {
     "name": "The Girl with the Dragon Tattoo",
     "year": 2011,
+    "director": "David Fincher",
     "relationships": [
-        ["Daniel Craig", "Rooney Mara"]
+        ["Daniel Craig", "Rooney Mara"],
+        ["Daniel Craig", "Robin Wright"]
     ]
 }

@@ -1,6 +1,7 @@
 {
     "name": "The Oranges",
     "year": 2012,
+    "director": "Julian Farino",
     "relationships": [
         ["Hugh Laurie", "Leighton Meester"]
     ]

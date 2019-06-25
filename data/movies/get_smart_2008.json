@@ -1,6 +1,7 @@
 {
     "name": "Get Smart",
     "year": 2008,
+    "director": "Peter Segal",
     "relationships": [
         ["Steve Carell", "Anne Hathaway"]
     ]

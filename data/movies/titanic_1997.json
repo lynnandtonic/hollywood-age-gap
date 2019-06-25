@@ -1,6 +1,7 @@
 {
     "name": "Titanic",
     "year": 1997,
+    "director": "James Cameron",
     "relationships": [
         ["Leonardo DiCaprio", "Kate Winslet"]
     ]

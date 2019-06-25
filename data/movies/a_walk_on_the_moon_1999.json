@@ -1,6 +1,7 @@
 {
     "name": "A Walk on the Moon",
     "year": 1999,
+    "director": "Tony Goldwyn",
     "relationships": [
         ["Viggo Mortensen", "Diane Lane"],
         ["Liev Schreiber", "Diane Lane"]

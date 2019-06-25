@@ -1,0 +1,8 @@
+{
+    "name": "First Man",
+    "year": 2018,
+    "director": "Damien Chazelle",
+    "relationships": [
+        ["Ryan Gosling", "Claire Foy"]
+    ]
+}

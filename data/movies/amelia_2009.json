@@ -1,6 +1,7 @@
 {
     "name": "Amelia",
     "year": 2009,
+    "director": "Mira Nair",
     "relationships": [
         ["Richard Gere", "Hilary Swank"],
         ["Ewan McGregor", "Hilary Swank"]

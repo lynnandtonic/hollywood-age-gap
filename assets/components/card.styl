@@ -17,9 +17,19 @@
     font-size: 20px
     line-height: 1.2
 
-  .year
+  .meta
+    display: flex
+    justify-content: space-between
     margin-bottom: 20px
     font-size: 12px
+
+  .franchise
+    display: none
+
+  .director
+    opacity: .6
+
+  .year
     text-align: right
 
   .difference
@@ -99,6 +109,7 @@
         background: $marker-pink
       &.man
         background: $marker-blue
+        border-radius: 3px
 
   .actor
     margin-bottom: 6px
@@ -127,6 +138,7 @@
     &.man .age
       color: $marker-blue
       border-color: $marker-blue
+      border-radius: 3px
 
 .social-container
   position: absolute
