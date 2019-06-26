@@ -38,7 +38,7 @@ html
         include ../../src/views/templates/SearchView.pug
         ul.movie-list
             each movie in movies
-                li.card
+                li.card(class=movie.isHidden ? 'hidden' : '')
                     include ../../src/views/templates/MovieView.pug
             li.card.card-contribute
                 include ../../src/views/templates/ContributeItemView.pug
@@ -74,3 +74,15 @@ html
 
                 return t;
             }(document, "script", "twitter-wjs"));
+        script.
+            // Because this page is so large, browsers will load chunks of the list of cards at a time.
+            // Each chunk will cause a reflow/repaint which leads to a ton of jank.
+            // I'm forcing all elements after the first 60 to be hidden so that loading them doesn't cause jank.
+            // Instead, we eat the costly repaint once at the end of the document load in this script.
+            var raf = window.requestAnimationFrame || window.setTimeout;
+            raf(function() {
+                var hiddenElements = document.querySelectorAll('.card.hidden');
+                for( var i = 0; i < hiddenElements.length; i++) {
+                    hiddenElements[i].classList.remove('hidden');
+                }
+            });
