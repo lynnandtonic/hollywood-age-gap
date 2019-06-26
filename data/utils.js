@@ -48,6 +48,11 @@ function toSortedMovieList (json) {
       return 0;
     }
   });
+  var i = 0;
+  movies.forEach(function(movie) {
+    movie.isHidden = i >= 60;
+    i++;
+  });
   return movies;
 }
 
