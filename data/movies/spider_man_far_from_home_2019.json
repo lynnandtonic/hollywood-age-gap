@@ -1,0 +1,10 @@
+{
+    "name": "Spider-Man: Far From Home",
+    "year": 2019,
+    "director": "Jon Watts",
+    "franchise": "Marvel",
+    "relationships": [
+        ["Tom Holland", "Zendaya"],
+        ["Jon Favreau", "Marisa Tomei"]
+    ]
+}
