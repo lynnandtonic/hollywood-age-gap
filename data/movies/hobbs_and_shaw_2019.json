@@ -1,0 +1,9 @@
+{
+    "name": "Hobbs & Shaw",
+    "year": 2019,
+    "director": "David Leitch",
+    "relationships": [
+        ["Dwayne Johnson", "Vanessa Kirby"],
+        ["Jason Statham", "Eiza Gonzalez"]
+    ]
+}
