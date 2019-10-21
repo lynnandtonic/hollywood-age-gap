@@ -1,0 +1,10 @@
+{
+    "name": "Zombieland: Double Tap",
+    "year": 2019,
+    "director": "Ruben Fleischer",
+    "relationships": [
+        ["Jesse Eisenberg", "Emma Stone"],
+        ["Jesse Eisenberg", "Zoey Deutch"],
+        ["Woody Harrelson", "Rosario Dawson"]
+    ]
+}
