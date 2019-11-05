@@ -1,0 +1,8 @@
+{
+    "name": "The Lake House",
+    "year": 2006,
+    "director": "Alejandro Agresti",
+    "relationships": [
+        ["Keanu Reeves", "Sandra Bullock"]
+    ]
+}

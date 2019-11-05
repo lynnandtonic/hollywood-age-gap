@@ -1,0 +1,9 @@
+{
+    "name": "Feeling Minnesota",
+    "year": 1996,
+    "director": "Steven Baigelman",
+    "relationships": [
+        ["Keanu Reeves", "Cameron Diaz"],
+        ["Vincent D'Onofrio", "Cameron Diaz"]
+    ]
+}

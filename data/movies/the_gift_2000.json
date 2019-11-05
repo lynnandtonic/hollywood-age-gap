@@ -1,0 +1,10 @@
+{
+    "name": "The Gift",
+    "year": 2000,
+    "director": "Sam Raimi",
+    "relationships": [
+        ["Keanu Reeves", "Hilary Swank"],
+        ["Keanu Reeves", "Katie Holmes"],
+        ["Greg Kinnear", "Katie Holmes"]
+    ]
+}
