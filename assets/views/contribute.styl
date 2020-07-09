@@ -27,6 +27,29 @@
     & :last-child
       margin-bottom: 0
 
+.contribute-links a
+  display: block
+  margin-bottom: 10px
+  padding: 10px
+  padding-left: 45px
+  background: black(.2) no-repeat 10px center
+  background-size: auto 25px
+  text-align: left
+  text-decoration: none !important
+  
+  &:hover
+    background-color: black(.3)
+
+  &.twitter
+    background-image: url('/social-twitter.svg')
+    background-size: auto 20px
+  &.github
+    background-image: url('/social-github.svg')
+  &.coffee
+    margin-top: 10px
+    background-image: url('/coffee.svg')
+    background-position-x: 14px
+
 @media screen and (max-height: 470px)
 
   .contribute
