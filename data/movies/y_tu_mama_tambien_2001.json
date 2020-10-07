@@ -1,0 +1,9 @@
+{
+    "name": "Y tu mamá también",
+    "year": 2001,
+    "director": "Alfonso Cuarón",
+    "relationships": [
+        ["Gael García Bernal", "Maribel Verdú"],
+        ["Diego Luna", "Maribel Verdú"]
+    ]
+}
