@@ -46,7 +46,7 @@
     "gulp-webserver": "^0.9.1",
     "markdown": "^0.5.0",
     "natives": "^1.1.6",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "rimraf": "^2.5.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
