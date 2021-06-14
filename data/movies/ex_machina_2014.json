@@ -1,0 +1,9 @@
+{
+  "name": "Ex Machina",
+  "year": 2014,
+  "director": "Alex Garland",
+  "relationships": [
+    ["Oscar Isaac", "Sonoya Mizuno"],
+    ["Domhnall Gleeson", "Alicia Vikander"]
+  ]
+}
