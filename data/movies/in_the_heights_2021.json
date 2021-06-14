@@ -1,0 +1,10 @@
+{
+  "name": "In the Heights",
+  "year": 2021,
+  "director": "John M. Chu",
+  "relationships": [
+    ["Anthony Ramos", "Melissa Barrera"],
+    ["Corey Hawkins", "Leslie Grace"],
+    ["Daphne Rubin-Vega", "Stephanie Beatriz"]
+  ]
+}
