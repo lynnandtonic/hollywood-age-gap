@@ -9,26 +9,27 @@
   color: $brand-yellow
 
   nav
-    width: 120px
+    width: auto
     position: absolute
     top: 45px
     right: 20px
-    background: black(.3)
     text-align: right
 
     a
-      width: 100%
-      padding: 15px 20px
+      padding: 20px 15px 10px
       display: inline-block
-      font-size: 18px
+      background: black(.3)
+      font-size: 16px
       font-weight: $font-weight-medium
       font-family: $font-proxima-condensed
       text-align: center
       color: white
-
+      
+      &:not(:last-child)
+        border-right: 1px solid white(.5)
 
       &:hover
-        opacity: .7
+        background-color: black(.5)
 
   .hero-text
     margin: 30px auto 0
@@ -75,7 +76,6 @@
     height: 200px
 
     nav
-      width: 110px
       right: 6px
 
       a
