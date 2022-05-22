@@ -1,0 +1,8 @@
+{
+    "name": "Jurassic Park",
+    "year": 1993,
+    "director": "Steven Spielberg",
+    "relationships": [
+        ["Sam Neill", "Laura Dern"]
+    ]
+}
