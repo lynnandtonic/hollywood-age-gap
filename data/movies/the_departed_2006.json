@@ -4,6 +4,7 @@
     "director": "Martin Scorsese",
     "relationships": [
         ["Matt Damon", "Vera Farmiga"],
-        ["Leonardo DiCaprio", "Vera Farmiga"]
+        ["Leonardo DiCaprio", "Vera Farmiga"],
+        ["Jack Nicholson", "Kristen Dalton"]
     ]
 }
