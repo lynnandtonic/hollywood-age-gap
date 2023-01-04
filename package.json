@@ -34,7 +34,7 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^3.0.1",
     "gulp-inline-source": "^2.1.0",
-    "gulp-merge-json": "^0.6.0",
+    "gulp-merge-json": "^2.1.2",
     "gulp-minify-css": "^1.2.4",
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.2.2",
