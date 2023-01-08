@@ -1,0 +1,8 @@
+{
+    "name": "My Fair Lady",
+    "year": 1964,
+    "director": "George Cukor",
+    "relationships": [
+        ["Rex Harrison", "Audrey Hepburn"]
+    ]
+}

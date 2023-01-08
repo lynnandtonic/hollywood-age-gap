@@ -1,0 +1,8 @@
+{
+    "name": "High Noon",
+    "year": 1952,
+    "director": "Fred Zinnemann",
+    "relationships": [
+        ["Gary Cooper", "Grace Kelly"]
+    ]
+}
