@@ -1,0 +1,8 @@
+{
+    "name": "To Catch a Thief",
+    "year": 1955,
+    "director": "Alfred Hitchcock",
+    "relationships": [
+        ["Cary Grant", "Grace Kelly"]
+    ]
+}

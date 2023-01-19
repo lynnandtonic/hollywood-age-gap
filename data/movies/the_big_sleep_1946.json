@@ -1,0 +1,8 @@
+{
+    "name": "The Big Sleep",
+    "year": 1946,
+    "director": "Howard Hawks",
+    "relationships": [
+        ["Humphrey Bogart", "Lauren Bacall"]
+    ]
+}

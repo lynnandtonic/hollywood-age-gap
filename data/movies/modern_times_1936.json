@@ -1,0 +1,8 @@
+{
+    "name": "Modern Times",
+    "year": 1936,
+    "director": "Charlie Chaplin",
+    "relationships": [
+        ["Charlie Chaplin", "Paulette Goddard"]
+    ]
+}

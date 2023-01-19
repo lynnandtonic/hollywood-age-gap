@@ -1,0 +1,8 @@
+{
+    "name": "Rio Bravo",
+    "year": 1959,
+    "director": "Howard Hawks",
+    "relationships": [
+        ["John Wayne", "Angie Dickinson"]
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "The Great Dictator",
+    "year": 1940,
+    "director": "Charlie Chaplin",
+    "relationships": [
+        ["Charlie Chaplin", "Paulette Goddard"]
+    ]
+}
