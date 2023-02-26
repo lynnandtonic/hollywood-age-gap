@@ -1,0 +1,8 @@
+{
+    "name": "Baby Doll",
+    "year": 1956,
+    "director": "Elia Kazan",
+    "relationships": [
+        ["Karl Malden", "Carroll Baker"]
+    ]
+}
