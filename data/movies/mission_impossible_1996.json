@@ -1,0 +1,9 @@
+{
+  "name": "Mission: Impossible",
+  "year": 1996,
+  "director": "Brian De Palma",
+  "relationships": [
+    ["Jon Voight","Emmanuelle Béart"],
+    ["Tom Cruise","Emmanuelle Béart"]
+  ]
+}
