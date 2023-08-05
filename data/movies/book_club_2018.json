@@ -1,0 +1,11 @@
+{
+    "name": "Book Club",
+    "year": 2018,
+    "director": "Bill Holderman",
+    "relationships": [
+        ["Don Johnson", "Jane Fonda"],
+        ["Andy Garcia", "Diane Keaton"],
+        ["Craig T. Nelson", "Mary Steenburgen"],
+        ["Richard Dreyfuss", "Candice Bergen"]
+    ]
+}

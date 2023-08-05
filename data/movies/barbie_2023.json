@@ -1,0 +1,8 @@
+{
+    "name": "Barbie",
+    "year": 2023,
+    "director": "Greta Gerwig",
+    "relationships": [
+        ["Ryan Gosling", "Margot Robbie"]
+    ]
+}

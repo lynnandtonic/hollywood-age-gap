@@ -1,0 +1,9 @@
+{
+    "name": "Oppenheimer",
+    "year": 2023,
+    "director": "Christopher Nolan",
+    "relationships": [
+        ["Cillian Murphy", "Emily Blunt"],
+        ["Cillian Murphy", "Florence Pugh"]
+    ]
+}
