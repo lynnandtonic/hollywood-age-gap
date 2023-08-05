@@ -1,0 +1,8 @@
+{
+    "name": "Licorice Pizza",
+    "year": 2021,
+    "director": "Paul Thomas Anderson",
+    "relationships": [
+        ["Cooper Hoffman", "Alana Haim"]
+    ]
+}
