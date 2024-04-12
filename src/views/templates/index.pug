@@ -10,7 +10,6 @@ html
         meta(name='viewport', content='width=device-width, initial-scale=1')
         title Hollywood Age Gap
         link(rel='dns-prefetch', href='https://use.typekit.net')
-        link(rel='dns-prefetch', href='https://platform.twitter.com')
         link(rel='dns-prefetch', href='https://p.typekit.net')
         link(rel='dns-prefetch', href='https://ping.typekit.net')
         meta(name='description', content='The age difference in years between movie love interests.')
@@ -57,23 +56,6 @@ html
         script(data-goatcounter="https://hollywoodagegap.goatcounter.com/count"
         async src="//gc.zgo.at/count.js")
 
-        script.
-            window.twttr = (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0],
-                t = window.twttr || {};
-                if (d.getElementById(id)) return t;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "https://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-
-                t._e = [];
-                t.ready = function(f) {
-                t._e.push(f);
-            };
-
-                return t;
-            }(document, "script", "twitter-wjs"));
         script.
             // Because this page is so large, browsers will load chunks of the list of cards at a time.
             // Each chunk will cause a reflow/repaint which leads to a ton of jank.

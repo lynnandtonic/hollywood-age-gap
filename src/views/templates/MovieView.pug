@@ -19,12 +19,3 @@ each actor in movie.relationship
     .age= actor.age
     .name= actor.name
       span(class='sr-only')=', '+ actor.gender
-.social-container
-  -
-    var text = 'In “' + movie.name + '” the age gap b/w ' + movie.relationship[0].name + ' and ' + movie.relationship[1].name + ' is ' + movie.difference + ' ' + years + '.';
-    var url = 'https://hollywoodagegap.com';
-    if ((text + ' ' + url).length > 140) {
-      text = text.replace('between', 'b/w');
-    }
-    var tweetUrl = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + text;
-  a.twitter(href=tweetUrl) Share on Twitter

@@ -40,9 +40,15 @@
   &:hover
     background-color: black(.3)
 
-  &.twitter
-    background-image: url('/social-twitter.svg')
-    background-size: auto 20px
+  &.email
+    background-repeat: no-repeat
+    background-image: linear-gradient(to right, white 2px, transparent 2px),
+                      linear-gradient(to left, white 2px, transparent 2px),
+                      linear-gradient(to top, white 2px, transparent 2px),
+                      linear-gradient(to bottom, white 2px, transparent 2px),
+                      radial-gradient(circle at 50% -10%, transparent 9.5px, white 10px, white 12px, transparent 12.5px)
+    background-size: 25px 20px
+    background-position: 10px 50%
   &.github
     background-image: url('/social-github.svg')
   &.coffee
