@@ -1,0 +1,8 @@
+{
+    "name": "El Dorado",
+    "year": 1966,
+    "director": "Howard Hawks",
+    "relationships": [
+        ["John Wayne", "Charlene Holt"]
+    ]
+}
