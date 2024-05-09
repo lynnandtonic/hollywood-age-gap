@@ -1,0 +1,8 @@
+{
+    "name": "The Fog",
+    "year": 1980,
+    "director": "John Carpenter",
+    "relationships": [
+        ["Tom Atkins", "Jamie Lee Curtis"]
+    ]
+}
