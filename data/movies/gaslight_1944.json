@@ -1,0 +1,8 @@
+{
+    "name": "Gaslight",
+    "year": 1944,
+    "director": "George Cukor",
+    "relationships": [
+        ["Charles Boyer", "Ingrid Bergman"]
+    ]
+}

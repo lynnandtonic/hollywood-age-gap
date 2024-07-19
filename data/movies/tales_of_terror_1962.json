@@ -1,0 +1,9 @@
+{
+    "name": "Tales of Terror",
+    "year": 1962,
+    "director": "Roger Corman",
+    "relationships": [
+        ["Vincent Price", "Debra Paget"],
+        ["Vincent Price", "Joyce Jameson"]
+    ]
+}
