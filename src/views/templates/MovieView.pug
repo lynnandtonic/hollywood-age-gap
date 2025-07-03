@@ -1,5 +1,7 @@
 - var years = movie.difference === 1 ? 'year' : 'years';
-h2= movie.name
+- var tmdbUrl = 'https://www.themoviedb.org/search/movie?query=' + encodeURIComponent(movie.name);
+h2
+  a(href=tmdbUrl target="_blank" rel="noopener")= movie.name
 .meta
   .franchise= movie.franchise
   .director= movie.director
