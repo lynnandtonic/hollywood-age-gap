@@ -17,7 +17,7 @@ h2
   each actor in movie.relationship
     .marker(class=actor.gender, style='left: ' + Math.round((actor.age - 18) * 1.6129) + '%')
 each actor in movie.relationship
-  .actor(class=actor.gender, data-birthday=actor.birthDate, title='Birthday: ' + new Date(actor.birthDate).toLocaleDateString())
+  .actor(class=actor.gender, title='Birthday: ' + new Date(actor.birthDate).toDateString())
     .age= actor.age
     .name= actor.name
       span(class='sr-only')=', '+ actor.gender
