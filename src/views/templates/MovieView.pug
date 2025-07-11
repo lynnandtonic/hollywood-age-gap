@@ -16,9 +16,9 @@ h2
   span
   span
   each actor in movie.relationship
-    .marker(class=actor.gender, style='left: ' + Math.round((actor.age - 18) * 1.6129) + '%')
+    .marker(class=actor.gender, style='left: ' + Math.round((actor.age - 18) * 1.6129) + '%', title=actor.name + ', born: ' + new Date(actor.birthDate).toDateString())
 each actor in movie.relationship
-  .actor(class=actor.gender, data-birthday=new Date(actor.birthDate).toLocaleDateString(undefined, dateStringOptions), title='Birthday: ' + new Date(actor.birthDate).toDateString())
+  .actor(class=actor.gender, title='Birthday: ' + new Date(actor.birthDate).toDateString())
     .age= actor.age
     .name= actor.name
       span(class='sr-only')=', '+ actor.gender
