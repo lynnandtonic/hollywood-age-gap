@@ -1,0 +1,8 @@
+{
+    "name": "The Birds",
+    "year": 1963,
+    "director": "Alfred Hitchcock",
+    "relationships": [
+        ["Rod Taylor", "Tippi Hedren"]
+    ]
+}
