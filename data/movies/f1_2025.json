@@ -1,0 +1,8 @@
+{
+    "name": "F1",
+    "year": 2025,
+    "director": "Joseph Kosinski",
+    "relationships": [
+        ["Brad Pitt", "Kerry Condon"]
+    ]
+}

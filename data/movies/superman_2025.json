@@ -1,0 +1,8 @@
+{
+    "name": "Superman",
+    "year": 2025,
+    "director": "James Gunn",
+    "relationships": [
+        ["David Corenswet", "Rachel Brosnahan"]
+    ]
+}
