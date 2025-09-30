@@ -1,3 +1,4 @@
+- var dateStringOptions = { month: "long", day: "numeric", year: "numeric", };
 - var years = movie.difference === 1 ? 'year' : 'years';
 - var tmdbUrl = 'https://www.themoviedb.org/search/movie?query=' + encodeURIComponent(movie.name);
 h2
@@ -15,9 +16,9 @@ h2
   span
   span
   each actor in movie.relationship
-    .marker(class=actor.gender, style='left: ' + Math.round((actor.age - 18) * 1.6129) + '%')
+    .marker(class=actor.gender, style='left: ' + Math.round((actor.age - 18) * 1.6129) + '%', title=actor.name + ', born: ' + new Date(actor.birthDate).toDateString())
 each actor in movie.relationship
-  .actor(class=actor.gender)
+  .actor(class=actor.gender, title='Birthday: ' + new Date(actor.birthDate).toDateString())
     .age= actor.age
     .name= actor.name
       span(class='sr-only')=', '+ actor.gender
