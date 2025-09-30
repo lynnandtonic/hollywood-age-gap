@@ -1,0 +1,10 @@
+{
+  "name": "Splitsville",
+  "year": 2025,
+  "director": "Michael Angelo Covino",
+  "relationships": [
+    ["Kyle Marvin", "Adria Arjona"],
+    ["Kyle Marvin", "Dakota Johnson"],
+    ["Michael Angelo Covino", "Dakota Johnson"]
+  ]
+}
