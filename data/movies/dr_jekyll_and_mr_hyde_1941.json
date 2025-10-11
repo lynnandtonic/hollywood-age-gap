@@ -1,0 +1,9 @@
+{
+    "name": "Dr. Jekyll and Mr. Hyde",
+    "year": 1941,
+    "director": "Victor Fleming",
+    "relationships": [
+        ["Spencer Tracy", "Lana Turner"],
+        ["Spencer Tracy", "Ingrid Bergman"]
+    ]
+}
