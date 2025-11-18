@@ -1,25 +1,29 @@
 var gulp = require('gulp');
-var PluginError = require('plugin-error');
 var fancyLog = require('fancy-log');
+const fs = require('fs');
+const path = require('path');
+const glob = require('glob');
+const { optimize } = require('svgo');
+const postcssPlugin = require('postcss');
 var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var watchify = require('watchify');
 var browserify = require('browserify');
-var webserver = require('gulp-webserver');
+var browserSync = require('browser-sync').create();
 var pug = require('gulp-pug');
 var data = require('gulp-data');
 var mergeJson = require('gulp-merge-json');
-var stylus = require('gulp-stylus');
-var postcss = require('gulp-postcss');
+var stylus = require('stylus');
 var autoprefixer = require('autoprefixer');
 var cleanCSS = require('gulp-clean-css');
-var deploy = require('gulp-gh-pages');
+var ghpages = require('gh-pages');
 var uglify = require('gulp-uglify');
 var clean = require('gulp-clean');
 var inline = require('gulp-inline-source');
 var tap = require('gulp-tap');
 var rename = require('gulp-rename');
+var sharp = require('sharp');
 
 var utils = require('./data/utils.js');
 
@@ -62,7 +66,6 @@ function buildMoviesJson() {
       fileName: 'index.json',
       edit: function(parsedJson, file) {
         // Use filename (without extension) as key to avoid flattening
-        const path = require('path');
         const key = path.basename(file.path, path.extname(file.path));
         let obj = {};
         obj[key] = parsedJson;
@@ -113,31 +116,118 @@ function buildJson() {
     .pipe(gulp.dest('./build/data'));
 }
 
-async function buildStatic() {
-  const gulpImagemin = (await import('gulp-imagemin')).default;
+async function buildStaticSvg() {
+  const svgPattern = './assets/images/**/*.svg';
+
+  const files = glob.sync(svgPattern);
+
+  // Ensure build/images directory exists
+  if (!fs.existsSync('build/images')) {
+    fs.mkdirSync('build/images', { recursive: true });
+  }
+
+  for (const filePath of files) {
+    const outputPath = path.join('build/images', path.basename(filePath));
+    const svgContent = fs.readFileSync(filePath, 'utf8');
+
+    try {
+      const result = optimize(svgContent, {
+        path: filePath,
+        multipass: true
+      });
+      fs.writeFileSync(outputPath, result.data);
+      fancyLog('Optimized SVG:', path.basename(filePath));
+    } catch (err) {
+      fancyLog('SVGO Error processing', filePath, '-', err.message, '- copying original');
+      fs.copyFileSync(filePath, outputPath);
+    }
+  }
+}
+
+async function buildStaticImages() {
+  const imagePattern = './assets/images/**/*.{png,jpg,jpeg}';
+
+  const files = glob.sync(imagePattern);
+
+  // Ensure build/images directory exists
+  if (!fs.existsSync('build/images')) {
+    fs.mkdirSync('build/images', { recursive: true });
+  }
+
+  for (const filePath of files) {
+    const outputPath = path.join('build/images', path.basename(filePath));
+    const ext = path.extname(filePath).toLowerCase();
+
+    try {
+      if (ext === '.png') {
+        await sharp(filePath)
+          .png({ quality: 80, compressionLevel: 9 })
+          .toFile(outputPath);
+      } else if (ext === '.jpg' || ext === '.jpeg') {
+        await sharp(filePath)
+          .jpeg({ quality: 80 })
+          .toFile(outputPath);
+      }
+      fancyLog('Optimized:', path.basename(filePath));
+    } catch (err) {
+      fancyLog('Sharp Error processing', filePath, '-', err.message, '- copying original');
+      // If Sharp fails, just copy the original file
+      fs.copyFileSync(filePath, outputPath);
+    }
+  }
+}
+
+function buildStaticOther() {
   return gulp.src([
-      './assets/images/**/*',
       './assets/favicon.ico',
       './assets/CNAME',
       '_redirects'
     ])
-    .pipe(gulpImagemin())
     .pipe(gulp.dest('build/'));
 }
 
-function buildStylus() {
-  return gulp.src('./assets/app.styl')
-    .pipe(stylus({
-      url: { name: 'url', limit: false }
-    }))
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest('build'));
+const buildStatic = gulp.parallel(buildStaticSvg, buildStaticImages, buildStaticOther);
+
+function buildStylus(done) {
+  const inputFile = './assets/app.styl';
+  const outputFile = './build/app.css';
+
+  // Read the Stylus file
+  const stylusContent = fs.readFileSync(inputFile, 'utf8');
+
+  // Compile Stylus to CSS
+  stylus(stylusContent)
+    .set('filename', inputFile)
+    .set('paths', [path.dirname(inputFile)])
+    .define('url', stylus.url({ limit: false }))
+    .render((err, css) => {
+      if (err) {
+        fancyLog('Stylus Error', err);
+        done(err);
+        return;
+      }
+
+      // Process with PostCSS (autoprefixer)
+      postcssPlugin([autoprefixer()])
+        .process(css, { from: undefined })
+        .then(result => {
+          // Write to build directory
+          fs.writeFileSync(outputFile, result.css);
+          fancyLog('Stylus compiled successfully');
+
+          // Now minify with cleanCSS
+          return gulp.src(outputFile)
+            .pipe(cleanCSS())
+            .pipe(gulp.dest('build'))
+            .on('end', done);
+        })
+        .catch(err => {
+          fancyLog('PostCSS Error', err);
+          done(err);
+        });
+    });
 }
 
-const fs = require('fs');
 function buildPug() {
   return gulp.src('./src/views/templates/index.pug')
     .pipe(data(function() {
@@ -153,7 +243,7 @@ function buildCsv() {
     .pipe(tap(function(file) {
       var movieList = JSON.parse(file.contents.toString());
       movieList = utils.toSortedMovieList(movieList);
-      file.contents = new Buffer(utils.movieListToCsv(movieList), 'utf8');
+      file.contents = Buffer.from(utils.movieListToCsv(movieList), 'utf8');
     }))
     .pipe(rename({
       basename: 'movies',
@@ -168,21 +258,23 @@ function inlineSource() {
     .pipe(gulp.dest('./build'));
 }
 
-gulp.task('webserver', function() {
+gulp.task('webserver', function(done) {
+  browserSync.init({
+    server: {
+      baseDir: './build'
+    },
+    port: 3456,
+    host: '0.0.0.0',
+    open: false,
+    notify: false
+  });
 
-  var stylWatcher = gulp.watch('assets/**/*.styl', gulp.series('build-stylus'));
-  var imageWatcher = gulp.watch('assets/**/*', gulp.series('build-static'));
-  var pugWatcher = gulp.watch('src/views/templates/**/*.pug', gulp.series('build-templates'));
-  var jsonWatcher = gulp.watch('data/**/*.json', gulp.series('build-templates', 'build-csv'));
+  gulp.watch('assets/**/*.styl', gulp.series('build-stylus')).on('change', browserSync.reload);
+  gulp.watch('assets/**/*', gulp.series('build-static')).on('change', browserSync.reload);
+  gulp.watch('src/views/templates/**/*.pug', gulp.series('build-templates')).on('change', browserSync.reload);
+  gulp.watch('data/**/*.json', gulp.series('build-templates', 'build-csv')).on('change', browserSync.reload);
 
-  gulp.src('build')
-    .pipe(webserver({
-      port: 3456,
-      livereload: false,
-      host: '0.0.0.0',
-      directoryListing: false,
-      open: false
-    }));
+  done();
 });
 
 gulp.task('clean:json', function() {
@@ -200,10 +292,7 @@ gulp.task('build-movies-json', function() {
 gulp.task('build-json', gulp.series('build-movies-json', 'build-actors-json', 'clean:json', buildJson));
 gulp.task('build-js', gulp.series('build-json', bundle)); // so you can run `gulp js` to build the file
 
-gulp.task('build-static', function() {
-  // Support async buildStatic for ESM gulp-imagemin
-  return buildStatic();
-});
+gulp.task('build-static', buildStatic);
 
 gulp.task('build-templates', gulp.series('build-json', buildPug));
 
@@ -220,15 +309,23 @@ gulp.task('do-build', gulp.series('build-stylus', 'build-static', 'build-json', 
 
 gulp.task('build', gulp.series('do-build', inlineSource));
 
-gulp.task('deploy', function () {
-  return gulp.src([
-      "./build/**/*",
-      "!./build/app.js",
-      "!./build/app.css",
-      "!./build/data/**/*",
-      "!./build/*.svg"
-    ])
-    .pipe(deploy({
-      cacheDir: './tmp'
-    }));
+gulp.task('deploy', function (done) {
+  ghpages.publish('build', {
+    src: [
+      '**/*',
+      '!app.js',
+      '!app.css',
+      '!data/**/*',
+      '!*.svg'
+    ],
+    dotfiles: true
+  }, function(err) {
+    if (err) {
+      fancyLog('Deploy Error', err);
+      done(err);
+    } else {
+      fancyLog('Successfully deployed to GitHub Pages');
+      done();
+    }
+  });
 });
