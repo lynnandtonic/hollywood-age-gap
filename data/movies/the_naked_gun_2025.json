@@ -1,0 +1,8 @@
+{
+  "name": "The Naked Gun",
+  "year": 2024,
+  "director": "Akiva Schaffer",
+  "relationships": [
+    ["Liam Neeson", "Pamela Anderson"]
+  ]
+}
