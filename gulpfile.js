@@ -1,37 +1,40 @@
 var gulp = require('gulp');
-var gutil = require('gulp-util');
+var fancyLog = require('fancy-log');
+const fs = require('fs');
+const path = require('path');
+const glob = require('glob');
+const { optimize } = require('svgo');
+const postcssPlugin = require('postcss');
 var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var watchify = require('watchify');
 var browserify = require('browserify');
-var webserver = require('gulp-webserver');
+var browserSync = require('browser-sync').create();
 var pug = require('gulp-pug');
 var data = require('gulp-data');
-var concatJson = require('gulp-concat-json');
 var mergeJson = require('gulp-merge-json');
-var stylus = require('gulp-stylus');
-var autoprefixer = require('gulp-autoprefixer');
-var minifyCSS = require('gulp-minify-css');
-var deploy = require('gulp-gh-pages');
+var stylus = require('stylus');
+var autoprefixer = require('autoprefixer');
+var cleanCSS = require('gulp-clean-css');
+var ghpages = require('gh-pages');
 var uglify = require('gulp-uglify');
-var assignToPug = require('gulp-assign-to-pug');
 var clean = require('gulp-clean');
-var imagemin = require('gulp-imagemin');
 var inline = require('gulp-inline-source');
 var tap = require('gulp-tap');
 var rename = require('gulp-rename');
+var sharp = require('sharp');
 
 var utils = require('./data/utils.js');
 
-gulp.task('build-js', ['build-json'], bundle); // so you can run `gulp js` to build the file
+
 
 function bundle() {
   var bundler = watchify(browserify('./src/index.js', watchify.args));
   bundler.on('update', bundle); // on any dep update, runs the bundler
   return bundler.bundle()
     // log errors if they happen
-    .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+    .on('error', function(err) { fancyLog('Browserify Error', err); this.emit('end'); })
     .pipe(source('app.js'))
     // optional, remove if you dont want sourcemaps
     .pipe(buffer())
@@ -44,7 +47,7 @@ function bundleProd() {
   var bundler = browserify('./src/index.js');
   return bundler.bundle()
     // log errors if they happen
-    .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+    .on('error', function(err) { fancyLog('Browserify Error', err); this.emit('end'); })
     .pipe(source('app.js'))
     .pipe(buffer())
     .pipe(uglify())
@@ -52,72 +55,186 @@ function bundleProd() {
 }
 
 function cleanJson() {
-  return gulp.src('build/data/index.json', {read: false})
+  return gulp.src('build/data/index.json', {read: false, allowEmpty: true})
     .pipe(clean());
 }
 
+
 function buildMoviesJson() {
   return gulp.src('./data/movies/**/*.json')
-    .pipe(concatJson('index.json'))
+    .pipe(mergeJson({
+      fileName: 'index.json',
+      edit: function(parsedJson, file) {
+        // Use filename (without extension) as key to avoid flattening
+        const key = path.basename(file.path, path.extname(file.path));
+        let obj = {};
+        obj[key] = parsedJson;
+        return obj;
+      },
+      transform: function(merged) {
+        // merged is an object with keys as filenames, values as movie objects
+        return Object.values(merged);
+      }
+    }))
     .pipe(gulp.dest('./build/data/movies'));
 }
 
 function buildActorsJson() {
   return gulp.src('./data/actors/**/*.json')
-    .pipe(mergeJson('index.json', function (parsedJson, file) {
-      var output = {};
-      output[parsedJson.name] = parsedJson;
-      return output;
+    .pipe(mergeJson({
+      fileName: 'index.json',
+      edit: function (parsedJson, file) {
+        var output = {};
+        output[parsedJson.name] = parsedJson;
+        return output;
+      }
     }))
     .pipe(gulp.dest('./build/data/actors'));
 }
 
 function buildJson() {
-  return gulp.src('./build/data/**/*.json')
-    .pipe(mergeJson('index.json', function (parsedJson, file) {
-      var output = {};
-      if (parsedJson.push) {
-        output.movies = parsedJson;
-      } else {
-        output.actors = parsedJson;
+  return gulp.src(['./build/data/actors/index.json', './build/data/movies/index.json'])
+    .pipe(mergeJson({
+      fileName: 'index.json',
+      edit: function (parsedJson, file) {
+        // actors file: { ActorName: { ... } }, movies file: [ { ... }, ... ]
+        if (Array.isArray(parsedJson)) {
+          return { movies: parsedJson };
+        } else {
+          return { actors: parsedJson };
+        }
+      },
+      transform: function (merged) {
+        // flatten to { actors: {...}, movies: [...] }
+        if (Array.isArray(merged)) {
+          return Object.assign({}, ...merged);
+        } else {
+          return merged;
+        }
       }
-      return output;
     }))
     .pipe(gulp.dest('./build/data'));
 }
 
-function buildStatic() {
+async function buildStaticSvg() {
+  const svgPattern = './assets/images/**/*.svg';
+
+  const files = glob.sync(svgPattern);
+
+  // Ensure build/images directory exists
+  if (!fs.existsSync('build/images')) {
+    fs.mkdirSync('build/images', { recursive: true });
+  }
+
+  for (const filePath of files) {
+    const outputPath = path.join('build/images', path.basename(filePath));
+    const svgContent = fs.readFileSync(filePath, 'utf8');
+
+    try {
+      const result = optimize(svgContent, {
+        path: filePath,
+        multipass: true
+      });
+      fs.writeFileSync(outputPath, result.data);
+      fancyLog('Optimized SVG:', path.basename(filePath));
+    } catch (err) {
+      fancyLog('SVGO Error processing', filePath, '-', err.message, '- copying original');
+      fs.copyFileSync(filePath, outputPath);
+    }
+  }
+}
+
+async function buildStaticImages() {
+  const imagePattern = './assets/images/**/*.{png,jpg,jpeg}';
+
+  const files = glob.sync(imagePattern);
+
+  // Ensure build/images directory exists
+  if (!fs.existsSync('build/images')) {
+    fs.mkdirSync('build/images', { recursive: true });
+  }
+
+  for (const filePath of files) {
+    const outputPath = path.join('build/images', path.basename(filePath));
+    const ext = path.extname(filePath).toLowerCase();
+
+    try {
+      if (ext === '.png') {
+        await sharp(filePath)
+          .png({ quality: 80, compressionLevel: 9 })
+          .toFile(outputPath);
+      } else if (ext === '.jpg' || ext === '.jpeg') {
+        await sharp(filePath)
+          .jpeg({ quality: 80 })
+          .toFile(outputPath);
+      }
+      fancyLog('Optimized:', path.basename(filePath));
+    } catch (err) {
+      fancyLog('Sharp Error processing', filePath, '-', err.message, '- copying original');
+      // If Sharp fails, just copy the original file
+      fs.copyFileSync(filePath, outputPath);
+    }
+  }
+}
+
+function buildStaticOther() {
   return gulp.src([
-      './assets/images/**/*',
       './assets/favicon.ico',
       './assets/CNAME',
       '_redirects'
     ])
-    .pipe(imagemin())
     .pipe(gulp.dest('build/'));
 }
 
-function buildStylus() {
-  return gulp.src('./assets/app.styl')
-    .pipe(stylus({
-      url: { name: 'url', limit: false }
-    }))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest('build'));
+const buildStatic = gulp.parallel(buildStaticSvg, buildStaticImages, buildStaticOther);
+
+function buildStylus(done) {
+  const inputFile = './assets/app.styl';
+  const outputFile = './build/app.css';
+
+  // Read the Stylus file
+  const stylusContent = fs.readFileSync(inputFile, 'utf8');
+
+  // Compile Stylus to CSS
+  stylus(stylusContent)
+    .set('filename', inputFile)
+    .set('paths', [path.dirname(inputFile)])
+    .define('url', stylus.url({ limit: false }))
+    .render((err, css) => {
+      if (err) {
+        fancyLog('Stylus Error', err);
+        done(err);
+        return;
+      }
+
+      // Process with PostCSS (autoprefixer)
+      postcssPlugin([autoprefixer()])
+        .process(css, { from: undefined })
+        .then(result => {
+          // Write to build directory
+          fs.writeFileSync(outputFile, result.css);
+          fancyLog('Stylus compiled successfully');
+
+          // Now minify with cleanCSS
+          return gulp.src(outputFile)
+            .pipe(cleanCSS())
+            .pipe(gulp.dest('build'))
+            .on('end', done);
+        })
+        .catch(err => {
+          fancyLog('PostCSS Error', err);
+          done(err);
+        });
+    });
 }
 
 function buildPug() {
-  return gulp.src('./build/data/index.json')
+  return gulp.src('./src/views/templates/index.pug')
     .pipe(data(function() {
-      return {utils: utils};
+      const json = JSON.parse(fs.readFileSync('./build/data/index.json', 'utf8'));
+      return { actorsAndMovies: json, utils: utils };
     }))
-    .pipe(assignToPug('./src/views/templates/index.pug', {
-      varName: 'actorsAndMovies'
-    }))
+    .pipe(pug())
     .pipe(gulp.dest('./build'));
 }
 
@@ -126,7 +243,7 @@ function buildCsv() {
     .pipe(tap(function(file) {
       var movieList = JSON.parse(file.contents.toString());
       movieList = utils.toSortedMovieList(movieList);
-      file.contents = new Buffer(utils.movieListToCsv(movieList), 'utf8');
+      file.contents = Buffer.from(utils.movieListToCsv(movieList), 'utf8');
     }))
     .pipe(rename({
       basename: 'movies',
@@ -141,21 +258,23 @@ function inlineSource() {
     .pipe(gulp.dest('./build'));
 }
 
-gulp.task('webserver', function() {
+gulp.task('webserver', function(done) {
+  browserSync.init({
+    server: {
+      baseDir: './build'
+    },
+    port: 3456,
+    host: '0.0.0.0',
+    open: false,
+    notify: false
+  });
 
-  var stylWatcher = gulp.watch('assets/**/*.styl', ['build-stylus']);
-  var imageWatcher = gulp.watch('assets/**/*', ['build-static']);
-  var pugWatcher = gulp.watch('src/views/templates/**/*.pug', ['build-templates']);
-  var jsonWatcher = gulp.watch('data/**/*.json', ['build-templates', 'build-csv']);
+  gulp.watch('assets/**/*.styl', gulp.series('build-stylus')).on('change', browserSync.reload);
+  gulp.watch('assets/**/*', gulp.series('build-static')).on('change', browserSync.reload);
+  gulp.watch('src/views/templates/**/*.pug', gulp.series('build-templates')).on('change', browserSync.reload);
+  gulp.watch('data/**/*.json', gulp.series('build-templates', 'build-csv')).on('change', browserSync.reload);
 
-  gulp.src('build')
-    .pipe(webserver({
-      port: 3456,
-      livereload: false,
-      host: '0.0.0.0',
-      directoryListing: false,
-      open: false
-    }));
+  done();
 });
 
 gulp.task('clean:json', function() {
@@ -170,49 +289,43 @@ gulp.task('build-movies-json', function() {
   return buildMoviesJson();
 });
 
-gulp.task('build-json', ['build-movies-json', 'build-actors-json', 'clean:json'], function() {
-  return buildJson();
-});
+gulp.task('build-json', gulp.series('build-movies-json', 'build-actors-json', 'clean:json', buildJson));
+gulp.task('build-js', gulp.series('build-json', bundle)); // so you can run `gulp js` to build the file
 
-gulp.task('build-static', function() {
-  return buildStatic();
-});
+gulp.task('build-static', buildStatic);
 
-gulp.task('build-templates', ['build-json'], function() {
-  return buildPug();
-});
+gulp.task('build-templates', gulp.series('build-json', buildPug));
 
-gulp.task('build-stylus', ['build-static'], function() {
-  return buildStylus();
-});
+gulp.task('build-stylus', gulp.series('build-static', buildStylus));
 
-gulp.task('build-csv', ['build-json'], function() {
-  return buildCsv();
-});
+gulp.task('build-csv', gulp.series('build-json', buildCsv));
 
-gulp.task('default', ['build-stylus', 'build-js', 'build-templates', 'build-csv', 'webserver']);
+gulp.task('default', gulp.series('build-stylus', 'build-js', 'build-templates', 'build-csv', 'webserver'));
 
-gulp.task('build-dev', ['build-stylus', 'build-templates'], function() {
-  bundle();
-});
+gulp.task('build-dev', gulp.series('build-stylus', 'build-templates', bundle));
 
-gulp.task('build', ['do-build'], function() {
-  inlineSource();
-});
 
-gulp.task('do-build', ['build-stylus', 'build-static', 'build-json', 'build-templates', 'build-csv'], function() {
-  return bundleProd();
-});
+gulp.task('do-build', gulp.series('build-stylus', 'build-static', 'build-json', 'build-templates', 'build-csv', bundleProd));
 
-gulp.task('deploy', function () {
-  return gulp.src([
-      "./build/**/*",
-      "!./build/app.js",
-      "!./build/app.css",
-      "!./build/data/**/*",
-      "!./build/*.svg"
-    ])
-    .pipe(deploy({
-      cacheDir: './tmp'
-    }));
+gulp.task('build', gulp.series('do-build', inlineSource));
+
+gulp.task('deploy', function (done) {
+  ghpages.publish('build', {
+    src: [
+      '**/*',
+      '!app.js',
+      '!app.css',
+      '!data/**/*',
+      '!*.svg'
+    ],
+    dotfiles: true
+  }, function(err) {
+    if (err) {
+      fancyLog('Deploy Error', err);
+      done(err);
+    } else {
+      fancyLog('Successfully deployed to GitHub Pages');
+      done();
+    }
+  });
 });
