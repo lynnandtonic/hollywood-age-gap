@@ -2,54 +2,45 @@ var search = document.getElementById('search');
 var cards = document.getElementsByClassName('card');
 var searchableCardData = [];
 
+function normalize (str) {
+  return str
+    .toLowerCase()
+    .replace(/[‘’‚‛ʼ]/g, "'")  // U+2018 U+2019 U+201A U+201B U+02BC
+    .replace(/[“”„‟]/g, '"')   // U+201C U+201D U+201E U+201F
+    .replace(/\band\b/g, '&');
+}
+
 for (var i = 0; i < cards.length; i++) {
   var card = cards[i];
   var titleEl = card.querySelector('h2');
   if (!titleEl) {
     continue;
   }
-  var searchContext = {
-    actorNames: [],
-    card: card,
-    title: titleEl.innerHTML,
-    year: card.querySelector('.year').innerHTML,
-    director: card.querySelector('.director').innerHTML,
-    franchise: card.querySelector('.franchise').innerHTML
-  };
+  var fields = [
+    titleEl.textContent,
+    card.querySelector('.year').textContent,
+    card.querySelector('.director').textContent,
+    card.querySelector('.franchise').textContent
+  ];
   var actors = card.querySelectorAll('.actor .name');
   for (var j = 0; j < actors.length; j++) {
-    searchContext.actorNames.push(actors.item(j).innerHTML);
+    fields.push(actors.item(j).textContent);
   }
-  searchableCardData.push(searchContext);
+  searchableCardData.push({
+    card: card,
+    searchText: normalize(fields.join('\n'))
+  });
 }
 
 var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.oRequestAnimationFrame || window.setTimeout;
 function doSearch (el) {
-  var searchTerm = new RegExp(el.target.value, 'i');
+  var searchTerm = normalize(el.target.value);
   var show = [];
   var hide = [];
 
   for (var i = 0; i < searchableCardData.length; i++) {
     var data = searchableCardData[i];
-    var hasMatch = false;
-    if (searchTerm.test(data.title)) {
-      hasMatch = true;
-    } else if (searchTerm.test(data.year)) {
-      hasMatch = true;
-    } else if (searchTerm.test(data.director)) {
-      hasMatch = true;
-    } else if (searchTerm.test(data.franchise)) {
-      hasMatch = true;
-    } else {
-      for (var j = 0; j < data.actorNames.length; j++) {
-        if (searchTerm.test(data.actorNames[j])) {
-          hasMatch = true;
-          j = data.actorNames.length;
-        }
-      }
-    }
-
-    if (hasMatch) {
+    if (data.searchText.indexOf(searchTerm) !== -1) {
       show.push(data.card);
     } else {
       hide.push(data.card);
