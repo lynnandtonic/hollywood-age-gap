@@ -1,6 +1,6 @@
--
-    actorsAndMovies = JSON.parse(actorsAndMovies);
-    var movies = utils.toSortedMovieList(actorsAndMovies);
+
+
+- var movies = utils.toSortedMovieList(actorsAndMovies);
 
 doctype html
 html
@@ -40,15 +40,15 @@ html
             })(document);
 
     body#top
-        include ../../src/views/templates/SearchView.pug
+        include SearchView.pug
         ul.movie-list
             each movie in movies
                 li.card(class=movie.isHidden ? 'hidden' : '')
-                    include ../../src/views/templates/MovieView.pug
+                    include MovieView.pug
             li.card.card-contribute
-                include ../../src/views/templates/ContributeItemView.pug
+                include ContributeItemView.pug
         .contribute.overlay.hidden
-            include ../../src/views/templates/ContributeView.pug
+            include ContributeView.pug
 
         // inline build/app.js
         script(src='app.js', inline)
